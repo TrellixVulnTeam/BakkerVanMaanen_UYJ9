@@ -1,0 +1,35 @@
+ion-title{
+  font-family: bvmFont;
+  text-align: center;
+  font-weight: bold;
+}
+
+ion-col{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  font-family: bvmFont;
+  display: block;
+  width: 100%;
+  background-color: #222428;
+  color: beige;
+}
+p{
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: bvmFont;
+}
+
+ion-col{
+  i{
+    font-size: 75px;
+  }
+  i.fa-check-circle{
+    color: green;
+  }
+  i.fa-times-circle{
+    color: red;
+  }
+}
