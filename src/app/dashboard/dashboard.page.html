@@ -9,7 +9,7 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <h3 class="display-3">Vitrine</h3>
+      <h4 class="display-4">Vitrine</h4>
     </ion-row>
     <ion-row>
       <ion-col *ngFor="let product of productStates | async">
@@ -19,16 +19,16 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <h3 class="display-3">Temperatuur & Vochtigheid</h3>
+      <h4 class="display-4">Temperatuur</h4>
     </ion-row>
     <ion-row>
       <ion-col>
         <h5 class="display-5">Huidige Temperatuur</h5>
-        <h4 class="display-4">{{ temp }} &deg;C</h4>
+        <h4 class="display-4 data">{{ temp }} &deg;C</h4>
       </ion-col>
       <ion-col>
         <h5 class="display-5">Huidige Vochtigheid</h5>
-        <h4 class="display-4">{{ humidity }}%</h4>
+        <h4 class="display-4 data">{{ humidity }}%</h4>
       </ion-col>
     </ion-row>
     <ion-row>
