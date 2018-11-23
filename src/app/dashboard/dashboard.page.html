@@ -19,13 +19,20 @@
       </ion-col>
     </ion-row>
     <ion-row>
-        <h3 class="display-3">Temperatuur & Vochtigheid</h3>
+      <h3 class="display-3">Temperatuur & Vochtigheid</h3>
     </ion-row>
     <ion-row>
       <ion-col>
-        
+        <h5 class="display-5">Huidige Temperatuur</h5>
+        <h4 class="display-4">{{ temp }} &deg;C</h4>
       </ion-col>
-      
+      <ion-col>
+        <h5 class="display-5">Huidige Vochtigheid</h5>
+        <h4 class="display-4">{{ humidity }}%</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <small class="text-muted">Updated On: {{ tempTimestamp }}</small>
     </ion-row>
   </ion-grid>
 </ion-content>

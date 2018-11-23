@@ -3,6 +3,7 @@ import { AngularFireList, AngularFireDatabase, AngularFireObject } from 'angular
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Vitrine } from '../vitrine';
+import { Temperature } from '../temperature';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,11 +14,19 @@ export class DashboardPage implements OnInit {
   dbRef: AngularFireList<any>;
   vitrine: Observable<any>;
   productStates: any;
+  tempData: Observable<any>;
+  temp: number;
+  humidity: number;
+  tempTimestamp: string;
   constructor(private db: AngularFireDatabase) {
     this.dbRef = this.db.list('/');
     this.vitrine = this.db.object('/vitrine').valueChanges();
     this.productStates = this.db.list('/vitrine/products_states').snapshotChanges();
-    this.db.list('/vitrine/products_states').snapshotChanges().subscribe(e => e.map(b => console.log(b.payload.val())));
+    this.db.object('/temp').valueChanges().subscribe(data => {
+      this.temp = data['temperature'];
+      this.humidity = data['humidity'];
+      this.tempTimestamp = data['timestamp'];
+    });
   }
 
   ngOnInit() {
