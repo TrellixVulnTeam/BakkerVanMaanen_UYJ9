@@ -1,4 +1,4 @@
-package nl.hsleiden;
+package com.company;
 
 public class Main {
 
