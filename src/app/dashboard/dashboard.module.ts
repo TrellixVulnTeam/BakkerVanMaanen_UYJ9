@@ -6,6 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { DashboardPage } from './dashboard.page';
+import { TemperatureComponent } from './temperature/temperature.component';
+import { VitrineComponent } from './vitrine/vitrine.component';
+import { LightsComponent } from './lights/lights.component';
 
 const routes: Routes = [
   {
@@ -21,6 +24,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DashboardPage]
+  declarations: [DashboardPage, TemperatureComponent, VitrineComponent, LightsComponent]
 })
 export class DashboardPageModule {}

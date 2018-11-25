@@ -1,22 +1,24 @@
 import pyrebase
+import datetime
+import Bakkerbase
 
-config = {
-    "apiKey": "AIzaSyBDKtBSkTW31bnxjtMiow8v7PVp3XL32Ks",
-    "authDomain": "bakkerbase-9bd8b.firebaseapp.com",
-    "databaseURL": "https://bakkerbase-9bd8b.firebaseio.com",
-    "projectId": "bakkerbase-9bd8b",
-    "storageBucket": "bakkerbase-9bd8b.appspot.com",
-    "messagingSenderId": "341606402913"
-}
-firebase = pyrebase.initialize_app(config)
-db = firebase.database()
+#   Main loop here
+def main():
+    fake_products = [
+        { 'product_name': 'Ananas Taart', 'available': False },
+        { 'product_name': 'Something Else Taart', 'available': False },
+        { 'product_name': 'Something Lekker', 'available': True },
+        { 'product_name': 'Something Vies', 'available': False },
+        { 'product_name': 'Fucking Taart', 'available': True },
+        { 'product_name': 'Lekkere Taart', 'available': False },
+        { 'product_name': 'Yummy Man', 'available': True }
+    ]
+    Bakkerbase.save_vitrine(fake_products)
+    return 0
 
 
-def get_temp():
-    return db.child("/temp").get().val()
-
-
-def get_vitrine():
-    return db.child("/vitrine/products_states").get().val()
-
-print(get_vitrine())
+if __name__ == '__main__':
+    #   Load while true here for collecting sensor data
+    #       - Do we need to run several python scripts for collecting from different sensors?
+    #       - Should we build classes?
+    main()

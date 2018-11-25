@@ -1,0 +1,37 @@
+ion-spinner{
+  text-align: center;
+  width: 100%;
+}
+
+ion-col{
+  i{
+    font-size: 75px;
+  }
+  i.fa-check-circle{
+    color: green;
+  }
+  i.fa-times-circle{
+    color: red;
+  }
+}
+
+h4{
+  text-align: center;
+  font-family: bvmFont;
+  display: block;
+  width: 100%;
+  background-color: #222428;
+  color: white;
+}
+
+p{
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: bvmFont;
+}
+
+small{
+  display: block;
+  text-align: center;
+  width: 100%;
+}

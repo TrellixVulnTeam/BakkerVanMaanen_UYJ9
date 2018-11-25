@@ -3,13 +3,14 @@
     <ion-title>BAKKER VAN MAANEN</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
+<ion-content padding class="background">
   <h4 class="display-4"><i class="fas fa-user-astronaut"></i></h4>
   <ion-item>
-    <ion-input required type="text" placeholder="Email"></ion-input>
+    <ion-input required type="text" placeholder="Medewerker Nummer"></ion-input>
   </ion-item>
   <ion-item>
-      <ion-input required type="password" placeholder="Passoword"></ion-input>
+      <ion-input required type="password" placeholder="Wachtwoord"></ion-input>
   </ion-item>
-  <ion-button shape="round" color="secondary" (click)="goToDashboard()">Login</ion-button>
+  <ion-button shape="round" color="dark" (click)="goToDashboard()">LOGIN</ion-button>
+  <small class="text-muted">Don't have an account yet? Click here for more information.</small>
 </ion-content>
