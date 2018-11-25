@@ -5,6 +5,12 @@ h4{
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  color: white;
+}
+
+small{
+  color: white!important;
+  display: block;
 }
 
 ion-title{
@@ -17,21 +23,23 @@ ion-title{
 ion-button{
   margin-top: 30px;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
 ion-item{
   width: 70%;
+  color: white;
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
+  --background: rgba(0,0,0,0);
 }
 
 ion-content{
   text-align: center;
   font-family: bvmFont;
-  background-color: black;
-  background-image: url("../../assets/images/login_bg.png");
+  --background: #fff url('../../assets/images/login_bg.png') no-repeat center cover;
+  background-image: url('../../assets/images/login_bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
