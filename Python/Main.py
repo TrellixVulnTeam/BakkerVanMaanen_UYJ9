@@ -11,7 +11,8 @@ def main():
         { 'product_name': 'Something Vies', 'available': False },
         { 'product_name': 'Fucking Taart', 'available': True },
         { 'product_name': 'Lekkere Taart', 'available': False },
-        { 'product_name': 'Reza Taart', 'available': True }]
+        { 'product_name': 'Reza Taart', 'available': True },
+        { 'product_name': 'Murtaza Taart', 'available': True }]
     Bakkerbase.save_vitrine(fake_products)
     return 0
 
