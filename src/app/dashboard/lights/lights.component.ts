@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LightsComponent implements OnInit {
 
+  lightsTimestamp: string;
+  //  For spinner
+  dataLoaded = false;
   constructor() { }
 
   ngOnInit() {
