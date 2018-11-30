@@ -57,9 +57,7 @@ def save_lights(lights_dict):
 #   Save current vitrine state
 def save_vitrine(products_dict):
     data = {
-        'products': {
-            products_dict
-        },
+        'products': products_dict,
         'timestamp': datetime.datetime.now().__str__()
     }
     return db.child('/vitrine').push(data)
