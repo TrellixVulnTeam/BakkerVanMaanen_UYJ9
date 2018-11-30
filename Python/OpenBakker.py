@@ -48,16 +48,17 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
         roi_gray = gray[y:y + height, x:x + width]
         roi_color = image[y:y + height, x:x + width]
 
-
+    # For all faces in de video
     for (x, y, width, height) in faces:
+        # x = left top corner of X where object is found
         center_x = int((x + width) - (width / 2))
+        # y = left top corner Y of where object is found
         center_y = int((y + height) - (height / 2))
-        print(center_x / 2)
+        # check if object found is on the left or right side of the image (camera pov)
         if(center_x < (640 / 2)):
             left += 1
         else:
             right += 1
-
         cv2.rectangle(image,(x, y),(x + width, y + height), (0,0,255), 1)
         cv2.circle(image, (center_x, center_y), 5, (0, 0, 255), -1)
         roi_gray = gray[y:y + height, x:x + width]
