@@ -38,7 +38,7 @@ def get_vitrine():
 #       - Timestamp works correctly and updates on front-end!
 def save_temperature(sensors_data):
     data = {
-            'temperature_sensors': sensors_data
+            'temperature_sensors': sensors_data,
             'timestamp': datetime.datetime.now().__str__()
         }
     return db.child('/temperature').push(data)
