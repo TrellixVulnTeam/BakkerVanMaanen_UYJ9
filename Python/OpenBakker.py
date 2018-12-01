@@ -29,6 +29,7 @@ def detect_objects():
     for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
         # PiCamera image array for cv2 use
         image = frame.array
+        # line for future use
         cv2.line(image, (363, 408), (465, 300), (255, 0, 0), 1)
         # Gray PiCamera output for detection use.
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -80,3 +81,4 @@ def detect_objects():
 
 if __name__ == "__main__":
     detect_objects()
+
