@@ -36,28 +36,27 @@ def get_vitrine():
 #       - Interval for sending data should be determined
 #       - Temperature model may need work
 #       - Timestamp works correctly and updates on front-end!
-def save_temperature(temperature, humidity):
+def save_temperature(sensors_data):
     data = {
-        'temperature': temperature,
-        'humidity': humidity,
-        'timestamp': datetime.datetime.now().__str__()
-    }
+            'temperature_sensors': sensors_data
+            'timestamp': datetime.datetime.now().__str__()
+        }
     return db.child('/temperature').push(data)
 
 
 #   Save light sensor entry
 def save_lights(lights_dict):
     data = {
-        'lights': lights_dict,
-        'timestamp': datetime.datetime.now().__str__()
-    }
+            'lights': lights_dict,
+            'timestamp': datetime.datetime.now().__str__()
+        }
     return db.child('/lights').push(data)
 
 
 #   Save current vitrine state
 def save_vitrine(products_dict):
     data = {
-        'products': products_dict,
-        'timestamp': datetime.datetime.now().__str__()
-    }
+            'products': products_dict,
+            'timestamp': datetime.datetime.now().__str__()
+        }
     return db.child('/vitrine').push(data)
