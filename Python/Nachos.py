@@ -45,8 +45,9 @@ while(cap.isOpened()):
     
     if len(upper_body_pts) > 1:
         for i in range(1, len(upper_body_pts)):
-            thickness = int(i * 1.10)
+            thickness = 1
             cv2.line(frame, upper_body_pts[i-1], upper_body_pts[i], (255, 0, 0), thickness)
+
 
     #   Display the resulting frame
     cv2.imshow('nigh7fox', frame)
