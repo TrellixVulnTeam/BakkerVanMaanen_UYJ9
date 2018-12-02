@@ -1,0 +1,2931 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" xmlns:fb="http://developers.facebook.com/schema/" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> <!--<![endif]-->
+  <head>
+        <link rel="alternate" href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" hreflang="en" />
+    <link rel="alternate" href="https://es.videezy.com/industria/5952-la-gente-caminando-cruzando-a-pie-en-la-ciudad" hreflang="es" />
+    <link rel="alternate" href="https://pt.videezy.com/industria/5952-pessoas-caminhando-pela-cruzada-na-cidade" hreflang="pt-BR" />
+    <link rel="alternate" href="https://de.videezy.com/industrie/5952-die-leute-die-in-der-stadt-berqueren" hreflang="de" />
+    <link rel="alternate" href="https://fr.videezy.com/industrie/5952-les-gens-marchent-en-traversant-dans-la-ville" hreflang="fr" />
+    <link rel="alternate" href="https://nl.videezy.com/industrie/5952-mensen-lopen-over-de-dwarsdoorlopen-in-de-stad" hreflang="nl" />
+    <link rel="alternate" href="https://sv.videezy.com/industri/5952-m-nniskor-g-r-tv-rs-ver-gatan-i-staden" hreflang="sv" />
+    <link rel="alternate" href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" hreflang="x-default" />
+
+    
+    <link rel="dns-prefetch" href="//static.videezy.com">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8807cf62c6","applicationID":"8328975","transactionName":"cl0NR0UNXlpTQ0wXUUJdFkFUB0EZRVkMEg==","queueTime":0,"applicationTime":122,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <script src="https://static.videezy.com/assets/gdpr-cmp-ccd6c3ad7ca8174607bfe2a8a79effe9.js" type="text/javascript"></script>
+    <title>People walking across cross-walk in the City - Free HD Video Clips & Stock Video Footage at Videezy!</title>
+<meta content="Free HD Stock Video Footage! - Videezy is a community of Videographers who download and share free HD stock video!" name="description" />
+<meta content="videezy" name="twitter:site" />
+<meta content="videezy" name="twitter:creator" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="https://static.videezy.com/system/resources/previews/000/005/952/original/11.mp4" name="twitter:image" />
+<meta content="Videezy" property="og:site_name" />
+<meta content="People walking across cross-walk in the City" property="og:title" />
+<meta content="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" property="og:url" />
+<meta content="en_US" property="og:locale" />
+<meta content="de_DE" property="og:locale:alternate" />
+<meta content="es_ES" property="og:locale:alternate" />
+<meta content="fr_FR" property="og:locale:alternate" />
+<meta content="nl_NL" property="og:locale:alternate" />
+<meta content="pt_BR" property="og:locale:alternate" />
+<meta content="sv_SE" property="og:locale:alternate" />
+<meta content="https://static.videezy.com/system/resources/previews/000/005/952/original/11.mp4" property="og:video" />
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"></link>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="https://static.videezy.com/assets/modernizr.custom.83825-93372fb200ead74f1d44254d993c5440.js" type="text/javascript"></script>
+    <link href="https://static.videezy.com/assets/application-4b844576b239797fc0ad592adc2b773e.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://static.videezy.com/assets/print-ac38768f09270df2214d2c500c647adc.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="https://feeds.feedburner.com/eezyinc/videezy-images" rel="alternate" title="RSS" type="application/rss+xml" />
+
+        <link rel="canonical" href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="7HssB447AeHNliK05k27ACUGRZ4cGlG7I+S076JDa7U=" name="csrf-token" />
+    <!-- Begin TextBlock "HTML - Head" -->
+<meta name="google-site-verification" content="mOMyvrYVQGuqwse7CZihEeIr5hGdSrWfID9O45QHsTQ" />
+<meta name="google-site-verification" content="HVgu-k8b6XG1SEaxL29j0XcOV33Uz5qneXtpGDQgCS4" />
+<!--<script type="text/javascript" src="//api.xeezy.com/api.min.js"></script>-->
+<meta name="referrer" content="unsafe-url" />
+
+<meta name="msvalidate.01" content="9E7A3F56C01FB9B69FCDD1FBD287CAE4" />
+</script>
+
+<meta name="p:domain_verify" content="9949c020348e97fc55305d8f9567e26b"/>
+<!-- TradeDoubler site verification 2802549 -->
+<meta name="google-site-verification" content="Kyua5JM6jqFQ6WxVq5b-tT2OxzLMy9QYKI9G2MAGbBo" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49058372 = new Ya.Metrika({
+                    id:49058372,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49058372" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- End TextBlock "HTML - Head" -->
+        <script>
+    // https://support.zendesk.com/hc/en-us/articles/203761906
+    function zendesk_locale(locale) {
+      switch(locale) {
+        case 'en':
+          return 'en-US';
+        case 'pt':
+          return 'pt-BR';
+        case 'es':
+        case 'de':
+        case 'fr':
+        case 'nl':
+        case 'sv':
+          return locale;
+      }
+    }
+
+    window.zESettings = {
+      webWidget: {
+        color: { theme: "#312962" },
+      }
+    };
+  </script>
+
+    <!-- Start of videezy Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zE||(function(e,t,s){var n=window.zE=window.zEmbed=function(){n._.push(arguments)}, a=n.s=e.createElement(t),r=e.getElementsByTagName(t)[0];n.set=function(e){ n.set._.push(e)},n._=[],n.set._=[],a.async=true,a.setAttribute("charset","utf-8"), a.src="https://static.zdassets.com/ekr/asset_composer.js?key="+s, n.t=+new Date,a.type="text/javascript",r.parentNode.insertBefore(a,r)})(document,"script","8d4b1275-a346-4298-b11d-4584ba602dfb");/*]]>*/</script>
+    <!-- End of videezy Zendesk Widget script -->
+
+  <script>
+    try {
+      // https://support.zendesk.com/hc/en-us/articles/229167008-Advanced-customization-of-your-Web-Widget
+      zE(function() {
+        zE.setLocale(zendesk_locale("en"));
+
+        $zopim(function(){
+          $zopim.livechat.departments.filter('');
+
+          $zopim.livechat.setOnConnected(function() {
+            $zopim.livechat.setOnStatus(function () {
+
+                $zopim.livechat.concierge.setAvatar('https://static.vecteezy.com/system/assets/asset_files/000/001/278/original/videezy-logo.png');
+                $zopim.livechat.concierge.setName('Videezy Support');
+            });
+          });
+        });
+      });
+    }
+    catch(error) {
+      console.error(error);
+    }
+  </script>
+
+  <link href="https://static.videezy.com/assets/resource-show-f3a922c2343ba42e6ef4476eb77e8580.css" media="screen" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    var is_show_page = true;
+  </script>
+
+  <script type="text/javascript">
+      var resource_id = 5952;
+      var custom_vert_text = "Traffic";
+  </script>
+
+      <div hidden itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+
+        <meta itemprop="author" content="G_99">
+
+        <meta itemprop="uploadDate" content="2017-03-10">
+
+        <meta itemprop="datePublished" content="2017-03-24">
+
+      <meta itemprop="thumbnailUrl" content="https://static.videezy.com/system/resources/thumbnails/000/005/952/original/tracking-shot.jpg">
+      <meta itemprop="contentUrl" content="https://static.videezy.com/system/resources/previews/000/005/952/original/11.mp4">
+      <meta itemprop="name" content="People walking across cross-walk in the City" />
+      <meta itemprop="description" content="Plano in traffic monitoring">
+    </div>
+  <link href="https://static.videezy.com/assets/video-9a408e30165095cd5510e96825e5bd8d.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "videezy",
+        "url": "https://www.videezy.com"
+      }
+   </script>
+
+    <script type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.videezy.com",
+      "logo": "https://static.videezy.com/assets/structured_data/videezy-logo-52625561c3550f3947fbf5fbfd3614a4.svg",
+      "sameAs": [
+        "https://www.facebook.com/videezy",
+        "https://twitter.com/videezy",
+        "https://pinterest.com/videezy/",
+        "https://www.youtube.com/videezy",
+        "https://instagram.com/eezy/",
+        "https://www.snapchat.com/add/eezy",
+        "https://google.com/+vecteezy"
+      ]
+     }
+    </script>
+
+  </head>
+
+  <body class=" fullwidth flex redesign-layout resources-show">
+     <script src="//rocinante.themediashop.co/library/videezy.js" async data-tmsclient="Videezy" data-layout="show" data-debug="true" data-lazy="true" data-targeting='{"page-type":"show"}'></script>
+
+    <script>
+    showPersonalizedAds = true;
+
+  var enabledVendors = [];
+  var enabledPurposes = [];
+
+  if (showPersonalizedAds) {
+    enabledVendors.push(11); // 11 - Quantcast International Limited (quantcast.com)
+
+    enabledPurposes.push(1); // Information storage and access
+    enabledPurposes.push(2); // Personalisation
+    enabledPurposes.push(3); // Ad selection, delivery, reporting
+    enabledPurposes.push(4); // Content selection, delivery, reporting
+    enabledPurposes.push(5); // Measurement
+  }
+
+  // assumes gdpr-cmp.js has been loaded already
+  window.gdpr.process({
+    consent: showPersonalizedAds, // has global consent been received - use as "false" to wipe out consents completely
+    vendors: enabledVendors,
+    purposes: enabledPurposes,
+    debug: /[?&]cmp_debug=true/.test(location.search)
+    //metadata: 'XXXXXX'   // optionally, already encoded metadata can be passed through if you need amends only
+  });
+</script>
+
+    
+      <div class="flash-error"><p>Download link expired.</p></div>
+
+    <div id="fb-root"></div>
+
+
+    <header class="site-header centered-search">
+<div class="max-inner is-logged-out">
+    <figure class="site-logo">
+      <a href="https://www.videezy.com/" alt="Videezy"><img alt="Free HD Stock Video at Videezy" src="https://static.videezy.com/assets/videezy/videezy-logo-96c769aa52a91cac6fa59c746e388dbb.svg" title="Videezy" /></a>
+    </figure>
+    <nav class="logged-out-nav">
+        <ul class="header-menu">
+            <li>
+              <a href="/signup" data-remote="true" onclick="track_header_join_eezy_click();">Join Eezy!</a>
+            </li>
+          <li>
+            <a href="/login" class="login-link" data-remote="true" onclick="track_header_login_click();">Login</a>
+          </li>
+        </ul>
+
+
+    </nav><!-- .logged-in-nav/.logged-out-nav -->
+        <form accept-charset="UTF-8" action="/free-video" class="search-form" id="search-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7HssB447AeHNliK05k27ACUGRZ4cGlG7I+S076JDa7U=" /></div>
+  <input id="from" name="from" type="hidden" value="mainsite" />
+    <input id="in_se" name="in_se" type="hidden" value="true" />
+    <div class="inputs-wrapper">
+        <input class="search-term" id="search-term" name="search" placeholder="Enter Keyword(s)" type="text" value="" />
+
+      <input class="search-submit" name="commit" type="submit" value="Search" />
+    </div>
+
+</form>
+  </div><!-- .max-inner -->
+
+</header>
+
+
+    <div id="body">
+      <div class="content">
+
+        
+
+          
+
+
+
+  <div id="remote-ip" style="display: none;">85.214.24.229</div>
+
+
+<section id="resource-main" class="info-section resource-main-info">
+
+  <!-- start: resource-card -->
+  <div class="resource-card">
+    <h1 class="resource-name">People walking across cross-walk in the City</h1>
+
+    <div class="resource-media">
+      <div class="resource-preview item ">
+
+        
+
+<!-- <video width="630" height="354" controls="controls" id="preview-video" data-tracking-url="/tracking/view/5952-people-walking-across-cross-walk-in-the-city" data-tracking-timeout="5000"> -->
+
+<video style="width:100%;height:100%;" width="100%" height="100%" controls="controls" id="preview-video" data-tracking-url="/tracking/view/5952-people-walking-across-cross-walk-in-the-city" data-tracking-timeout="5000">
+
+    <source type="video/mp4" src="https://static.videezy.com/system/resources/previews/000/005/952/original/11.mp4" />
+    <source type="application/ogg" src="https://static.videezy.com/system/resources/preview2s/000/005/952/original/11.ogv" />
+    <source type="video/webm" src="https://static.videezy.com/system/resources/preview3s/000/005/952/original/11.webm" />
+
+</video>
+
+
+  <div class="resource-actions">
+      <div class="resource-license-show">
+  <a href="/resources/5952/license_info_modal" data-remote="true" rel="nofollow">
+    <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 20" style="enable-background:new 0 0 16 20;" xml:space="preserve">
+<title>license</title>
+<g>
+	<path d="M11.5,4.7C11.5,3.8,11.6,0,6.3,0C1.2,0,0,0,0,0v20h16c0,0,0-8.3,0-10.5C16,5.7,12.6,4.6,11.5,4.7z M14,18H2V2   c0,0,2.2,0,4.1,0c4.1,0,3.5,2.9,3.2,4.6C12,6.3,14,7,14,10.2C14,12.6,14,18,14,18z"></path>
+	<rect x="4" y="14" width="8" height="2"></rect>
+	<rect x="4" y="10" width="5" height="2"></rect>
+</g>
+</svg>
+
+    <span>License Info</span>
+</a></div>
+
+
+
+    <div class="user-actions">
+      <a href="#" class="resource-comments-count">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>comments</title><g id="Layer_2" data-name="Layer 2"><g id="Legacy_Show_Page_Comments" data-name="Legacy Show Page Comments"><g id="Legacy_Show_Page_Comments-2" data-name="Legacy Show Page Comments"><path class="cls-1" d="M6,9H8V7H6ZM9,9h2V7H9Zm3,0h2V7H12Zm5-9H3A3,3,0,0,0,0,3V13a3,3,0,0,0,3,3v4l8.56-4H17a3,3,0,0,0,3-3V3A3,3,0,0,0,17,0Zm1,13a1,1,0,0,1-1,1H11.11L5,16.85V14H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H17a1,1,0,0,1,1,1Z"></path></g></g></g></svg>
+
+</a>
+      
+  <a href="/login" class="resource-likes-count fave unauthorized" data-remote="true">
+    <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 115.4 100" style="enable-background:new 0 0 115.4 100;" xml:space="preserve">
+<g>
+	<path d="M81.5,0c-9.3,0-17.7,3.7-23.8,9.8c-6.1-6-14.5-9.7-23.8-9.7C15.1,0.1,0,15.3,0,34c0.1,43,57.8,66,57.8,66   s57.7-23.1,57.6-66.1C115.4,15.1,100.2,0,81.5,0z M57.7,84.2c0,0-42.8-19.8-42.8-46.2c0-12.8,7.5-23.3,21.4-23.3   c10,0,16.9,5.5,21.4,10c4.5-4.5,11.4-10,21.4-10c13.9,0,21.4,10.5,21.4,23.3C100.5,64.4,57.7,84.2,57.7,84.2z"></path>
+</g>
+</svg>
+
+</a>
+
+      <div class="shareblock-horiz">
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/sharer.php?u=https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city&amp;t=People walking across cross-walk in the City" class="shr-btn facebook-like" data-social-network="facebook" data-href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" data-send="false" data-layout="button" data-width="60" data-show-faces="false" rel="nofollow" target="_blank" rel="nofollow">
+        <span class="vhidden"><!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 14.9 15" style="enable-background:new 0 0 14.9 15;" xml:space="preserve">
+<path d="M14.1,0H0.8C0.4,0,0,0.4,0,0.8c0,0,0,0,0,0v13.3C0,14.6,0.4,15,0.8,15h7.1V9.2H6V6.9h1.9V5.3c-0.2-1.5,0.9-2.8,2.4-3  c0.2,0,0.3,0,0.5,0c0.6,0,1.2,0,1.7,0.1v2h-1.2c-0.9,0-1.1,0.4-1.1,1.1v1.5h2.2l-0.3,2.3h-1.9V15h3.8c0.5,0,0.8-0.4,0.8-0.8V0.8  C14.9,0.4,14.5,0,14.1,0C14.1,0,14.1,0,14.1,0z"></path>
+</svg>
+</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=People walking across cross-walk in the City on @videezy&url=https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" class="shr-btn twitter-share" data-social-network="twitter"   data-count="none" rel="nofollow" target="_blank" rel="nofollow">
+        <span class="vhidden"><!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 14.8 12.5" style="enable-background:new 0 0 14.8 12.5;" xml:space="preserve">
+<path d="M14.8,1.5C14.2,1.7,13.6,1.9,13,2c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.2,0.6-1.9,0.8c-0.6-0.6-1.4-1-2.2-1  c-1.7,0.1-3,1.5-3,3.2c0,0.2,0,0.5,0.1,0.7C4.8,3.8,2.5,2.6,1,0.6c-0.3,0.5-0.4,1-0.4,1.6c0,1.1,0.5,2,1.4,2.6c-0.5,0-1-0.1-1.4-0.4  l0,0c0,1.5,1,2.8,2.4,3.1C2.6,7.7,2.1,7.7,1.6,7.6C2,8.9,3.2,9.7,4.5,9.8c-1.3,1-2.9,1.5-4.5,1.3c1.4,0.9,3,1.4,4.7,1.4  c5.6,0,8.6-4.8,8.6-9c0-0.1,0-0.3,0-0.4C13.9,2.6,14.4,2.1,14.8,1.5z"></path>
+</svg>
+</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" class="googleplus-one" data-size="shr-btn medium" data-social-network="google plus" data-href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" data-annotation="none" rel="nofollow" target="_blank" rel="nofollow">
+        <span class="vhidden"><!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20.5 13.1" style="enable-background:new 0 0 20.5 13.1;" xml:space="preserve">
+<path d="M6.5,5.3v2.6H10c-0.3,1.6-1.8,2.8-3.5,2.6c-2.1,0-3.8-1.7-3.8-3.9l0,0c0-2.1,1.6-3.9,3.8-3.9l0,0c0.9,0,1.8,0.3,2.5,1  c0.5-0.6,0.5-0.7,1.9-2C9.7,0.6,8.1,0,6.5,0C2.9,0-0.1,2.9-0.1,6.6s2.9,6.6,6.6,6.6c5.4,0,6.7-4.7,6.2-7.9L6.5,5.3z M18.2,5.4V3.1  h-1.6v2.3h-2.3V7h2.3v2.4h1.6V7h2.2V5.4H18.2z"></path>
+</svg>
+</span>
+      </a>
+    </li>
+    <li>
+      <a href="//www.pinterest.com/pin/create/button/?url=https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city&media=https://static.videezy.com/system/resources/previews/000/005/952/original/11.mp4&description=People walking across cross-walk in the City" data-social-network="pinterest" class="shr-btn pinterest-pinit" data-pin-do="buttonPin" data-pin-color="red" data-pin-height="20" target="_blank" rel="nofollow">
+        <span class="vhidden"><!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 14.9 15" style="enable-background:new 0 0 14.9 15;" xml:space="preserve">
+<path d="M7.4,0C3.3,0,0,3.4,0,7.6c0,2.9,1.8,5.6,4.5,6.8c0-0.6,0-1.2,0.1-1.7l1-4.1C5.4,8.2,5.3,7.8,5.3,7.4c0-1.1,0.6-1.9,1.4-1.9  c0.6,0,1,0.4,1,1c0,0,0,0.1,0,0.1C7.6,7.5,7.4,8.4,7.1,9.2c-0.2,0.6,0.2,1.3,0.8,1.4c0.1,0,0.2,0,0.3,0c1.4,0,2.4-1.8,2.4-4  c0.1-1.5-1.2-2.8-2.7-2.9c-0.1,0-0.3,0-0.4,0c-2-0.1-3.6,1.5-3.7,3.4c0,0.1,0,0.1,0,0.2c0,0.5,0.2,1.1,0.5,1.5  C4.5,9,4.5,9.1,4.5,9.3L4.3,9.9c0,0.1-0.2,0.2-0.3,0.2c0,0,0,0-0.1,0c-1-0.6-1.7-1.7-1.5-2.9c0-2.1,1.8-4.7,5.3-4.7  c2.5-0.1,4.6,1.7,4.7,4.2c0,0,0,0.1,0,0.1c0,2.9-1.6,5.1-4,5.1c-0.7,0-1.4-0.3-1.8-1c0,0-0.4,1.7-0.5,2.1c-0.2,0.6-0.4,1.1-0.8,1.6  C6,14.9,6.7,15,7.4,15c4.1,0,7.5-3.4,7.5-7.5S11.6,0,7.4,0z"></path>
+</svg>
+</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<a href="#" class="resource-share" title="Share This Resource">
+  <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 16.7" style="enable-background:new 0 0 20 16.7;" xml:space="preserve">
+<g>
+	<polygon points="17.8,14.4 2.2,14.4 2.2,2.2 6.7,2.2 6.7,0 0,0 0,16.7 20,16.7 20,10 17.8,10  "></polygon>
+	<path d="M13.8,6.1v3L20,4.5L13.8,0v2.8c-7.5,0-8,7.9-8,7.9C9.1,5.5,13.8,6.1,13.8,6.1z"></path>
+</g>
+</svg>
+
+</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="resource-info-scrollable">
+
+
+          <div class="video-meta">
+    <div class="meta-icons">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>video-format</title><g id="Layer_2" data-name="Layer 2"><g id="Videezy_Show_Page_Format" data-name="Videezy Show Page Format"><g id="Videezy_Show_Page_Format-2" data-name="Videezy Show Page Format"><path class="cls-1" d="M15,0V2H2V0H0V18H2V16H15v2h2V0Zm0,14H2V4H15ZM5,6H3V8H5Zm0,4H3v2H5Zm9-4H12V8h2Zm0,4H12v2h2Z"></path></g></g></g></svg>
+ mp4</span>
+
+      <span><!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 15.9" style="enable-background:new 0 0 20 15.9;" xml:space="preserve">
+<g>
+	<polygon points="8.3,7.4 5.9,7.4 5.9,5.4 4.8,5.4 4.8,10.5 5.9,10.5 5.9,8.5 8.3,8.5 8.3,10.5 9.4,10.5 9.4,5.4 8.3,5.4  "></polygon>
+	<path d="M9.4,10.5H8.3v-2H5.9v2H4.8V5.4h1.2v2h2.3v-2h1.2V10.5z M8.4,10.4h1v-5h-1v2H5.9v-2h-1v5h1v-2h2.5V10.4z"></path>
+</g>
+<path d="M16.2,1.8c1.1,0,2,0.9,2,2v8.2c0,1.1-0.9,2-2,2H3.8c-1.1,0-2-0.9-2-2V3.8c0-1.1,0.9-2,2-2H16.2 M16.2,0H3.8  C1.7,0,0,1.7,0,3.8v8.2c0,2.1,1.7,3.8,3.8,3.8h12.3c2.1,0,3.8-1.7,3.8-3.8V3.8C20,1.7,18.3,0,16.2,0L16.2,0z"></path>
+<g>
+	<path d="M11.3,10.5h-0.5V5.4h0.5c1.8,0,4.5,0,4.5,2.6C15.8,10.5,13.2,10.5,11.3,10.5z M11.9,6.5v3C14,9.4,14.7,9,14.7,8   C14.7,6.8,13.8,6.5,11.9,6.5z"></path>
+</g>
+</svg>
+ 1920x1080</span>
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>video-frame-rate</title><g id="Layer_2" data-name="Layer 2"><g id="Videezy_Show_Page_Frame_Rate" data-name="Videezy Show Page Frame Rate"><g id="Videezy_Show_Page_Frame_Rate-2" data-name="Videezy Show Page Frame Rate"><path class="cls-1" d="M18.17,4.25l1.54-1.54L18.29,1.29,16.85,2.73,15.44,4.15h0L11.29,8.3A3,3,0,0,0,10,8a3,3,0,1,0,3,3,3,3,0,0,0-.3-1.29l4-4A7.91,7.91,0,0,1,18,10h2A9.91,9.91,0,0,0,18.17,4.25ZM10,12a1,1,0,1,1,1-1A1,1,0,0,1,10,12Zm3.8-9,1.45-1.45A10,10,0,0,0,0,10H2A8,8,0,0,1,13.8,3Z"></path></g></g></g></svg>
+ 25 fps</span>
+    </div>
+
+  </div>
+
+
+        <div class="resource-desc ellipsis">
+          Plano in traffic monitoring
+
+          <span class="custom-ellipsis"><img alt="Ellipsis" src="https://static.videezy.com/assets/ellipsis-029e440c5b8317319d2fded31d2aee37.png" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- start: resource-info -->
+    <div class="resource-info">
+
+        <div class="secondary-section-info">
+      <center>
+<div
+  id="div-gpt-ad-1991553-1"
+  class="tmsads  bsap adunit"
+  style=""
+
+  
+></div>
+</center>
+  </div>
+
+
+      <!-- start: resource cta -->
+      <div class="resource-cta">
+            <div class="btn-wrapper">
+              <a href="/download/5952?download_auth_hash=b2261dd3&amp;pro=false" class="download-resource-link download-btn btn flat ez-icon-download" id="download-button" onclick="fire_download_click_tracking();" rel="nofollow">Free Download</a>
+            </div>
+      </div>
+      <!-- end: resource cta -->
+
+    </div>
+    <!-- end: resource-info -->
+
+  </div>
+  <!-- end: resource-card -->
+</section>
+
+
+  <script>
+    var resourceType = 'free';
+  </script>
+
+<section id="related-resources" class="info-section resource-related">
+  <h2>This Image Appears in Searches For</h2>
+    <link href="https://static.videezy.com/assets/tags_carousel-ac4ce9b2c3307c2e27a01901d1d6951c.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <div class="outer-tags-wrap" >
+    <div class="rs-carousel">
+      <ul class="tags-wrap">
+            <li class="tag">
+              <a href="/free-video/traffic" class="tag-link" title="traffic">
+              <span>
+                traffic
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/city" class="tag-link" title="city">
+              <span>
+                city
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/street" class="tag-link" title="street">
+              <span>
+                street
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/people" class="tag-link" title="people">
+              <span>
+                people
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/urban" class="tag-link" title="urban">
+              <span>
+                urban
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/buildings" class="tag-link" title="buildings">
+              <span>
+                buildings
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/walking" class="tag-link" title="walking">
+              <span>
+                walking
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/4k" class="tag-link" title="4k">
+              <span>
+                4k
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/travel" class="tag-link" title="travel">
+              <span>
+                travel
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/downtown" class="tag-link" title="downtown">
+              <span>
+                downtown
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/building" class="tag-link" title="building">
+              <span>
+                building
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/outdoor" class="tag-link" title="outdoor">
+              <span>
+                outdoor
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/california" class="tag-link" title="california">
+              <span>
+                california
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/los-angeles" class="tag-link" title="los angeles">
+              <span>
+                los angeles
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/cityscape" class="tag-link" title="cityscape">
+              <span>
+                cityscape
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/la" class="tag-link" title="la">
+              <span>
+                la
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/angeles" class="tag-link" title="angeles">
+              <span>
+                angeles
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/states" class="tag-link" title="states">
+              <span>
+                states
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/united" class="tag-link" title="united">
+              <span>
+                united
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/architecture" class="tag-link" title="architecture">
+              <span>
+                architecture
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/landmark" class="tag-link" title="landmark">
+              <span>
+                landmark
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/modern" class="tag-link" title="modern">
+              <span>
+                modern
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/america" class="tag-link" title="america">
+              <span>
+                america
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/usa" class="tag-link" title="usa">
+              <span>
+                usa
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/stoplight" class="tag-link" title="stoplight">
+              <span>
+                stoplight
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/outside" class="tag-link" title="outside">
+              <span>
+                outside
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/business" class="tag-link" title="business">
+              <span>
+                business
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/hall" class="tag-link" title="hall">
+              <span>
+                hall
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/concert" class="tag-link" title="concert">
+              <span>
+                concert
+              </span>
+</a>            </li>
+            <li class="tag">
+              <a href="/free-video/music" class="tag-link" title="music">
+              <span>
+                music
+              </span>
+</a>            </li>
+      </ul>
+    </div>
+  </div>
+
+  <script defer="defer" src="https://static.videezy.com/assets/jquery.ui.widget-0763685ac5d9057e21eac4168b755b9a.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/jquery.event.drag-3d54f98bab25c12a9b9cc1801f3e1c4b.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/jquery.translate3d-6277fde3b8b198a2da2aa8e4389a7c84.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/jquery.rs.carousel-5763ad180bc69cb2b583cd5d42a9c231.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/jquery.rs.carousel-touch-c5c93eecbd1da1af1bce8f19e8f02105.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/tags-carousel-6af3c3a9d1135b957ae4736b07801e0a.js" type="text/javascript"></script>
+
+
+    <h2>Users Who Downloaded This File Also Downloaded</h2>
+
+        
+    <input type="hidden" name="eezysearch" value="Traffic"/>
+<input type="hidden" name="eezy-resource-id" value="5952"/>
+
+
+<!--<div class="special-items">-->
+
+    <!--<div class="new-justified-grid eezyapi&#45;&#45;justified" data-limit="40" data-apiparams="s=videezy" data-is-justified="true"></div>-->
+
+<!--</div>-->
+
+<div class="eezyapi--justified with-stars" data-affiliate="shutterstock-justified">
+
+</div>
+
+
+
+
+
+    <!-- envideezy-related-5952-v2-47/2018 -->
+    <!-- Cached at 2018-11-26 01:00:36 -0600 -->
+      <ul class="ez-resource-grid ez-resource-grid--small is-hidden videezy-grid not-last-page" rel="search-results">
+      
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/aerial-drone/7470-drone-footage-over-a-bridge-while-train-passes" class="ez-resource-thumb__link sponsored-premium-resource" title="Drone Footage Over a Bridge While Train Passes"><img alt="Drone Footage Over a Bridge While Train Passes" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/470/small/drone-footage-over-a-bridge-while-train-passes.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/470/small_2x/drone-footage-over-a-bridge-while-train-passes.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/470/small/drone-footage-over-a-bridge-while-train-passes.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Drone Footage Over a Bridge While Train Passes
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/people/6436-woman-walking-in-the-water-at-the-beach" class="ez-resource-thumb__link sponsored-premium-resource" title="Woman walking in the water at the beach"><img alt="Woman walking in the water at the beach" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/436/small/woman-walking-in-the-water-at-the-beach.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/436/small_2x/woman-walking-in-the-water-at-the-beach.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/436/small/woman-walking-in-the-water-at-the-beach.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Woman walking in the water at the beach
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/people/6413-woman-splashing-feet-in-the-ocean" class="ez-resource-thumb__link sponsored-premium-resource" title="Woman splashing feet in the ocean"><img alt="Woman splashing feet in the ocean" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/413/small/woman-splashing-feet-in-the-ocean.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/413/small_2x/woman-splashing-feet-in-the-ocean.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/413/small/woman-splashing-feet-in-the-ocean.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Woman splashing feet in the ocean
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/people/6434-woman-sits-in-chair-on-the-beach" class="ez-resource-thumb__link sponsored-premium-resource" title="Woman sits in chair on the beach"><img alt="Woman sits in chair on the beach" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/434/small/woman-sits-in-chair-on-the-beach.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/434/small_2x/woman-sits-in-chair-on-the-beach.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/434/small/woman-sits-in-chair-on-the-beach.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Woman sits in chair on the beach
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/people/6432-woman-in-white-dress-walking-on-the-beach" class="ez-resource-thumb__link sponsored-premium-resource" title="Woman in white dress walking on the beach"><img alt="Woman in white dress walking on the beach" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/432/small/woman-in-white-dress-walking-on-the-beach.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/432/small_2x/woman-in-white-dress-walking-on-the-beach.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/432/small/woman-in-white-dress-walking-on-the-beach.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Woman in white dress walking on the beach
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb is-premium-resource is-pro">
+
+
+  <a href="/people/6433-woman-in-white-dress-walks-along-the-shore" class="ez-resource-thumb__link sponsored-premium-resource" title="Woman in white dress walks along the shore"><img alt="Woman in white dress walks along the shore" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/433/small/woman-in-white-dress-walks-along-the-shore.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/433/small_2x/woman-in-white-dress-walks-along-the-shore.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/433/small/woman-in-white-dress-walks-along-the-shore.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Woman in white dress walks along the shore
+      </div>
+    </div>
+  </div>
+</li>
+
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/696-walking-across-the-golden-gate-bridge" class="ez-resource-thumb__link internal-resource" title="Walking Across The Golden Gate Bridge"><img alt="Walking Across The Golden Gate Bridge" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/000/696/small/10.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/000/696/small_2x/10.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/000/696/small/10.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Walking Across The Golden Gate Bridge
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/travel/2251-glasgow-traffic" class="ez-resource-thumb__link internal-resource" title="Glasgow Traffic"><img alt="Glasgow Traffic" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/002/251/small/TrafficGlasgow.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/002/251/small_2x/TrafficGlasgow.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/002/251/small/TrafficGlasgow.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Glasgow Traffic
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/11730-intersection-traffic" class="ez-resource-thumb__link internal-resource" title="Intersection Traffic"><img alt="Intersection Traffic" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/730/small/intersection-traffic.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/730/small_2x/intersection-traffic.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/730/small/intersection-traffic.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Intersection Traffic
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/1561-free-hd-video-of-traffic-in-orlando-florida" class="ez-resource-thumb__link internal-resource" title="Free HD Video of Traffic in Orlando Florida"><img alt="Free HD Video of Traffic in Orlando Florida" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/001/561/small/Untitled.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/001/561/small_2x/Untitled.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/001/561/small/Untitled.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Free HD Video of Traffic in Orlando Florida
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/travel/4793-cars-and-pedestrians-on-the-streets-of-chicago-4k" class="ez-resource-thumb__link internal-resource" title="Cars and Pedestrians on the Streets of Chicago 4K"><img alt="Cars and Pedestrians on the Streets of Chicago 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/004/793/small/cars-and-pedestrians-on-the-streets-of-chicago-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/004/793/small_2x/cars-and-pedestrians-on-the-streets-of-chicago-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/004/793/small/cars-and-pedestrians-on-the-streets-of-chicago-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Cars and Pedestrians on the Streets of Chicago 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/6910-traffic-in-kiev" class="ez-resource-thumb__link internal-resource" title="Traffic in Kiev"><img alt="Traffic in Kiev" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/910/small/traffic-in-kiev.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/910/small_2x/traffic-in-kiev.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/910/small/traffic-in-kiev.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic in Kiev
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/7837-traffic-in-wales-cadiff-timelapse" class="ez-resource-thumb__link internal-resource" title="Traffic in Wales, Cadiff (Timelapse)"><img alt="Traffic in Wales, Cadiff (Timelapse)" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/837/small/traffic-in-wales-cadiff-timelapse.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/837/small_2x/traffic-in-wales-cadiff-timelapse.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/837/small/traffic-in-wales-cadiff-timelapse.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic in Wales, Cadiff (Timelapse)
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/7674-traffic-passing-at-port-of-dover-uk" class="ez-resource-thumb__link internal-resource" title="Traffic passing at Port of Dover (UK)"><img alt="Traffic passing at Port of Dover (UK)" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/674/small/traffic-passing-at-dover-uk.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/674/small_2x/traffic-passing-at-dover-uk.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/674/small/traffic-passing-at-dover-uk.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic passing at Port of Dover (UK)
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/people/7079-cross-walk" class="ez-resource-thumb__link internal-resource" title="Cross Walk"><img alt="Cross Walk" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/079/small/cross-walk.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/079/small_2x/cross-walk.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/079/small/cross-walk.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Cross Walk
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/6755-traffic-and-cars-in-italy" class="ez-resource-thumb__link internal-resource" title="Traffic and cars in Italy"><img alt="Traffic and cars in Italy" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/755/small/traffic-and-cars-in-italy.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/755/small_2x/traffic-and-cars-in-italy.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/755/small/traffic-and-cars-in-italy.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic and cars in Italy
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/5920-bus" class="ez-resource-thumb__link internal-resource" title="Bus"><img alt="Bus" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/920/small/bus.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/920/small_2x/bus.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/920/small/bus.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Bus
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/3955-traffic-in-hollywood-4k" class="ez-resource-thumb__link internal-resource" title="Traffic in Hollywood 4K"><img alt="Traffic in Hollywood 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/003/955/small/hollywoodtraffic.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/003/955/small_2x/hollywoodtraffic.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/003/955/small/hollywoodtraffic.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic in Hollywood 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/11673-time-lapse-at-floor-level-of-vehicles-transiting-on-the-street-in-4k" class="ez-resource-thumb__link internal-resource" title="Time lapse at floor level of vehicles transiting on the street in 4K"><img alt="Time lapse at floor level of vehicles transiting on the street in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/673/small/time-lapse-at-floor-level-of-vehicles-transiting-on-the-street-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/673/small_2x/time-lapse-at-floor-level-of-vehicles-transiting-on-the-street-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/673/small/time-lapse-at-floor-level-of-vehicles-transiting-on-the-street-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Time lapse at floor level of vehicles transiting on the street in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/11674-time-lapse-of-vehicles-and-people-moving-on-the-street-in-4k" class="ez-resource-thumb__link internal-resource" title="Time lapse of vehicles and people moving on the street in 4K"><img alt="Time lapse of vehicles and people moving on the street in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/674/small/time-lapse-of-vehicles-and-people-moving-on-the-street-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/674/small_2x/time-lapse-of-vehicles-and-people-moving-on-the-street-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/674/small/time-lapse-of-vehicles-and-people-moving-on-the-street-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Time lapse of vehicles and people moving on the street in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/11676-time-lapse-of-vehicles-transiting-on-the-street-and-bright-buildings-in-4k" class="ez-resource-thumb__link internal-resource" title="Time lapse of vehicles transiting on the street and bright buildings in 4K"><img alt="Time lapse of vehicles transiting on the street and bright buildings in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/676/small/time-lapse-of-vehicles-transiting-on-the-street-and-bright-buildings-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/676/small_2x/time-lapse-of-vehicles-transiting-on-the-street-and-bright-buildings-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/676/small/time-lapse-of-vehicles-transiting-on-the-street-and-bright-buildings-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Time lapse of vehicles transiting on the street and bright buildings in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/3991-aerial-shot-of-downtown-honolulu-in-hawaii-4k" class="ez-resource-thumb__link internal-resource" title="Aerial Shot of Downtown Honolulu in Hawaii 4K"><img alt="Aerial Shot of Downtown Honolulu in Hawaii 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/003/991/small/honolulu_downtown.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/003/991/small_2x/honolulu_downtown.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/003/991/small/honolulu_downtown.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Aerial Shot of Downtown Honolulu in Hawaii 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/travel/4006-over-head-shot-of-traffic-in-honolulu-hawaii-4k" class="ez-resource-thumb__link internal-resource" title="Over-head shot of traffic in Honolulu, Hawaii 4K"><img alt="Over-head shot of traffic in Honolulu, Hawaii 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/004/006/small/traffic_overhead.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/004/006/small_2x/traffic_overhead.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/004/006/small/traffic_overhead.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Over-head shot of traffic in Honolulu, Hawaii 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/6729-timelapse-at-syntagma-square" class="ez-resource-thumb__link internal-resource" title="Timelapse At Syntagma Square."><img alt="Timelapse At Syntagma Square." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/006/729/small/timelapse-at-syntagma-square.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/006/729/small_2x/timelapse-at-syntagma-square.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/006/729/small/timelapse-at-syntagma-square.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Timelapse At Syntagma Square.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/416-st-petersburg" class="ez-resource-thumb__link internal-resource" title="St. Petersburg"><img alt="St. Petersburg" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/000/416/small/02.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/000/416/small_2x/02.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/000/416/small/02.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        St. Petersburg
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/time-lapse/7673-traffic-passing-at-the-cardiff-castle-time-lapse" class="ez-resource-thumb__link internal-resource" title="Traffic passing at the Cardiff Castle (Time lapse)"><img alt="Traffic passing at the Cardiff Castle (Time lapse)" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/673/small/traffic-passing-at-the-cardiff-castle-time-lapse.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/673/small_2x/traffic-passing-at-the-cardiff-castle-time-lapse.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/673/small/traffic-passing-at-the-cardiff-castle-time-lapse.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic passing at the Cardiff Castle (Time lapse)
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/8012-traffic-at-central-london" class="ez-resource-thumb__link internal-resource" title="Traffic at Central London"><img alt="Traffic at Central London" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/008/012/small/traffic-at-central-london.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/008/012/small_2x/traffic-at-central-london.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/008/012/small/traffic-at-central-london.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic at Central London
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/people/5323-bangkok-car-traffic" class="ez-resource-thumb__link internal-resource" title="Bangkok car traffic"><img alt="Bangkok car traffic" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/323/small/bangkok-car-traffic.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/323/small_2x/bangkok-car-traffic.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/323/small/bangkok-car-traffic.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Bangkok car traffic
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11033-handheld-shot-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Handheld shot of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Handheld shot of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/033/small/handheld-shot-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/033/small_2x/handheld-shot-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/033/small/handheld-shot-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Handheld shot of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/3541-times-square-traffic-at-night-4k" class="ez-resource-thumb__link internal-resource" title="Times Square Traffic at Night 4K"><img alt="Times Square Traffic at Night 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/003/541/small/timessquaretraffic.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/003/541/small_2x/timessquaretraffic.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/003/541/small/timessquaretraffic.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Times Square Traffic at Night 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/1597-traffic-scene-stock-video" class="ez-resource-thumb__link internal-resource" title="Traffic Scene Stock Video "><img alt="Traffic Scene Stock Video " class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/001/597/small/TrafficIntoPark.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/001/597/small_2x/TrafficIntoPark.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/001/597/small/TrafficIntoPark.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic Scene Stock Video 
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/4872-traffic" class="ez-resource-thumb__link internal-resource" title="Traffic"><img alt="Traffic" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/004/872/small/traffic.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/004/872/small_2x/traffic.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/004/872/small/traffic.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/abstract/16152-traffic-on-harbor-bridge-at-night-4k" class="ez-resource-thumb__link internal-resource" title="Traffic on Harbor Bridge at Night 4K"><img alt="Traffic on Harbor Bridge at Night 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/016/152/small/traffic-on-harbor-bridge-at-night-4k.png" srcset="https://static.videezy.com/system/resources/thumbnails/000/016/152/small_2x/traffic-on-harbor-bridge-at-night-4k.png 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/016/152/small/traffic-on-harbor-bridge-at-night-4k.png 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic on Harbor Bridge at Night 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/3513-traffic-in-new-york-city-with-american-flags-4k" class="ez-resource-thumb__link internal-resource" title="Traffic in New York City with American Flags 4K"><img alt="Traffic in New York City with American Flags 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/003/513/small/nytrafficwithflags.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/003/513/small_2x/nytrafficwithflags.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/003/513/small/nytrafficwithflags.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic in New York City with American Flags 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/94-frogger-highway" class="ez-resource-thumb__link internal-resource" title="Frogger Highway"><img alt="Frogger Highway" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/000/094/small/FroggerHighway.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/000/094/small_2x/FroggerHighway.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/000/094/small/FroggerHighway.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Frogger Highway
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/182-public-transportation" class="ez-resource-thumb__link internal-resource" title="Public Transportation"><img alt="Public Transportation" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/000/182/small/Public_transportation__SaveYouTube.com_.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/000/182/small_2x/Public_transportation__SaveYouTube.com_.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/000/182/small/Public_transportation__SaveYouTube.com_.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Public Transportation
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11036-slow-panning-shot-going-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow panning shot going right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Slow panning shot going right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/036/small/slow-panning-shot-going-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/036/small_2x/slow-panning-shot-going-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/036/small/slow-panning-shot-going-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow panning shot going right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11037-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/037/small/vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/037/small_2x/vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/037/small/vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11039-slow-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Slow vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/039/small/slow-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/039/small_2x/slow-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/039/small/slow-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11047-fast-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Fast vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Fast vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/047/small/fast-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/047/small_2x/fast-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/047/small/fast-vertical-panning-shot-going-down-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Fast vertical panning shot going down of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11048-horizontal-panning-shot-going-left-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Horizontal panning shot going left of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Horizontal panning shot going left of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/048/small/horizontal-panning-shot-going-left-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/048/small_2x/horizontal-panning-shot-going-left-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/048/small/horizontal-panning-shot-going-left-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Horizontal panning shot going left of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11054-static-shot-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Static shot of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Static shot of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/054/small/static-shot-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/054/small_2x/static-shot-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/054/small/static-shot-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Static shot of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11057-slow-panning-shot-from-the-walt-disney-concert-hall-to-the-music-center-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow panning shot from the Walt Disney Concert Hall to The Music Center at Los Angeles in 4K."><img alt="Slow panning shot from the Walt Disney Concert Hall to The Music Center at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/057/small/slow-panning-shot-from-the-walt-disney-concert-hall-to-the-music-center-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/057/small_2x/slow-panning-shot-from-the-walt-disney-concert-hall-to-the-music-center-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/057/small/slow-panning-shot-from-the-walt-disney-concert-hall-to-the-music-center-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow panning shot from the Walt Disney Concert Hall to The Music Center at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11059-static-shot-of-outside-of-the-walt-disney-concert-hall-at-los-angeles-with-buildings-in-the-background-4k" class="ez-resource-thumb__link internal-resource" title="Static shot of outside of the Walt Disney Concert Hall at Los Angeles with buildings in the background 4K."><img alt="Static shot of outside of the Walt Disney Concert Hall at Los Angeles with buildings in the background 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/059/small/static-shot-of-outside-of-the-walt-disney-concert-hall-at-los-angeles-with-buildings-in-the-background-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/059/small_2x/static-shot-of-outside-of-the-walt-disney-concert-hall-at-los-angeles-with-buildings-in-the-background-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/059/small/static-shot-of-outside-of-the-walt-disney-concert-hall-at-los-angeles-with-buildings-in-the-background-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Static shot of outside of the Walt Disney Concert Hall at Los Angeles with buildings in the background 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11178-slow-panning-shot-of-a-man-skating-at-the-outside-of-the-walt-disney-concert-hall-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow panning shot of a man skating at the outside of the Walt Disney Concert Hall in 4K."><img alt="Slow panning shot of a man skating at the outside of the Walt Disney Concert Hall in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/178/small/slow-panning-shot-of-a-man-skating-at-the-outside-of-the-walt-disney-concert-hall-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/178/small_2x/slow-panning-shot-of-a-man-skating-at-the-outside-of-the-walt-disney-concert-hall-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/178/small/slow-panning-shot-of-a-man-skating-at-the-outside-of-the-walt-disney-concert-hall-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow panning shot of a man skating at the outside of the Walt Disney Concert Hall in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/200-free-cityscape-at-dusk-stock-video-in-hd" class="ez-resource-thumb__link internal-resource" title="Free Cityscape at Dusk Stock Video in HD "><img alt="Free Cityscape at Dusk Stock Video in HD " class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/000/200/small/Cityscape_at_dusk__SaveYouTube.com_.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/000/200/small_2x/Cityscape_at_dusk__SaveYouTube.com_.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/000/200/small/Cityscape_at_dusk__SaveYouTube.com_.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Free Cityscape at Dusk Stock Video in HD 
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11023-static-shot-of-crosswalk-and-outside-of-the-broad-art-gallery-of-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Static shot of crosswalk and outside of The Broad Art Gallery of Los Angeles in 4K"><img alt="Static shot of crosswalk and outside of The Broad Art Gallery of Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/023/small/static-shot-of-crosswalk-and-outside-of-the-broad-art-gallery-of-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/023/small_2x/static-shot-of-crosswalk-and-outside-of-the-broad-art-gallery-of-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/023/small/static-shot-of-crosswalk-and-outside-of-the-broad-art-gallery-of-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Static shot of crosswalk and outside of The Broad Art Gallery of Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11024-panning-shot-going-right-of-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going right of The Broad Art Gallery at Los Angeles in 4K"><img alt="Panning shot going right of The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/024/small/panning-shot-going-right-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/024/small_2x/panning-shot-going-right-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/024/small/panning-shot-going-right-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going right of The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11025-panning-shot-going-left-of-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going left of The Broad Art Gallery at Los Angeles in 4K"><img alt="Panning shot going left of The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/025/small/panning-shot-going-left-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/025/small_2x/panning-shot-going-left-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/025/small/panning-shot-going-left-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going left of The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11026-horizontal-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Horizontal panning shot outside of The Broad Art Gallery at Los Angeles in 4K"><img alt="Horizontal panning shot outside of The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/026/small/horizontal-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/026/small_2x/horizontal-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/026/small/horizontal-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Horizontal panning shot outside of The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11027-vertical-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Vertical panning shot outside of The Broad Art Gallery at Los Angeles in 4K"><img alt="Vertical panning shot outside of The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/027/small/vertical-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/027/small_2x/vertical-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/027/small/vertical-panning-shot-outside-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Vertical panning shot outside of The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11029-vertical-tracking-shot-of-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Vertical tracking shot of The Broad Art Gallery at Los Angeles in 4K"><img alt="Vertical tracking shot of The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/029/small/vertical-tracking-shot-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/029/small_2x/vertical-tracking-shot-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/029/small/vertical-tracking-shot-of-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Vertical tracking shot of The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11032-panning-shot-of-buildings-near-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot of buildings near The Broad Art Gallery at Los Angeles in 4K"><img alt="Panning shot of buildings near The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/032/small/panning-shot-of-buildings-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/032/small_2x/panning-shot-of-buildings-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/032/small/panning-shot-of-buildings-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot of buildings near The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/industry/5954-transit-plaza-spain" class="ez-resource-thumb__link internal-resource" title="Transit Plaza Spain"><img alt="Transit Plaza Spain" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/954/small/plaza-espa-a-tr-nsito.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/954/small_2x/plaza-espa-a-tr-nsito.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/954/small/plaza-espa-a-tr-nsito.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Transit Plaza Spain
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/industry/5956-floorplan-traffic-barcelona" class="ez-resource-thumb__link internal-resource" title="Floorplan traffic Barcelona"><img alt="Floorplan traffic Barcelona" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/956/small/plano-detalles-tr-fico-barcelona.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/956/small_2x/plano-detalles-tr-fico-barcelona.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/956/small/plano-detalles-tr-fico-barcelona.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Floorplan traffic Barcelona
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/industry/5958-barcelona-circulation-and-transit" class="ez-resource-thumb__link internal-resource" title="Barcelona circulation and transit"><img alt="Barcelona circulation and transit" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/958/small/barcelona-circulaci-n-y-tr-nsito.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/958/small_2x/barcelona-circulaci-n-y-tr-nsito.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/958/small/barcelona-circulaci-n-y-tr-nsito.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Barcelona circulation and transit
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11038-panning-shot-going-down-and-then-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going down and then right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Panning shot going down and then right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/038/small/panning-shot-going-down-and-then-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/038/small_2x/panning-shot-going-down-and-then-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/038/small/panning-shot-going-down-and-then-right-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going down and then right of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11040-panning-shot-going-down-and-then-up-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going down and then up of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Panning shot going down and then up of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/040/small/panning-shot-going-down-and-then-up-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/040/small_2x/panning-shot-going-down-and-then-up-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/040/small/panning-shot-going-down-and-then-up-of-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going down and then up of the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11041-panning-shot-going-left-from-a-crosswalk-to-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going left from a crosswalk to the frontage of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Panning shot going left from a crosswalk to the frontage of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/041/small/panning-shot-going-left-from-a-crosswalk-to-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/041/small_2x/panning-shot-going-left-from-a-crosswalk-to-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/041/small/panning-shot-going-left-from-a-crosswalk-to-the-frontage-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going left from a crosswalk to the frontage of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11042-panning-shot-going-right-from-the-frontage-of-the-walt-disney-concert-hall-to-a-crosswalk-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot going right from the frontage of the Walt Disney Concert Hall to a crosswalk at Los Angeles in 4K."><img alt="Panning shot going right from the frontage of the Walt Disney Concert Hall to a crosswalk at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/042/small/panning-shot-going-right-from-the-frontage-of-the-walt-disney-concert-hall-to-a-crosswalk-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/042/small_2x/panning-shot-going-right-from-the-frontage-of-the-walt-disney-concert-hall-to-a-crosswalk-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/042/small/panning-shot-going-right-from-the-frontage-of-the-walt-disney-concert-hall-to-a-crosswalk-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot going right from the frontage of the Walt Disney Concert Hall to a crosswalk at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11049-close-up-panning-shot-going-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Close up panning shot going right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Close up panning shot going right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/049/small/close-up-panning-shot-going-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/049/small_2x/close-up-panning-shot-going-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/049/small/close-up-panning-shot-going-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Close up panning shot going right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11050-slow-close-up-panning-shot-going-left-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow close up panning shot going left of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Slow close up panning shot going left of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/050/small/slow-close-up-panning-shot-going-left-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/050/small_2x/slow-close-up-panning-shot-going-left-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/050/small/slow-close-up-panning-shot-going-left-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow close up panning shot going left of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11051-slow-close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Slow close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/051/small/slow-close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/051/small_2x/slow-close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/051/small/slow-close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11053-close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k-with-sun-flare" class="ez-resource-thumb__link internal-resource" title="Close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K with sun flare."><img alt="Close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K with sun flare." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/053/small/close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k-with-sun-flare.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/053/small_2x/close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k-with-sun-flare.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/053/small/close-up-panning-shot-going-down-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k-with-sun-flare.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Close up panning shot going down of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K with sun flare.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11055-close-up-panning-shot-going-down-then-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Close up panning shot going down then right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Close up panning shot going down then right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/055/small/close-up-panning-shot-going-down-then-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/055/small_2x/close-up-panning-shot-going-down-then-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/055/small/close-up-panning-shot-going-down-then-right-of-the-entrance-stairs-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Close up panning shot going down then right of the entrance stairs of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/transportation/2368-trucks-crossing-a-bridge-hd-stock-video" class="ez-resource-thumb__link internal-resource" title="Trucks Crossing a Bridge HD Stock Video"><img alt="Trucks Crossing a Bridge HD Stock Video" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/002/368/small/trucks_crossing_a_bridge.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/002/368/small_2x/trucks_crossing_a_bridge.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/002/368/small/trucks_crossing_a_bridge.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Trucks Crossing a Bridge HD Stock Video
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/industry/5953-traffic-on-the-streets-of-barcelona" class="ez-resource-thumb__link internal-resource" title="Traffic on the streets of Barcelona"><img alt="Traffic on the streets of Barcelona" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/005/953/small/tr-fico-en-las-calles-de-barcelona.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/005/953/small_2x/tr-fico-en-las-calles-de-barcelona.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/005/953/small/tr-fico-en-las-calles-de-barcelona.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Traffic on the streets of Barcelona
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11028-slow-panning-shot-going-left-and-right-near-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow panning shot going left and right near The Broad Art Gallery at Los Angeles in 4K"><img alt="Slow panning shot going left and right near The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/028/small/slow-panning-shot-going-left-and-right-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/028/small_2x/slow-panning-shot-going-left-and-right-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/028/small/slow-panning-shot-going-left-and-right-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow panning shot going left and right near The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11030-vertical-panning-shot-going-up-and-down-near-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Vertical panning shot going up and down near The Broad Art Gallery at Los Angeles in 4K"><img alt="Vertical panning shot going up and down near The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/030/small/vertical-panning-shot-going-up-and-down-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/030/small_2x/vertical-panning-shot-going-up-and-down-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/030/small/vertical-panning-shot-going-up-and-down-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Vertical panning shot going up and down near The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11031-panning-shot-of-a-line-of-people-near-the-broad-art-gallery-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Panning shot of a line of people near The Broad Art Gallery at Los Angeles in 4K"><img alt="Panning shot of a line of people near The Broad Art Gallery at Los Angeles in 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/031/small/panning-shot-of-a-line-of-people-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/031/small_2x/panning-shot-of-a-line-of-people-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/031/small/panning-shot-of-a-line-of-people-near-the-broad-art-gallery-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Panning shot of a line of people near The Broad Art Gallery at Los Angeles in 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11175-slow-panning-shot-going-down-and-then-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Slow panning shot going down and then left of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Slow panning shot going down and then left of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/175/small/slow-panning-shot-going-down-and-then-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/175/small_2x/slow-panning-shot-going-down-and-then-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/175/small/slow-panning-shot-going-down-and-then-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Slow panning shot going down and then left of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11181-close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/181/small/close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/181/small_2x/close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/181/small/close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11182-close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/182/small/close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/182/small_2x/close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/182/small/close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11184-extreme-close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Extreme close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Extreme close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/184/small/extreme-close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/184/small_2x/extreme-close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/184/small/extreme-close-up-of-slow-panning-shot-going-left-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Extreme close up of slow panning shot going left of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/11185-extreme-close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k" class="ez-resource-thumb__link internal-resource" title="Extreme close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K."><img alt="Extreme close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K." class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/011/185/small/extreme-close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/011/185/small_2x/extreme-close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/011/185/small/extreme-close-up-of-slow-panning-shot-going-right-of-the-walt-disney-concert-hall-at-los-angeles-in-4k.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Extreme close up of slow panning shot going right of the Walt Disney Concert Hall at Los Angeles in 4K.
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/urban/3950-aerial-view-of-the-disney-concert-hall-in-downtown-los-angeles-4k" class="ez-resource-thumb__link internal-resource" title="Aerial View of the Disney Concert Hall in Downtown Los Angeles 4K"><img alt="Aerial View of the Disney Concert Hall in Downtown Los Angeles 4K" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/003/950/small/disneyconcerthall.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/003/950/small_2x/disneyconcerthall.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/003/950/small/disneyconcerthall.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Aerial View of the Disney Concert Hall in Downtown Los Angeles 4K
+      </div>
+    </div>
+  </div>
+</li>
+
+    
+<li data-height="120"
+    data-width="188"
+    class="ez-resource-grid__item ez-resource-thumb  ">
+
+
+  <a href="/aerial-drone/7541-drone-flyover-footage-of-highway-in-portland-or" class="ez-resource-thumb__link internal-resource" title="Drone Flyover Footage of Highway in Portland, OR"><img alt="Drone Flyover Footage of Highway in Portland, OR" class="ez-resource-thumb__img" src="https://static.videezy.com/system/resources/thumbnails/000/007/541/small/drone-flyover-footage-of-highway-in-portland-or.jpg" srcset="https://static.videezy.com/system/resources/thumbnails/000/007/541/small_2x/drone-flyover-footage-of-highway-in-portland-or.jpg 2x,
+                                https://static.videezy.com/system/resources/thumbnails/000/007/541/small/drone-flyover-footage-of-highway-in-portland-or.jpg 1x" /></a>
+
+
+  <div class="ez-resource-thumb__hover-state">
+    <div class="ez-resource-thumb__gray-dient">
+      <div class="ez-resource-thumb__name-content">
+        Drone Flyover Footage of Highway in Portland, OR
+      </div>
+    </div>
+  </div>
+</li>
+
+
+</ul>
+
+
+</section>
+
+<section class="info-section resource-comments">
+  <span class="overlay-comments-closure fa fa-close"></span>
+  <div class="resource-comments-content">
+    <header class="resource-comments-header">
+    <div class="resource-comments-header-closure"></div>
+      <div class="resource-comments-header-info">
+        <div class="resource-comments-header-title">People walking across cross-walk in the City</div>
+      </div>
+    </header>
+      <h2 class="">
+        Join the Conversation!
+        <br>
+        <a href="/login" class="require-logged-in" data-remote="true">Log In</a> or <a href="/signup" class="require-logged-in" data-remote="true">Sign Up</a> Now to Comment!
+      </h2>
+    <div class="comments-partial">
+      <div class="flash-error"><p>Download link expired.</p></div>
+
+
+    </div>
+  </div>
+  <div class="resource-comments-overlay"></div>
+</section>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+        <div class="ez-footer-alert" data-action="ez-tos-alert">
+  <div class="ez-footer-alert__inner">
+    <div class="ez-footer-alert__content">We use cookies to understand how you use our site and to improve your experience. This includes personalizing content and advertising. By continuing to use our site, you accept our use of cookies, revised <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="/terms" target="_blank">Terms of Use</a>.</div>
+
+    <button class="btn ez-btn flat" data-action="set-tos-accepted-cookie">
+      Accept
+    </button>
+
+    <span class='ez-close-btn' data-action='ez-footer-alert-close'>
+      <svg class='ez-icon-close'><use xlink:href="#ez-icon-close"></use></svg>
+      Close
+    </span>
+  </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+    <symbol id="ez-icon-plus" viewBox="0 0 512 512">
+      <path d="m512 213l-213 0 0-213-86 0 0 213-213 0 0 86 213 0 0 213 86 0 0-213 213 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-vector-file" viewBox="0 0 512 512">
+      <path d="m356 0l-318 0 0 512 436 0 0-394z m66 461l-332 0 0-410 245 0 87 87z m-179-256c-56 0-102 46-102 102 0 57 46 103 102 103 57 0 103-46 103-103l-103 0z m26 77l102 0c0-57-46-103-102-103z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-webpage" viewBox="0 0 512 512">
+      <path d="m0 0l0 512 512 0 0-512z m51 51l307 0 0 51-307 0z m410 410l-410 0 0-307 410 0z m0-359l-51 0 0-51 51 0z m-179 103l-180 0 0 205 180 0z m-52 153l-76 0 0-102 76 0z m180-153l-77 0 0 51 77 0z m0 77l-77 0 0 51 77 0z m0 76l-77 0 0 52 77 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-money" viewBox="0 0 512 512">
+      <path d="m486 77l-460 0c-15 0-26 11-26 25l0 308c0 14 11 25 26 25l460 0c15 0 26-11 26-25l0-308c0-14-11-25-26-25z m-435 307l0-92 92 92z m410 0l-246 0-164-164 0-92 246 0 164 164z m0-164l-92-92 92 0z m-307 36c0 57 45 102 102 102 57 0 102-45 102-102 0-57-45-102-102-102-57 0-102 45-102 102z m153 0c0 28-23 51-51 51-28 0-51-23-51-51 0-28 23-51 51-51 28 0 51 23 51 51z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-money-dark" viewBox="0 0 512 512">
+      <path d="m0 77l0 358 512 0 0-358z m461 307l-282 0-128-128 0-128 282 0 128 128z m-205-205c-42 0-77 35-77 77 0 42 35 77 77 77 42 0 77-35 77-77 0-42-35-77-77-77z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-calendar" viewBox="0 0 512 512">
+      <path d="m384 358l-51 0 0 52 51 0z m26-307l0-51-52 0 0 51-204 0 0-51-52 0 0 51-102 0 0 461 512 0 0-461z m51 410l-410 0 0-256 410 0z m0-307l-410 0 0-52 410 0z m-77 102l-51 0 0 51 51 0z m-102 0l-52 0 0 51 52 0z m-103 102l-51 0 0 52 51 0z m0-102l-51 0 0 51 51 0z m103 102l-52 0 0 52 52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-calendar-dark" viewBox="0 0 512 512">
+      <path d="m410 51l0-51-52 0 0 51-204 0 0-51-52 0 0 51-102 0 0 77 512 0 0-77z m-410 461l512 0 0-333-512 0z m333-256l51 0 0 51-51 0z m0 102l51 0 0 52-51 0z m-103-102l52 0 0 51-52 0z m0 102l52 0 0 52-52 0z m-102-102l51 0 0 51-51 0z m0 102l51 0 0 52-51 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-checkbox" viewBox="0 0 512 512">
+      <path d="m142 205l142 136 200-252-49-34-156 199-94-89z m313 79l0 171-398 0 0-398 171 0 0-57-228 0 0 512 512 0 0-228z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-minus" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z m-102-179l204 0 0-52-204 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-minus-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m102 282l-204 0 0-52 204 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-comments" viewBox="0 0 512 512">
+      <path d="m154 230l51 0 0-51-51 0z m76 0l52 0 0-51-52 0z m77 0l51 0 0-51-51 0z m128-230l-358 0c-43 0-77 34-77 77l0 256c0 42 34 77 77 77l0 102 219-102 139 0c43 0 77-35 77-77l0-256c0-43-34-77-77-77z m26 333c0 14-12 25-26 25l-151 0-156 73 0-73-51 0c-14 0-26-11-26-25l0-256c0-14 12-26 26-26l358 0c14 0 26 12 26 26z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-close" viewBox="0 0 512 512">
+      <path d="m512 56l-56-56-200 200-200-200-56 56 200 200-200 200 56 56 200-200 200 200 56-56-200-200z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-comments-dark" viewBox="0 0 512 512">
+      <path d="m435 0l-358 0c-43 0-77 34-77 77l0 256c0 42 34 77 77 77l0 102 219-102 139 0c43 0 77-35 77-77l0-256c0-43-34-77-77-77z m-230 230l-51 0 0-51 51 0z m77 0l-52 0 0-51 52 0z m76 0l-51 0 0-51 51 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-credits" viewBox="0 0 512 512">
+      <path d="m358 166c-48 0-153-19-153 77l0 154c0 57 105 77 153 77 49 0 154-20 154-77l0-154c0-57-105-77-154-77z m0 52c36-1 70 7 100 25-30 18-64 27-100 26-35 1-69-8-100-26 31-18 65-26 100-25z m103 176c-31 20-66 30-103 28-36 2-72-8-102-28l0-17c33 13 67 19 102 20 35-1 70-7 103-20z m0-76c-30 20-66 29-103 28-36 1-72-8-102-29l0-17c33 13 67 20 102 20 35 0 70-7 103-20z m-324-177l-9-2-10 0c-11-2-21-5-31-8l-10-4-7 0-5-2-4-2-3-2-4-6c30-18 64-26 100-25 35-1 69 7 100 25l53 0c0-57-105-77-153-77-49 0-154 20-154 77l0 231c0 57 105 76 154 76 8 0 17 0 25-1l0-51c-8 1-17 1-25 1-37 2-72-8-103-28l0-17c33 12 68 19 103 20 8 0 17-1 25-2l0-51c-8 1-17 1-25 1-37 2-73-8-103-28l0-17c33 13 68 19 103 20 8 0 17-1 25-2l0-51c-8 1-17 2-25 2-37 1-73-8-103-29l0-17c33 13 68 20 103 20 8 0 17-1 25-2l0-51c-8 1-17 2-25 2-6 0-12 0-17 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-credits-dark" viewBox="0 0 512 512">
+      <path d="m425 245c-26-15-54-21-84-21-30 0-57 6-83 21 26 15 53 22 83 22 30 0 58-7 84-22z m-169 111l0 15c26 17 55 26 85 24 30 2 60-7 86-24l0-15c-28 11-56 17-86 17-30 0-57-6-85-17z m0-64l0 15c26 17 55 26 85 24 30 2 60-7 86-24l0-15c-28 11-56 17-86 17-30 0-57-6-85-17z m85-153c0-79-102-107-170-107-69 0-171 28-171 107l0 192c0 79 102 106 171 106 8 0 17 0 25-2l2 0c37 32 99 45 143 45 69 0 171-28 171-107l0-128c0-79-102-106-171-106z m-170-22c-30 0-58 7-84 22l3 2 2 2 8 4 7 0 8 2c9 2 17 5 26 7l15 0c4 2 10 4 15 4 6 0 15 0 21-2l0 43c-6 2-15 2-21 2-30 0-58-7-86-17l0 15c26 17 56 25 86 23 6 0 15 0 21-2l0 43c-6 2-15 2-21 2-30 0-58-7-86-17l0 15c26 17 56 25 86 23 6 0 15 0 21-2l0 43c-6 2-15 2-21 2-30 0-58-7-86-17l0 15c26 17 56 25 86 23 6 0 15 0 21-2l0 43c-6 2-15 2-21 2-41 0-128-17-128-64l0-192c0-47 87-64 128-64 40 0 128 17 128 64l-45 0c-26-15-53-22-83-22z m298 256c0 47-87 64-128 64-40 0-128-17-128-64l0-128c0-47 88-64 128-64 41 0 128 17 128 64z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-go-back-arrow" viewBox="0 0 512 512">
+      <path d="m388 201l-269 0 93-93-43-44-169 168 169 168 43-43-93-94 269 0c34 0 62 28 62 62 0 34-28 62-62 62l-32 0 0 61 32 0c45 3 89-20 112-59 24-40 24-89 0-128-23-39-67-62-112-59z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-home" viewBox="0 0 512 512">
+      <path d="m59 273l0 227 394 0 0-227-197-139z m222 178l-49 0 0-97 49 0z m123 0l-73 0 0-146-149 0 0 146-73 0 0-153 148-104 148 104z m-148-439l-123 87 0-87-49 0 0 122-84 59 29 39 227-161 227 161 29-39z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-home-dark" viewBox="0 0 512 512">
+      <path d="m256 12l-123 87 0-87-49 0 0 122-84 59 29 39 227-161 227 161 29-39z m-197 261l0 227 123 0 0-195 148 0 0 195 123 0 0-227-197-139z m172 227l49 0 0-146-49 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-horiz-dots" viewBox="0 0 512 512">
+      <path d="m51 205c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z m205 0c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z m205 0c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-edit" viewBox="0 0 512 512">
+      <path d="m51 51l103 0 0-51-154 0 0 154 51 0z m461 51c0-28-10-53-31-71-41-39-105-39-146 0l-274 274c-2 2-2 5-5 5l0 2-56 167c-5 13 0 28 15 33 5 3 13 3 18 0l164-54 3 0c2-2 5-5 7-7l274-277c21-18 31-43 31-72z m-445 343l25-74 51 51z m122-51l-35-36-39-35 215-215 72 71z m256-256l-5 5-71-71 5-5c20-21 51-21 71 0 21 17 21 51 0 71z m16 323l-103 0 0 51 154 0 0-154-51 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-alert" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z m-26-103l52 0 0-51-52 0z m0-102l52 0 0-102-52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-alert-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m26 358l-52 0 0-51 52 0z m0-102l-52 0 0-102 52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-plus" viewBox="0 0 512 512">
+      <path d="m282 154l-52 0 0 76-76 0 0 52 76 0 0 76 52 0 0-76 76 0 0-52-76 0z m-26-154c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-plus-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m102 282l-76 0 0 76-52 0 0-76-76 0 0-52 76 0 0-76 52 0 0 76 76 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-facebook" viewBox="0 0 512 512">
+      <path d="m483 0l-454 0c-14 0-27 14-27 27l0 454c0 17 13 31 27 31l242 0 0-198-64 0 0-78 64 0 0-55c-6-51 31-96 82-102 7 0 11 0 17 0 21 0 41 0 58 3l0 68-41 0c-30 0-37 14-37 38l0 51 75 0-10 78-65 0 0 195 130 0c17 0 27-14 27-27l0-458c3-13-10-27-24-27z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-triangle-info" viewBox="0 0 512 512">
+      <path d="m230 256l52 0 0-51-52 0z m0 154l52 0 0-103-52 0z m274-13l-179-353c-18-39-66-54-105-36-15 7-28 20-36 36l-176 355c-21 39-5 87 36 105 10 5 23 8 35 8l356 0c44 0 80-36 80-79-3-11-6-23-11-36z m-48 51c-5 8-13 13-23 13l-354 0c-15 0-25-10-25-26 0-5 0-10 2-13l177-355c8-13 23-18 38-11 5 3 8 5 11 11l176 355c3 8 3 18-2 26z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-triangle-info-dark" viewBox="0 0 512 512">
+      <path d="m504 398l-178-354c-13-27-40-44-70-44-30 0-57 17-70 44l-178 354c-12 25-11 54 4 77 14 23 39 37 67 37l354 0c27 0 53-14 67-37 14-23 16-52 4-77z m-222 12l-52 0 0-103 52 0z m0-154l-52 0 0-51 52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-close" viewBox="0 0 512 512">
+      <path d="m319 157l-63 63-63-63-39 38 63 63-63 63 39 37 63-62 63 62 39-37-63-63 63-63z m-63-157c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-close-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m102 321l-39 37-63-62-63 62-39-37 63-63-63-63 39-38 63 63 63-63 39 38-63 63z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-check-banner" viewBox="0 0 512 512">
+      <path d="m384 438l-113-77c-7-5-20-5-28 0l-112 77 0-387 307 0c0-28-23-51-51-51l-259 0c-28 0-51 23-51 51l0 435c0 16 13 26 25 26 6 0 11-3 13-5l141-92 138 92c13 8 28 5 36-8 3-2 5-7 5-13l0-230-51 0z m-182-282l-46 46 100 98 151-152-46-46-105 108z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-check-banner-dark" viewBox="0 0 512 512">
+      <path d="m384 0l-256 0c-28 0-51 23-51 51l0 435c0 16 13 26 25 26 6 0 11-3 13-5l141-92 138 92c13 8 28 5 36-8 3-2 5-7 5-13l0-435c0-28-23-51-51-51z m-154 300l-99-98 46-46 53 54 105-105 46 46z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-info" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z m-26-256l52 0 0-51-52 0z m0 153l52 0 0-102-52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-info-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m26 358l-52 0 0-102 52 0z m0-153l-52 0 0-51 52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-instagram" viewBox="0 0 512 512">
+      <path d="m391 89c-17 0-31 13-31 30 0 18 14 31 31 31 17 0 31-13 31-31 0-17-14-30-31-30z m116 61c0-20-4-41-14-61-7-17-17-34-30-45-14-13-28-24-45-30-17-7-37-14-58-14-27 0-34 0-106 0-71 0-75 0-102 0-21 0-44 7-62 14-17 6-34 17-47 27-11 14-21 31-28 48-6 20-13 41-13 61 0 27 0 38 0 106 0 68 0 79 0 106 0 20 3 41 10 61 14 34 41 62 75 75 21 7 41 14 65 14 27 0 34 0 106 0 71 0 78 0 106 0 20 0 40-3 61-14 34-13 61-41 75-75 7-20 10-41 14-61 0-27 0-38 0-106 0-68-4-79-7-106z m-44 208c0 17-4 31-11 48-3 10-10 21-20 31-7 7-17 14-31 20-14 7-31 11-48 11-27 0-34 0-102 0-68 0-75 0-103 0-17 0-30-4-47-11-11-3-21-10-31-20-7-7-14-17-21-31-6-13-10-31-10-48 0-27 0-34 0-102 0-68 0-75 0-102 0-17 4-31 10-48 14-10 21-21 28-27 7-11 17-18 31-21 13-7 30-10 44-10 27 0 34 0 102 0 69 0 75 0 103 0 17 0 30 3 47 10 11 3 21 10 31 21 7 6 14 17 21 30 7 14 10 31 10 48 0 27 0 34 0 102 0 69-3 72-3 99z m-209-232c-71 0-133 58-133 130 0 72 58 133 130 133 72 0 133-58 133-130 3-75-55-133-130-133z m0 215c-47 0-85-37-85-85 0-48 38-85 85-85 48 0 86 37 86 85 0 48-38 85-86 85z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-linkedin" viewBox="0 0 512 512">
+      <path d="m60 21c-30-4-56 19-60 52 0 0 0 4 0 4 0 30 23 53 56 57 0 0 4 0 4 0 30 0 57-23 60-53 4-30-18-57-48-60-4 0-8 0-12 0z m-49 470l102 0 0-320-102 0z m377-323c-42-4-83 18-102 52l0-49-113 0c0 27 0 320 0 320l113 0 0-173c0-7 0-19 4-26 7-23 30-38 53-38 37 0 56 30 56 72l0 162 113 0 0-174c0-98-53-146-124-146z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-message" viewBox="0 0 512 512">
+      <path d="m0 77l0 358 512 0 0-358z m419 51l-163 145-163-145z m-368 31l109 97-109 97z m42 225l105-94 41 36c10 9 24 9 34 0l41-36 105 94z m368-31l-109-97 109-97z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-message-dark" viewBox="0 0 512 512">
+      <path d="m477 77l-442 0 221 188z m-119 169l154 153 0-285z m-102 87l-63-54-157 156 440 0-157-156z m-256-219l0 285 154-154z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-hamburger" viewBox="0 0 512 512">
+      <path d="m0 77l0 51 512 0 0-51z m0 205l512 0 0-52-512 0z m0 153l512 0 0-51-512 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-obscure" viewBox="0 0 512 512">
+      <path d="m64 335l36-35c-16-13-31-29-44-44 46-59 116-97 190-102l48-49c-12-3-25-3-38-3-95 0-184 49-251 139-5 10-5 23 0 30 18 23 39 46 59 64z m338-189l110-110-36-36-476 476 36 36 120-120c33 10 67 18 100 18 95 0 184-49 248-139 8-10 8-20 0-30-28-39-61-69-102-95z m-205 205l5-5c10 5 21 10 34 12-13-2-26-5-39-7z m44-44l59-59c0 3 2 8 2 11 0 28-23 51-51 51-3 0-5-3-10-3z m15 51l-3 0c57 0 100-46 100-102 0-18-5-33-13-49l24-23c33 18 64 44 87 72-47 61-118 100-195 102z m-10-204c-51 2-92 43-95 94z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-obscure-dark" viewBox="0 0 512 512">
+      <path d="m413 158l97-97-35-35-426 425 35 35 93-92c25 7 50 10 75 10 93 0 181-48 246-135 7-10 7-23 0-31-25-30-53-57-85-80z m-161 198c-10 0-22-2-32-5l47-47c13-5 23-15 28-28l47-50c3 10 5 20 5 30 3 53-40 98-95 100z m-97-85c-3-5-3-10-3-15 0-55 43-100 98-100 5 0 10 0 17 2l45-45c-20-5-40-7-60-7-92 0-180 47-245 135-5 7-8 20 0 30 20 28 45 53 72 75z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-reveal" viewBox="0 0 512 512">
+      <path d="m506 241c-67-90-157-139-251-139-95 0-182 49-249 139-7 10-7 20 0 30 67 90 154 139 249 139 94 0 184-49 248-139 8-10 8-20 3-30z m-446 15c44-59 113-97 187-102-56 0-102 46-102 102 0 56 46 102 102 102-74-5-143-43-187-102z m141 0c0-28 23-51 51-51 28 0 51 23 51 51 0 28-23 51-51 51-28 0-51-23-51-51z m54 102l-3 0c56 0 103-46 103-102 0-56-47-102-103-102l3 0c77 2 151 41 197 102-46 61-118 100-197 102z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-reveal-dark" viewBox="0 0 512 512">
+      <path d="m257 205c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z m251 36c-69-90-156-139-251-139-94 0-184 49-251 139-7 10-7 20 0 30 67 90 154 139 251 139 98 0 185-49 251-139 5-10 5-23 0-30z m-251 117c-56 0-102-46-102-102-3-56 41-102 95-105 53-3 102 41 105 95 0 2 0 7 0 10 2 56-41 100-98 102z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-pause" viewBox="0 0 512 512">
+      <path d="m128 512l85 0 0-512-85 0z m171-512l0 512 85 0 0-512z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-pinterest" viewBox="0 0 512 512">
+      <path d="m254 0c-140 0-252 116-252 259 0 99 61 192 153 233 0-21 0-41 4-59l34-139c-7-14-10-28-10-41 0-38 20-65 47-65 21 0 35 13 35 34 0 0 0 3 0 3-4 31-11 62-21 89-7 21 7 44 27 48 4 0 7 0 11 0 47 0 82-62 82-137 3-51-41-95-93-99-3 0-10 0-13 0-69-3-123 51-127 116 0 4 0 4 0 7 0 17 7 38 17 51 7 7 7 11 7 17l-7 21c0 3-6 7-10 7 0 0 0 0-3 0-34-21-58-58-51-99 0-72 61-161 181-161 85-3 157 58 160 144 0 0 0 3 0 3 0 99-55 174-137 174-23 0-47-10-61-34 0 0-14 58-17 72-7 20-14 37-27 54 24 11 47 14 71 14 140 0 256-116 256-256 0-140-112-256-256-256z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-play" viewBox="0 0 512 512">
+      <path d="m472 190l-362-183c-37-18-81-3-103 30-3 11-7 25-7 36l0 366c0 25 15 51 37 62 22 15 51 15 73 4l362-183c36-18 51-62 36-99-7-15-18-26-36-33z m-399 249l0-366 366 183z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-play-dark" viewBox="0 0 512 512">
+      <path d="m472 190l-362-183c-37-18-81-3-103 30-3 11-7 25-7 36l0 366c0 25 15 51 37 62 22 15 51 15 73 4l362-183c36-18 51-62 36-99-7-15-18-26-36-33z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-print" viewBox="0 0 512 512">
+      <path d="m435 128l-25 0 0-128-308 0 0 128-25 0c-43 0-77 34-77 77l0 128c0 42 34 77 77 77l25 0 0 102 308 0 0-102 25 0c43 0 77-35 77-77l0-128c0-43-34-77-77-77z m-281-77l204 0 0 77-204 0z m204 410l-204 0 0-77 204 0z m103-128c0 14-12 25-26 25l-25 0 0-25-308 0 0 25-25 0c-14 0-26-11-26-25l0-128c0-14 12-26 26-26l358 0c14 0 26 12 26 26z m-103-51l52 0 0-52-52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-print-dark" viewBox="0 0 512 512">
+      <path d="m435 154l-358 0c-43 0-77 34-77 76l0 103c0 42 34 77 77 77l25 0 0-77 308 0 0 77 25 0c43 0 77-35 77-77l0-103c0-42-34-76-77-76z m-25 128l-52 0 0-52 52 0z m0-282l-308 0 0 102 308 0z m-256 512l204 0 0-128-204 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-question" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z m0-333c-42 0-77 34-77 77l51 0c0-14 12-26 26-26 14 0 26 12 26 26 0 14-12 25-26 25l-26 0 0 77 52 0 0-30c35-12 56-48 50-85-7-37-39-64-76-64z m-26 256l52 0 0-51-52 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-question-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m26 384l-52 0 0-51 52 0z m0-107l0 30-52 0 0-77 26 0c14 0 26-11 26-25 0-14-12-26-26-26-14 0-26 12-26 26l-51 0c0-39 30-72 68-76 39-5 75 21 84 59 9 38-13 76-49 89z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-rss" viewBox="0 0 512 512">
+      <path d="m0 171l0 97c135 0 244 109 244 244l97 0c0-189-152-341-341-341z m73 195c-40 0-73 32-73 73 0 40 33 73 73 73 40 0 73-33 73-73 0-41-33-73-73-73z m-73-366l0 98c229 0 414 185 414 414l98 0c0-283-229-512-512-512z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-search" viewBox="0 0 512 512">
+      <path d="m364 324c68-91 48-216-40-284-88-68-216-49-284 40-68 88-49 216 40 284 71 54 170 54 244 0l148 148 40-40z m-51-31l-20 20c-26 23-57 34-91 34-80 0-145-65-142-145 0-80 65-145 145-142 79 0 142 65 142 145 0 31-11 62-34 88z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-settings" viewBox="0 0 512 512">
+      <path d="m512 300l0-88-61-20c-3-10-8-18-13-28l28-59-62-61-58 28c-8-5-18-8-29-13l-17-59-88 0-20 61c-10 3-18 8-28 13l-56-30-64 64 28 58c-3 8-8 16-11 26l-61 20 0 88 61 20c3 10 8 18 13 28l-30 59 61 61 59-28c8 5 18 8 28 13l20 59 88 0 20-61c10-3 18-8 28-13l59 28 61-62-28-58c5-8 8-18 13-29z m-105-21l-3 13c-2 15-10 28-17 41l-8 13 25 48-10 10-48-25-13 8c-13 7-26 12-41 17l-10 3-18 54-16 0-18-54-12-3c-16-2-29-10-41-17l-13-8-49 25-10-10 26-48-8-13c-8-13-13-26-18-41l0-10-54-18 0-16 54-18 3-12c2-13 10-29 17-41l8-13-25-49 10-10 48 26 13-8c13-8 26-13 41-18l10 0 18-54 16 0 18 54 12 3c16 2 29 10 41 17l13 8 49-25 10 10-26 48 8 13c8 13 13 26 18 41l0 10 54 18 0 16z m-151-100c-44 0-77 33-77 77 0 44 33 77 77 77 44 0 77-33 77-77 0-44-33-77-77-77z m0 103c-15 0-26-11-26-26 0-15 11-26 26-26 15 0 26 11 26 26 0 15-11 26-26 26z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-settings-dark" viewBox="0 0 512 512">
+      <path d="m256 205c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z m256 95l0-88-61-20c-3-10-8-18-13-28l28-59-62-61-58 28c-8-5-18-8-29-13l-17-59-88 0-20 61c-10 3-18 8-28 13l-56-30-64 64 28 58c-3 8-8 16-11 26l-61 20 0 88 61 20c3 10 8 18 13 28l-30 59 61 61 59-28c8 5 18 8 28 13l20 59 88 0 20-61c10-3 18-8 28-13l59 28 61-62-28-58c5-8 8-18 13-29z m-256 58c-56 0-102-46-102-102 0-56 46-102 102-102 56 0 102 46 102 102 0 56-46 102-102 102z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-snapchat" viewBox="0 0 512 512">
+      <path d="m498 373c-44-10-81-44-98-85-3-7-3-10-3-17 3-10 17-13 27-17l7 0c6-3 13-6 20-13 3-4 7-10 7-14 0-10-7-17-17-20-4 0-7-4-10-4-4 0-7 0-11 4-6 3-13 7-20 7-3 0-3 0-7 0l0-7c4-34 4-68-7-102-6-17-16-30-30-44-14-13-24-24-37-30-21-11-38-14-58-14l-10 0c-20 0-41 3-58 14-13 3-27 13-37 23-14 14-24 27-30 44-11 34-11 68-7 102l0 10c-4 0-7 0-7 0-7 0-17-3-24-7-3 0-7-3-7-3-6 0-10 0-16 3-7 7-11 14-11 17 0 7 0 14 7 17 7 7 14 14 20 17l7 0c10 4 24 7 27 17 4 7 0 14-3 17-7 14-14 27-24 41-10 10-20 20-30 27-14 10-27 14-44 17-7 0-10 7-10 13 0 0 0 4 0 4 3 7 10 13 16 13 17 7 34 11 51 14 0 3 4 7 4 10 0 4 0 7 3 14 0 6 7 10 14 10 3 0 6 0 10 0 10-4 17-4 27-4 7 0 13 0 20 0 14 4 24 11 34 17 20 17 44 28 68 28l7 0c27 0 51-11 67-28 11-10 21-13 34-17 7 0 14 0 21 0 10 0 17 0 27 4 3 0 7 0 10 0 7 0 10-4 14-10 0-4 3-7 3-14 0-3 3-7 3-10 17-3 34-7 48-14 7-3 13-6 17-13 0 0 0-4 0-4 3-6 0-10-4-13z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-speech-bubble" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 92-256 205 2 58 30 112 77 146l0 161 162-102 17 0c141 0 256-92 256-205 0-113-115-205-256-205z m0 358c-7 0-30-1-30-1l-98 62 0-94-11-8c-39-24-64-66-66-112 0-85 92-154 205-154 113 0 205 69 205 154 0 85-92 153-205 153z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-speech-bubble-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 92-256 205 2 58 30 112 77 146l0 161 162-102 17 0c141 0 256-92 256-205 0-113-115-205-256-205z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-subscription" viewBox="0 0 512 512">
+      <path d="m256 448c-85 0-159-55-184-136l56-56-128 0 0 128 39-39c39 96 138 155 241 145 104-11 188-89 207-191l-43 0c-20 87-98 150-188 149z m217-281c-40-96-138-155-241-144-103 11-187 88-207 190l43 0c20-84 94-146 180-149 87-3 165 53 191 136l-55 56 128 0 0-128z m-174 89c0-24-19-43-43-43-24 0-43 19-43 43 0 24 19 43 43 43 24 0 43-19 43-43z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-subscription-alert" viewBox="0 0 512 512">
+      <path d="m256 448c-85 0-159-55-184-136l56-56-128 0 0 128 39-39c39 96 138 155 241 145 104-11 188-89 207-191l-43 0c-20 87-98 150-188 149z m217-281c-40-96-138-155-241-144-103 11-187 88-207 190l43 0c20-84 94-146 180-149 87-3 165 53 191 136l-55 56 128 0 0-128z m-196 4l-42 0 0 85 42 0z m-42 170l42 0 0-42-42 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-subscription-paused" viewBox="0 0 512 512">
+      <path d="m256 448c-85 0-159-55-184-136l56-56-128 0 0 128 39-39c39 96 138 155 241 145 104-11 188-89 207-191l-43 0c-20 87-98 150-188 149z m217-281c-40-96-138-155-241-144-103 11-187 88-207 190l43 0c20-84 94-146 180-149 87-3 165 53 191 136l-55 56 128 0 0-128z m-281 25l0 128 43 0 0-128z m85 0l0 128 43 0 0-128z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-twitter" viewBox="0 0 512 512">
+      <path d="m512 92c-21 7-42 14-62 17 24-14 41-35 48-62-21 14-41 20-66 27-20-20-48-34-76-34-58 3-103 52-103 110 0 7 0 18 3 25-90-4-170-45-221-114-11 17-14 34-14 55 0 38 17 69 48 90-17 0-34-4-48-14 0 52 34 97 83 107-14 7-31 7-49 4 14 45 56 72 101 76-45 34-101 52-156 45 48 31 104 48 163 48 193 0 297-166 297-311 0-4 0-11 0-14 21-17 38-35 52-55z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-crown" viewBox="0 0 512 512">
+      <path d="m500 184c-7-5-17-7-25-2l-120 54-77-123c-8-11-23-13-36-5-3 0-5 2-8 7l-77 123-120-56c-8-3-18-3-25 2-8 8-11 18-8 26l51 205c3 13 13 20 23 20l356 0c13 0 23-7 26-20l51-205c2-8-3-18-11-26z m-87 200l-314 0-34-133 92 41c13 5 26 0 31-10l67-105 66 105c8 10 21 15 31 10l92-41z m-309 128l304 0 0-51-304 0z m189-476l-38-36-36 36 36 36z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-crown-dark" viewBox="0 0 512 512">
+      <path d="m500 184c-7-5-17-7-25-2l-120 54-77-123c-8-11-23-13-36-5-3 0-5 2-8 7l-77 123-120-56c-8-3-18-3-25 2-8 8-11 18-8 26l51 205c3 13 13 20 23 20l356 0c13 0 23-7 26-20l51-205c2-8-3-18-11-26z m-396 328l304 0 0-51-304 0z m189-476l-38-36-36 36 36 36z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-camera" viewBox="0 0 512 512">
+      <path d="m400 128l-51-102-186 0-51 102-112 0 0 358 512 0 0-358z m-205-51l122 0 26 51-174 0z m266 358l-410 0 0-256 410 0z m-205-25c57 0 102-46 102-103 0-56-45-102-102-102-57 0-102 46-102 102 0 57 45 103 102 103z m0-154c28 0 51 23 51 51 0 28-23 51-51 51-28 0-51-23-51-51 0-28 23-51 51-51z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-camera-dark" viewBox="0 0 512 512">
+      <path d="m256 256c-28 0-51 23-51 51 0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51z m144-128l-51-102-186 0-51 102-112 0 0 358 512 0 0-358z m-144 282c-57 0-102-46-102-103 0-56 45-102 102-102 57 0 102 46 102 102 0 57-45 103-102 103z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-user" viewBox="0 0 512 512">
+      <path d="m379 287c20-32 31-70 31-108 0-99-69-179-154-179-85 0-154 80-154 179 0 38 11 76 32 108-25 4-48 13-69 27-29 21-65 62-65 144l0 28c0 15 11 26 26 26l460 0c15 0 26-11 26-26l0-28c0-94-48-154-133-171z m-123-236c57 0 102 58 102 128 0 71-45 128-102 128-57 0-102-57-102-128 0-70 45-128 102-128z m205 410l-410 0 0-3c-4-40 12-78 43-103 26-15 55-23 85-22 47 33 110 33 156 0 126 4 126 95 126 125z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-user-dark" viewBox="0 0 512 512">
+      <path d="m466 330c-22-20-49-35-79-41-30 43-79 68-131 69-52-1-101-27-131-69-80 18-125 78-125 169l0 28c0 15 11 26 26 26l460 0c15 0 26-11 26-26l0-28c3-47-14-93-46-128z m-210-23c68 0 124-69 124-153 0-85-56-154-124-154-68 0-124 69-124 154 0 84 56 153 124 153z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-video-frame" viewBox="0 0 512 512">
+      <path d="m441 0l0 57-370 0 0-57-57 0 0 512 57 0 0-57 370 0 0 57 57 0 0-512z m0 398l-370 0 0-284 370 0z m-285-227l-56 0 0 57 56 0z m0 113l-56 0 0 57 56 0z m256-113l-56 0 0 57 56 0z m0 113l-56 0 0 57 56 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-guage" viewBox="0 0 512 512">
+      <path d="m465 186l40-40-37-36-37 37-36 36-106 106c-10-5-22-7-33-7-42 0-77 34-77 76 0 43 35 77 77 77 42 0 77-34 77-77 0-11-3-22-8-33l103-102c21 33 33 71 33 110l51 0c0-53-16-104-47-147z m-209 198c-14 0-26-11-26-26 0-14 12-25 26-25 14 0 26 11 26 25 0 15-12 26-26 26z m97-230l37-38c-78-48-177-50-258-6-81 45-131 130-132 223l51 0c1-72 39-139 101-175 61-37 138-39 201-4z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-resolution" viewBox="0 0 512 512">
+      <path d="m0 26l0 102 51 0 0-51 410 0 0 358-51 0 0 51 102 0 0-460z m0 230l51 0 0-51 282 0 0 230-51 0 0 51 102 0 0-332-384 0z m0 230l256 0 0-204-256 0z m51-153l154 0 0 102-154 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-resolution-dark" viewBox="0 0 512 512">
+      <path d="m0 282l256 0 0 204 51 0 0-256-307 0z m0 204l205 0 0-153-205 0z m0-307l358 0 0 307 52 0 0-358-410 0z m0-153l0 51 461 0 0 409 51 0 0-460z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-youtube" viewBox="0 0 512 512">
+      <path d="m506 151c-3-17-8-37-20-51-14-15-31-23-51-23-71-6-179-6-179-6 0 0-108 0-179 6-20 0-37 8-51 23-12 14-17 34-20 51-3 28-6 57-6 85l0 40c0 28 3 57 6 85 3 17 8 37 20 51 14 15 37 23 56 23 40 6 174 6 174 6 0 0 108 0 179-6 20 0 37-8 51-23 12-14 17-34 20-51 3-28 6-57 6-85l0-40c0-28-3-57-6-85z m-304 173l0-148 139 74z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-download" viewBox="0 0 512 512">
+      <path d="m0 495l0-158 64 0 0 94 384 0 0-94 64 0 0 158z m95-286l94 0 0-192 128 0 0 192 95 0-156 158z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-dribbble" viewBox="0 0 512 512">
+      <path d="m503 203c-3-18-7-32-14-47-53-128-199-192-331-138-28 14-57 32-82 57-10 10-21 25-32 39-7 14-17 28-21 42-7 15-14 32-18 47-7 35-7 67 0 103 7 32 22 64 39 92 18 29 43 50 68 68 14 10 28 18 43 25 64 28 135 28 199 0 14-7 28-15 42-25 29-18 50-43 68-68 11-14 18-28 25-42 7-15 11-32 14-50 7-32 7-68 0-103z m-249-167c54 0 103 17 142 53-28 39-67 67-110 82-25-43-53-86-82-128 18-4 32-7 50-7z m-50 7z m-42 14c28 39 57 82 82 128-64 18-132 25-200 25 15-68 57-121 118-153z m-68 345c-35-39-57-93-57-146 0-4 0-4 0-7 75 0 153-11 224-32 7 11 11 25 18 35l-7 4c-75 25-139 75-178 146z m160 71c-50 0-96-14-131-46 35-64 99-114 170-135 22 53 36 110 47 167-29 10-57 14-86 14z m121-36c-11-53-25-106-43-156 47-7 93-4 136 11-8 56-43 110-93 145z m-53-192l-4-10c-7-11-10-22-14-32 46-18 89-47 121-86 32 39 50 86 50 135-50-10-103-10-153-7z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-edit-dark" viewBox="0 0 512 512">
+      <path d="m69 69l136 0 0-69-205 0 0 205 69 0z m374 374l-133 0 0 69 202 0 0-205-69 0z m-392-93l266-266 109 109-266 266z m446-227c20-21 20-54 0-74l-36-34c-21-20-54-20-74 0l-44 44 110 110z m-497 381c0 5 3 11 10 8l131-31-110-110z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-file" viewBox="0 0 512 512">
+      <path d="m346 120c0-23 2-120-134-120-130 0-161 0-161 0l0 512 410 0c0 0 0-212 0-269 0-97-87-125-115-123z m64 341l-308 0 0-410c0 0 57 0 105 0 105 0 90 74 82 118 69-8 121 10 121 92 0 62 0 200 0 200z m-256-103l204 0 0 52-204 0z m0-102l128 0 0 51-128 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-share" viewBox="0 0 512 512">
+      <path d="m456 411l-400 0 0-312 116 0 0-57-172 0 0 428 512 0 0-172-56 0z m-103-213l0 77 159-118-159-115 0 72c-192 0-205 202-205 202 85-133 205-118 205-118z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-file-check" viewBox="0 0 512 512">
+      <path d="m346 120c0-23 2-120-134-120-130 0-161 0-161 0l0 512 410 0c0 0 0-212 0-269 0-97-87-125-115-123z m64 341l-308 0 0-410c0 0 57 0 105 0 105 0 90 74 82 118 69-8 121 10 121 92 0 62 0 200 0 200z m-182-121l-54-51-36 36 92 87 131-164-41-28z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-file-check-dark" viewBox="0 0 512 512">
+      <path d="m333 131c0-23-10-131-146-131-131 0-136 0-136 0l0 512 410 0c0 0 0-187 0-243 0-97-100-141-128-138z m-103 281l-94-89 36-36 51 53 94-122 41 28z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-file-dark" viewBox="0 0 512 512">
+      <path d="m333 131c0-23-10-131-146-131-131 0-136 0-136 0l0 512 410 0c0 0 0-187 0-243 0-97-100-141-128-138z m-179 125l128 0 0 51-128 0z m204 154l-204 0 0-52 204 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-heart-dark" viewBox="0 0 512 512">
+      <path d="m362 34c-42 0-79 17-106 44-27-27-64-43-106-43-83 0-150 67-150 150 0 191 256 293 256 293 0 0 256-103 256-293 0-84-67-151-150-151z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-heart" viewBox="0 0 512 512">
+      <path d="m362 34c-42 0-79 17-106 44-27-27-64-43-106-43-83 0-150 67-150 150 0 191 256 293 256 293 0 0 256-103 256-293 0-84-67-151-150-151z m-106 374c0 0-190-88-190-205 0-57 33-104 95-104 44 0 75 25 95 45 20-20 51-45 95-45 62 0 95 47 95 104 0 117-190 205-190 205z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-google" viewBox="0 0 512 512">
+      <path d="m165 226l0 63 85 0c-7 38-44 67-85 63-51 0-92-42-92-95 0-51 39-94 92-94 22 0 44 7 61 24 12-14 12-17 46-48-29-27-68-41-107-41-87 0-159 70-159 159 0 90 70 160 159 160 131 0 162-114 150-191z m283 2l0-55-38 0 0 55-56 0 0 39 56 0 0 58 38 0 0-58 54 0 0-39z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-checkmark" viewBox="0 0 512 512">
+      <path d="m500 136l-72-72-240 240-104-104-72 72 176 176z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-attribution-link-clipboard" viewBox="0 0 512 512">
+      <path d="m305 141c5-8 5-18 0-26l-8-13 61 0 0 154 52 0 0-205-139 0-18-36c-5-10-12-15-23-15l-51 0c-10 0-18 5-23 15l-18 36-138 0 0 461 102 0 0-51-51 0 0-359 62 0-8 16c-5 10-3 25 10 33 5 3 8 3 13 3l154 0c7 0 18-6 23-13z m-136-39l26-51 20 0 26 51z m36 308c0-29 23-52 51-52l51 0 0-51-51 0c-56 0-102 46-102 103 0 56 46 102 102 102l51 0 0-51-51 0c-28 0-51-23-51-51z m205-103l-52 0 0 51 52 0c28 0 51 23 51 52 0 28-23 51-51 51l-52 0 0 51 52 0c56 0 102-46 102-102 0-57-46-103-102-103z m-128 128l102 0 0-51-102 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-link" viewBox="0 0 512 512">
+      <path d="m504 119l-108-111c-11-11-32-11-42 0l-138 137c-10 11-10 32 0 42l19 19 124-124c5-5 16-5 24 0l47 50c5 5 5 16 0 24l-124 124 19 18c10 11 31 11 42 0l134-134c16-14 16-35 3-45z m-227 187l-121 122c-6 5-16 5-24 0l-48-48c-5-5-5-16 0-24l122-121-19-19c-10-10-31-10-42 0l-134 135c-11 11-11 32 0 42l108 108c10 11 31 11 42 0l135-134c10-11 10-32 0-42z m-113 16l26 26c3 3 8 3 13 0l148-147c3-3 3-8 0-14l-26-26c-3-3-8-3-14 0l-147 148c-3 5-3 10 0 13z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-checkmark-dark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m-33 361l-95-97 38-39 57 57 130-131 39 38z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-circle-checkmark" viewBox="0 0 512 512">
+      <path d="m256 0c-141 0-256 115-256 256 0 141 115 256 256 256 141 0 256-115 256-256 0-141-115-256-256-256z m0 461c-113 0-205-92-205-205 0-113 92-205 205-205 113 0 205 92 205 205 0 113-92 205-205 205z m138-272l-41-38-130 131-57-57-38 39 95 97z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-tele" viewBox="0 0 512 512">
+      <path d="m275 128l93-93-35-35-90 89-64-63-35 35 63 64-4 3-203 0 0 358 51 0 0 26 51 0 0-26 308 0 0 26 51 0 0-26 51 0 0-358z m186 307l-410 0 0-256 410 0z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-arrow-up" viewBox="0 0 512 512">
+      <path d="m506 342l-54 63-194-181-193 181-59-63 252-235z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-arrow-right" viewBox="0 0 512 512">
+      <path d="m170 506l-63-54 181-194-181-193 63-59 235 252z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-arrow-down" viewBox="0 0 512 512">
+      <path d="m506 170l-54-63-194 181-193-181-59 63 252 235z"></path>
+    </symbol>
+  
+    <symbol id="ez-icon-arrow-left" viewBox="0 0 512 512">
+      <path d="m342 506l63-54-181-194 181-193-63-59-235 252z"></path>
+    </symbol>
+  
+</svg>
+
+
+
+<script defer="defer" src="https://static.videezy.com/assets/alerts/footer-tos-alert-0b77e5fcd7afd4c238b96c05c4a044bf.js" type="text/javascript"></script>
+
+
+
+      
+      
+
+
+      <section class="sponsors">
+  <div class="max-inner">
+      <div class="sponsors-wrapper">
+            
+<div
+  id="div-gpt-ad-1991553-2"
+  class="tmsads  adunit"
+  style=""
+
+  
+></div>
+
+
+
+
+      </div>
+  </div>
+</section>
+
+
+
+    <footer class="site-footer new">
+  <div class="max-inner">
+
+    <div class="footer-nav row">
+      <div class="col">
+        <h4>Our network</h4>
+        <ul>
+          <li><a href="https://www.brusheezy.com">Brusheezy</a></li>
+          <li><a href="https://www.vecteezy.com">Vecteezy</a></li>
+          <li><a href="https://www.videezy.com">Videezy</a></li>
+          <li><a href="https://www.themezy.com">Themezy</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="http://www.eezy.com/team">Our Team</a></li>
+          <li><a href="/blog">Our Blog</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Site links</h4>
+        <ul>
+          <li><a href="/deals">Deals</a></li>
+          <li><a href="/advertising">Advertise</a></li>
+          <li><a href="https://support.videezy.com" class="" target="_blank">Support</a></li>
+              <li><a href="https://support.videezy.com/hc/en-us/articles/115002183131-Digital-Millennium-Copyright-Act-DMCA-" target="_blank">DMCA</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Languages</h4>
+        <ul>
+
+            <li>
+              <a href="https://www.videezy.com/industry/5952-people-walking-across-cross-walk-in-the-city" class="locale-footer-link en">English</a>
+            </li>
+            <li>
+              <a href="https://es.videezy.com/industria/5952-la-gente-caminando-cruzando-a-pie-en-la-ciudad" class="locale-footer-link es">Español</a>
+            </li>
+            <li>
+              <a href="https://pt.videezy.com/industria/5952-pessoas-caminhando-pela-cruzada-na-cidade" class="locale-footer-link pt">Português</a>
+            </li>
+          <li class="more-languages" data-action="toggle-language-switcher" data-switcher-target="footer-locale-switcher">
+            <a href="#" class="footer-locale-more-link">More...</a>
+
+            <div id="footer-locale-switcher" class="ez-language-switcher ez-tooltip ez-tooltip--arrow-bottom">
+  <div class="ez-tooltip__arrow ez-tooltip__arrow--middle"></div>
+  <div class="ez-tooltip__content">
+    <ul>
+        <li>
+          
+            <span class="nested-locale-switcher-link en current">
+              English
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 11.93 9.39"><polygon points="11.93 1.76 10.17 0 4.3 5.87 1.76 3.32 0 5.09 4.3 9.39 11.93 1.76"></polygon></svg>
+
+            </span>
+        </li>
+        <li>
+          <a href="https://es.videezy.com/industria/5952-la-gente-caminando-cruzando-a-pie-en-la-ciudad" class="nested-locale-switcher-link es" data-locale="es">Español</a>        </li>
+        <li>
+          <a href="https://pt.videezy.com/industria/5952-pessoas-caminhando-pela-cruzada-na-cidade" class="nested-locale-switcher-link pt" data-locale="pt">Português</a>        </li>
+        <li>
+          <a href="https://de.videezy.com/industrie/5952-die-leute-die-in-der-stadt-berqueren" class="nested-locale-switcher-link de" data-locale="de">Deutsch</a>        </li>
+        <li>
+          <a href="https://fr.videezy.com/industrie/5952-les-gens-marchent-en-traversant-dans-la-ville" class="nested-locale-switcher-link fr" data-locale="fr">Français</a>        </li>
+        <li>
+          <a href="https://nl.videezy.com/industrie/5952-mensen-lopen-over-de-dwarsdoorlopen-in-de-stad" class="nested-locale-switcher-link nl" data-locale="nl">Nederlands</a>        </li>
+        <li>
+          <a href="https://sv.videezy.com/industri/5952-m-nniskor-g-r-tv-rs-ver-gatan-i-staden" class="nested-locale-switcher-link sv" data-locale="sv">Svenska</a>        </li>
+    </ul>
+  </div>
+</div>
+
+<span class="ez-language-switcher__overlay"></span>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom row">
+      <div class="footer-bottom-inner">
+        <a href="http://eezy.com" class="eezy-logo" title="Eezy Inc."><img alt="Eezy-logo" src="https://static.videezy.com/assets/eezy-logo-3ea26c89a4ddb6c0d835c64e0fc6679c.svg" /></a>
+
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/videezy" target="_blank" title="facebook"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/videezy" target="_blank" title="twitter"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-twitter"></i></a></li>
+          <li><a href="https://google.com/+vecteezy" target="_blank" title="googleplus"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://pinterest.com/videezy/" target="_blank" title="pinterest"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-pinterest"></i></a></li>
+          <li><a href="https://instagram.com/eezy/" target="_blank" title="instagram"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.snapchat.com/add/eezy" target="_blank" title="snapchat"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-snapchat-ghost"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/eezy.com" target="_blank" title="linkedin"><i aria="{:hidden=&gt;&quot;true&quot;}" class="fa fa-linkedin-square"></i></a></li>
+          
+        </ul>
+
+        <div class="footer-aux">
+          <p class="footer-copyright">&copy; 2018 Eezy Inc. All rights reserved</p>
+          <span class="bullet-sep"> &bullet; </span>
+          <ul>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+
+      
+      <script src="https://static.videezy.com/assets/essential_top_scripts-1dd2ef49e9a55d3793bd8cc97aa86b7c.js" type="text/javascript"></script>
+      <script defer="defer" src="https://static.videezy.com/assets/shutterstock-api-3e8a37d9ff61e95856ff7e7ffb307e27.js" type="text/javascript"></script>
+      <script defer="defer" src="https://static.videezy.com/assets/application-f5d745b7a86e6305266e79cac8afe146.js" type="text/javascript"></script>
+        <script defer="defer" src="https://static.videezy.com/assets/shutterstock-presentation-c8115b79011212c1150c2b646c132401.js" type="text/javascript"></script>
+      <script defer="defer" src="https://static.videezy.com/assets/redesign-functionality-6bf4ca9b2811703f05d6180f8ed6bfdd.js" type="text/javascript"></script>
+
+      <script src="https://static.videezy.com/assets/video-3616dca79054fdc92256096ebf2f7b4c.js" type="text/javascript"></script>
+  <script>
+    var category = 'VideoPlayTiming';
+    var label = 'People walking across cross-walk in the City' ;
+    $('#preview-video').mediaelementplayer({
+      features: ['playpause','progress','current','duration','volume','fullscreen','googleanalytics','tracking'],
+      success: function(mediaElement, domObject) {
+        mediaElement.addEventListener('play', function() {
+          start_timed_event('timedVideoEvent', label);
+        }, false);
+
+        mediaElement.addEventListener('pause', function() {
+          end_timed_event('timedVideoEvent', category, label);
+        }, false);
+
+        mediaElement.addEventListener('ended', function() {
+          end_timed_event('timedVideoEvent', category, label);
+        }, false);
+      }
+    });
+  </script>
+
+    <script src="https://static.videezy.com/assets/shutterstock-api-justified-d66f929ab1a4a70b2f66131d656ca381.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function() {
+            var search = $('[name=eezysearch]').val();
+            var resourceID = $('[name=eezy-resource-id]').val();
+            var ref = $('[name=eezyref]').val();
+            var pos = $('[name=eezypos]').val();
+
+            var sub_id_1 = 'similar';
+
+            var sh_atid = "sharedid=www.videezy.com&subId1="+ sub_id_1 + "&subId2=" + resourceID + "&subId3=" +getCookie("ga-client-id");
+
+            $(document).on("click", ".eezyapi--justified[data-affiliate='shutterstock'] .flex-images .flex-item a", function(e) {
+                track("similar_click", search, "shutterstock");
+            });
+
+
+            $('.eezyapi--justified[data-affiliate=shutterstock-justified]').each(function() {
+                $(this).data('urlparams', sh_atid);
+                $(this).data('ird', '38919');
+                $(this).data('loc', 'en');
+                $(this).data('apiparams', "type=video&s=videezy");
+            });
+
+              $('.eezyapi--justified').on('resultsLoaded', function() {
+                  $('.flex-images').flexImages({rowHeight: 140, object: 'img',  container: '.flex-item', truncate: true, maxRows: 2, truncate: 1});
+              });
+
+        })();
+    </script>
+    <script class="shutterstock-justified result" type="text/template">
+        <div class="flex-item" data-width="{{image_width}}" data-height="{{image_height}}">
+  <a class="affiliate-shutterstock" title="{{description}}" rel="nofollow" target="_new" href="{{url}}" data-term="" data-page="1" data-premium="false" data-internal="" data-search-page-view-event-id="" data-search-id="" data-domain="www.videezy.com">
+    <img src="{{image_url}}" alt="{{description}}"/>
+  </a>
+</div>
+
+    </script>
+
+
+  <script>
+    // Necessary for differentiating between premium and non-premium files in tracking
+    var premiumFile = false;
+  </script>
+  <script defer="defer" src="https://static.videezy.com/assets/tracking/show_page_tracking-399e2f53ebc2b5d94f0d119362476c1b.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/splittests/temp_styleguide_scripts-868a6221c5d5f6951ae4e9cffdaa5ed2.js" type="text/javascript"></script>
+  <script defer="defer" src="https://static.videezy.com/assets/show-page-scripts-cd2c77b388717bc310691b601db55b30.js" type="text/javascript"></script>
+
+
+      <script type="text/javascript">$(function() { track_resource_user_view(resource_id); });</script>
+    <script type="text/javascript">
+      $('.edit-and-download-resource-link').on('click', function(e) {
+        track('show page', 'edit button click', window.location.pathname);
+        ga('send', 'pageview', window.location.pathname + '/editor');
+
+      });
+      var download_file_url = "/download/5952?download_auth_hash=b2261dd3&amp;pro=false";
+    </script>
+      <script type="text/javascript">
+        var active_dl_btn_selector = '#download-button';
+
+
+        $(active_dl_btn_selector).on('click', function() {
+          updatePopCookie();
+        });
+        var download_file_url = "/download/5952?download_auth_hash=b2261dd3&amp;pro=false";
+      </script>
+      <script src="https://static.videezy.com/assets/download_presentation-bdd759537014b94396508d5b532f00aa.js" type="text/javascript"></script>
+<div id='inlinecode' rel="download-thankyou-body">
+  <span class='_ffw_top-heading'>Your free file will automatically download in <strong class='_ffw_strong _ffw_countdown'>5</strong> <strong class='_ffw_strong'>seconds.</strong></span>
+    <br />
+    <span>While you wait, check out this offer!</span>
+    <br />
+    
+<div
+  id="div-gpt-ad-1991553-3"
+  class="tmsads  popup-adunit adunit"
+  style=""
+
+  data-refresh=0
+></div>
+
+</div>
+
+    <script type="text/javascript">
+      $('#search-form').on('submit', function() {
+        track('search', 'show_page', $('#search-term').val());
+        return true;
+      });
+    </script>
+
+  <script>
+    function connected_to_facebook() {
+      FB.login(function(response) {
+        if (response.authResponse) {
+         console.log('Welcome!  Fetching your information.... ');
+         FB.api('/me', function(response) {
+           console.log('Good to see you, ' + response.name + '.');
+         });
+          trackFacebookLogin();
+          var isDLReachedModal = false;
+          if($('.download-limit-reached').length) {
+            isDLReachedModal = true;
+          }
+          if (isDLReachedModal) {
+            /* We need to explicitly check for session[:last_viewed_resource_id] being
+            present even though it will never be accessed by the client in a situation where
+            it would be nil because Rails will throw an exception when trying to generate
+            this template otherwise. */
+              window.location.href = "/auth/facebook/callback?three_downloads_popup_resource_id=5952?" + $.param({ signed_request: response.authResponse.signedRequest });
+          } else {
+            window.location.href = "/auth/facebook/callback?" + $.param({ signed_request: response.authResponse.signedRequest });
+          }
+        } else {
+         console.log('User cancelled login or did not fully authorize.');
+        }
+      }, {scope: 'email,public_profile'}); // todo: confirm scope
+    }
+
+    function initFacebookSignin() {
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '433618560134484', // App ID
+          channelUrl : '//www.videezy.com/channel.html', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          version    : 'v2.7',
+          xfbml      : true  // parse XFBML
+        });
+
+        FB.Event.subscribe('edge.create', function(href, widget) {
+          pageTracker._trackEvent('facebook', 'like', href);
+        });
+        FB.Event.subscribe('auth.login', function(e) {
+          return false;
+        });
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    }
+
+      initFacebookSignin();
+  </script>
+
+  <script>
+    $( "iframe" ).contents().find( "img" ).css( "background-color", "#BADA55" );
+  </script>
+
+
+    
+    
+      
+    <script defer="defer" src="https://static.videezy.com/assets/animated_inputs_hacks-729dc697616e3ca215afee5392b42fca.js" type="text/javascript"></script>
+      <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '359443887835602');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=359443887835602&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+    
+    
+  </body>
+</html>
