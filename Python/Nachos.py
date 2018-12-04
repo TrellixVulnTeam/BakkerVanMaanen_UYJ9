@@ -9,6 +9,7 @@ from CentroidTracker import CentroidTracker
 
 #   add haarcascades
 upper_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_upperbody.xml')
+lower_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_lowerbody.xml')
 
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -16,7 +17,7 @@ MAX_BUFFER = 16
 
 def haar_detect():
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample4.mp4")
+    cap = cv2.VideoCapture("walking_sample7.mp4")
     start_time = time.time()
     body_pts = deque(maxlen=MAX_BUFFER)
     fps = int(cap.get(cv2.CAP_PROP_FPS))
@@ -35,19 +36,20 @@ def haar_detect():
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         #   load detect multiscale to detect
-        upper_bodies = upper_body_cascade.detectMultiScale(frame, scaleFactor=1.30, minNeighbors=5)
+        #   upper_bodies = upper_body_cascade.detectMultiScale(frame, scaleFactor=1.30, minNeighbors=5)
+        lower_bodies = lower_body_cascade.detectMultiScale(frame, scaleFactor=1.25, minNeighbors=5)
 
         #   left n right lines
         cv2.line(frame, (500, 0), (500, 600), (0, 255, 0), 1)
         cv2.line(frame, (100, 0), (100, 600), (0, 255, 0), 1)
 
         #   Upperbodies cascade detection
-        for(x, y, width, height) in upper_bodies:
+        for(x, y, width, height) in lower_bodies:
             roi_gray = gray[y:y+height, x:x+width]
             roi_color = frame[y:y+height, x:x+width]
             center = (int((x+width) - (width/2)), int((y+height) - (height/2)))
             body_pts.append(center)
-            cv2.circle(frame, center, 3, (0, 0, 255), 2)
+            cv2.circle(frame, center, 5, (0, 0, 255), 2)
             #   contrail
             if len(body_pts) > 1:
                 for i in range(1, len(body_pts)):
