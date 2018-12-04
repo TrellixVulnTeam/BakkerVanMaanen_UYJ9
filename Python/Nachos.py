@@ -4,7 +4,7 @@ from collections import deque
 import time
 import imutils
 from imutils.object_detection import non_max_suppression
-
+from CentroidTracker import CentroidTracker
 
 MAX_BUFFER = 16 
 #   add haarcascades
@@ -65,58 +65,97 @@ def haar_detect():
 
 
 def hog_detect():
+    #   initialize HOG people detector
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-    hog_bodies = deque(maxlen=MAX_BUFFER)
+    
+    #   deque of center pointns with a max length of buffer size
+    detections = deque(maxlen=MAX_BUFFER)
+
     #   start video from file
     cap = cv2.VideoCapture("walking_sample7.mp4")
+    
+    #   start timer
     start_time = time.time()
+    
+    #  counters
     right_counter = 0
     left_counter = 0
+    people_in_frame_count = 0
+
+
     while(cap.isOpened()):
+        #   frame information
+        fps = cap.get(cv2.CAP_PROP_FPS)      # OpenCV2 version 2 used "CV_CAP_PROP_FPS"
+        frameCount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duration = frameCount/fps 
+        
+        #   setup
         ret, frame = cap.read()
         frame = imutils.resize(frame, width=min(600, frame.shape[1])) 
-        orig = frame.copy()
-        (rects, weights) = hog.detectMultiScale(frame, winStride=(4, 4), padding=(8, 8), scale=1.30) 
-        cv2.line(frame, (100, 0), (100, 600), (0, 0, 255), 1)
-        cv2.line(frame, (350, 0), (350, 600), (0, 0, 255), 1)
+        orig = frame.copy() 
+        (rects, weights) = hog.detectMultiScale(frame,winStride=(4,4),padding=(16,16),scale=1.25)
         
-        for(x, y, w, h) in rects:
+        #   lines for counting people
+        cv2.line(frame, (100, 0), (100, 600), (0, 0, 255), 2)
+        cv2.line(frame, (375, 0), (370, 600), (0, 0, 255), 2)
+        
+        #   use centroid method of uniquely identifying objects found
+        ct = CentroidTracker()
+        #   detection using hogDetectMultiScale
+        for i, (x, y, w, h) in enumerate(rects):
             #   track centers of detected objects
             center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
-            hog_bodies.append(center)
-            cv2.circle(frame, (center), 3, (0, 255, 0), 2) 
+            detections.append(center)
+            cv2.circle(frame, (center), 3, (0, 0, 255), 2) 
             #   contrail
-            if len(hog_bodies) > 1:
-                for i in range(1, len(hog_bodies)):
+            if len(detections) > 1:
+                for i in range(1, len(detections)):
                     #   MAX_BUFFER = length of deque for contrail
                     #   a bigger length will have a longer tail
-                    thickness = int(np.sqrt(MAX_BUFFER / float(i+1)) * 2.5)
-                    cv2.line(frame, hog_bodies[i-1], hog_bodies[i], (0, 0, 255), thickness)
-
+                    thickness = int(np.sqrt(MAX_BUFFER/float(i+1)) * 2.00)
+                    close_color = (255, 0, 0)
+                    far_color = (255, 255, 0)
+                    color_treshold = 30
+                    cv2.line(frame, detections[i-1], detections[i], far_color, thickness)
+        #   !! NEED TO READ MORE ABOUT NON-MAXIMA-SUPPRESSION !!!
         #   apply non-maxima suppression to the bounding boxes using a
         #   fairly large overlap threshold to try to maintain overlapping
-	#   boxes that are still people 
+	#   boxes that are still people
         rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-        pick = non_max_suppression(rects, probs=None, overlapThresh=0.6)	
-        
-        
-        # draw the final bounding boxes
+        pick = non_max_suppression(rects, probs=None, overlapThresh=0.85)	
+        # draw the final bounding boxes, this ensures less boxes will be drawn at detection.
         for (xA, yA, xB, yB) in pick:
-            cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
-        
+            #   update centroids
+            objects = ct.update(pick)
+            #   loop over the tracked objects
+            for (objectID, centroid) in objects.items():
+                #   draw both the ID of the object and the centroid of the
+		#   object on the output frame
+                people_in_frame_count = len(objects)
+                text = "Person {}".format(objectID)
+                cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
+            #   center of object
+            #   cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
+
+        # end timer 
         end_time = time.time() 
-        cv2.putText(frame, "Right counter: " + str(right_counter), (20, 40), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
+        
+        #   Texts
+        cv2.putText(frame, "Right counter: " + str(right_counter) , (20, 40), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
         cv2.putText(frame, "Left counter: " + str(left_counter), (20, 60), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
-        cv2.putText(frame, "Time Elapsed: " + str(end_time-start_time), (20, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
-        cv2.imshow("HOG with Non Max Suppression", frame)
+        cv2.putText(frame, "Time + FPS: " + (str(duration) + " - " + str(fps)), (20, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
+        cv2.putText(frame, "Total being detected: " + str(people_in_frame_count), (400, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA) 
         #   Display the resulting frame
+        cv2.imshow("HOG with Non Max Suppression", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
 
+#   detection types
 hog_detect()
 #   haar_detect()
+
 #   When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
