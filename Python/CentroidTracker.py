@@ -3,15 +3,15 @@ from collections import OrderedDict
 import numpy as np
 
 class CentroidTracker():
-    def __init__(self, maxDisappeared=50):
-        self.nextObjectID = 0
+    def __init__(self, maxDisappeared=75):
+        self.nextObjectID = 1
         self.objects = OrderedDict()
         self.disappeared = OrderedDict()
         self.maxDisappeared = maxDisappeared
-    
+
     def register(self, centroid):
         self.objects[self.nextObjectID] = centroid
-        self.disappeared[self.nextObjectID] = 0
+        self.disappeared[self.nextObjectID] = 1
         self.nextObjectID += 1
 
     def deregister(self, objectID):
@@ -64,7 +64,7 @@ class CentroidTracker():
             # finding the smallest value in each column and then
             # sorting using the previously computed row index list
             cols = D.argmin(axis=1)[rows]
-            
+
             # in order to determine if we need to update, register,
             # or deregister an object we need to keep track of which
             # of the rows and column indexes we have already examined
@@ -85,7 +85,7 @@ class CentroidTracker():
                 # counter
                 objectID = objectIDs[row]
                 self.objects[objectID] = inputCentroids[col]
-                self.disappeared[objectID] = 0
+                self.disappeared[objectID] = 1
 
                 # indicate that we have examined each of the row and
                 # column indexes, respectively
@@ -119,6 +119,6 @@ class CentroidTracker():
                 else:
                     for col in unusedCols:
                         self.register(inputCentroids[col])
-            
+
         # return the set of trackable objects
         return self.objects
