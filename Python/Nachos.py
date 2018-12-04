@@ -40,7 +40,7 @@ def haar_detect():
         lower_bodies = lower_body_cascade.detectMultiScale(frame, scaleFactor=1.25, minNeighbors=5)
 
         #   left n right lines
-        cv2.line(frame, (500, 0), (500, 600), (0, 255, 0), 1)
+        cv2.line(frame, (450, 0), (450, 600), (0, 255, 0), 1)
         cv2.line(frame, (100, 0), (100, 600), (0, 255, 0), 1)
 
         #   Upperbodies cascade detection
@@ -80,7 +80,7 @@ def hog_detect():
     detections = deque(maxlen=MAX_BUFFER)
 
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample8.mp4")
+    cap = cv2.VideoCapture("walking_sample7.mp4")
 
     #  counters
     right_counter = 0
@@ -92,7 +92,7 @@ def hog_detect():
         ret, frame = cap.read()
         frame = imutils.resize(frame, width=min(600, frame.shape[1]))
         orig = frame.copy()
-        (rects, weights) = hog.detectMultiScale(frame,winStride=(5,5),padding=(8,8),scale=1.15)
+        (rects, weights) = hog.detectMultiScale(frame,winStride=(4,4),padding=(8,8),scale=1.10)
 
         #   frame information
         fps = int(cap.get(cv2.CAP_PROP_FPS))
@@ -109,7 +109,7 @@ def hog_detect():
             #   track centers of detected objects
             center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
             detections.append(center)
-            cv2.circle(frame, (center), 3, (0, 0, 255), 2)
+            cv2.circle(frame, (center), 5, (0, 0, 255), 2)
             #   contrail
             if len(detections) > 1:
                 for i in range(1, len(detections)):
@@ -155,7 +155,7 @@ def hog_detect():
             break
 
 
-#   detection types
+#   detection type
 #   hog_detect()
 haar_detect()
 
