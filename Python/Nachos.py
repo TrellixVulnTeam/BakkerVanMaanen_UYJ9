@@ -5,6 +5,7 @@ import time
 import imutils
 from imutils.object_detection import non_max_suppression
 from CentroidTracker import CentroidTracker
+from TrackableObject import TrackableObject
 
 
 #   add haarcascades
@@ -15,12 +16,15 @@ lower_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_lowerbody.xml')
 font = cv2.FONT_HERSHEY_SIMPLEX
 MAX_BUFFER = 16
 
+
 def haar_detect():
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample7.mp4")
+    cap = cv2.VideoCapture("walking_sample10.mp4")
     start_time = time.time()
     body_pts = deque(maxlen=MAX_BUFFER)
     fps = int(cap.get(cv2.CAP_PROP_FPS))
+
+    ct = CentroidTracker()
 
     #  counters
     right_counter = 0
@@ -37,25 +41,27 @@ def haar_detect():
 
         #   load detect multiscale to detect
         #   upper_bodies = upper_body_cascade.detectMultiScale(frame, scaleFactor=1.30, minNeighbors=5)
-        lower_bodies = lower_body_cascade.detectMultiScale(frame, scaleFactor=1.25, minNeighbors=5)
+        lower_bodies = lower_body_cascade.detectMultiScale(frame, scaleFactor=1.05, minNeighbors=4, minSize=(50, 50))
 
         #   left n right lines
         cv2.line(frame, (450, 0), (450, 600), (0, 255, 0), 1)
         cv2.line(frame, (100, 0), (100, 600), (0, 255, 0), 1)
-
+        people_in_frame_count = 0
         #   Upperbodies cascade detection
-        for(x, y, width, height) in lower_bodies:
+        for i, (x, y, width, height) in enumerate(lower_bodies):
             roi_gray = gray[y:y+height, x:x+width]
             roi_color = frame[y:y+height, x:x+width]
             center = (int((x+width) - (width/2)), int((y+height) - (height/2)))
             body_pts.append(center)
-            cv2.circle(frame, center, 5, (0, 0, 255), 2)
+            cv2.circle(gray, center, 5, (0, 0, 255), 2)
+            people_in_frame_count = (i+1)
+            text = "Person {}".format(i+1)
+            cv2.putText(frame,text,(x, y),font,0.5,(0, 0, 255),1)
             #   contrail
             if len(body_pts) > 1:
                 for i in range(1, len(body_pts)):
                     thickness = int(np.sqrt(MAX_BUFFER / float(i+1)) * 2.50)
                     cv2.line(frame, body_pts[i-1], body_pts[i], (255, 255, 0), thickness)
-
         #   current time in video in ms (divided by 1000) for seconds
         duration = round((cap.get(cv2.CAP_PROP_POS_MSEC)/1000), 2)
 
@@ -78,9 +84,9 @@ def hog_detect():
 
     #   deque of center pointns with a max length of buffer size
     detections = deque(maxlen=MAX_BUFFER)
-
+    trackableObjects = {}
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample7.mp4")
+    cap = cv2.VideoCapture("walking_sample10.mp4")
 
     #  counters
     right_counter = 0
@@ -92,17 +98,16 @@ def hog_detect():
         ret, frame = cap.read()
         frame = imutils.resize(frame, width=min(600, frame.shape[1]))
         orig = frame.copy()
-        (rects, weights) = hog.detectMultiScale(frame,winStride=(4,4),padding=(8,8),scale=1.10)
+        (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(4, 4),scale=1.30)
 
         #   frame information
         fps = int(cap.get(cv2.CAP_PROP_FPS))
 
         #   lines for counting people
-        cv2.line(frame, (150, 0), (150, 600), (0, 0, 255), 2)
-        cv2.line(frame, (450, 0), (450, 600), (0, 0, 255), 2)
-
+        cv2.line(frame, (300, 0), (300, 600), (0, 0, 255), 2)
         #   use centroid method of uniquely identifying objects found
         ct = CentroidTracker()
+        tracked_x = deque([], maxlen=MAX_BUFFER)
 
         #   detection using hogDetectMultiScale
         for i, (x, y, w, h) in enumerate(rects):
@@ -110,7 +115,7 @@ def hog_detect():
             center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
             detections.append(center)
             cv2.circle(frame, (center), 5, (0, 0, 255), 2)
-            #   contrail
+            #contrail
             if len(detections) > 1:
                 for i in range(1, len(detections)):
                     #   MAX_BUFFER = length of deque for contrail
@@ -125,21 +130,42 @@ def hog_detect():
         #   fairly large overlap threshold to try to maintain overlapping
 	#   boxes that are still people
         rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-        pick = non_max_suppression(rects, probs=None, overlapThresh=0.85)
+        pick = non_max_suppression(rects, probs=None, overlapThresh=0.55)
         # draw the final bounding boxes, this ensures less boxes will be drawn at detection.
         for (xA, yA, xB, yB) in pick:
             #   update centroids -> centers of objects found look above for center example
             objects = ct.update(pick)
-            #   center of object
-            #   cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
+            cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
             #   loop over the tracked objects
-            for (objectID, centroid) in objects.items():
-                #   draw both the ID of the object and the centroid of the
-		#   object on the output frame
-                people_in_frame_count = len(objects)
-                text = "Person {}".format(objectID)
-                cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
+            for i, (objectID, centroid) in enumerate(objects.items()):
+                to = trackableObjects.get(objectID, None)
+                if to is None:
+                    print("No trackable object")
+                    to = TrackableObject(objectID, centroid)
+                else:
+                    if to.objectID == 0:
+                        to.counted = False
+                    x = [c[0] for c in to.centroids]
+                    #   not sure if needed, maybe read more?
+                    direction = centroid[0]-25 - np.mean(x)
+                    #   debug lel
+                    print("Centroid " + str(to.objectID) + " Xaxis " + str(centroid[0]) + " in " + str(direction) + " at " + str(round((cap.get(cv2.CAP_PROP_POS_MSEC)/1000), 2)))
+                    print(to.counted)
+                    to.centroids.append(centroid)
+                    if not to.counted:
+                        #   count
+                        if direction < 0 and centroid[0] > 297 and centroid[0] < 300:
+                            left_counter += 1
+                            to.counted = True
+                        elif direction > 0 and centroid[0] > 301 and centroid[0] < 303:
+                            right_counter += 1
+                            to.counted = True
+                # store the trackable object in our dictionary
+                trackableObjects[objectID] = to
 
+            people_in_frame_count = len(objects)
+            text = "Person {}".format(objectID)
+            cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
         #   current time in video in ms (divided by 1000) for seconds
         duration = round((cap.get(cv2.CAP_PROP_POS_MSEC)/1000), 2)
 
@@ -154,11 +180,9 @@ def hog_detect():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-
 #   detection type
-#   hog_detect()
-haar_detect()
-
+hog_detect()
+#   haar_detect()
 #   When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
