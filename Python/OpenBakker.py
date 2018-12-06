@@ -59,8 +59,6 @@ def detect_people():
         frame = imutils.resize(frame, width=min(600, frame.shape[1]))
         orig = frame.copy()
         (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(4, 4),scale=1.50)
-        #   frame information
-        fps = int(cap.get(cv2.CAP_PROP_FPS))
         #   line in the middle of the screen
         cv2.line(frame, (300, 0), (300, 600), (0, 0, 255), 2)
         #   use centroid method of uniquely identifying objects found
@@ -94,7 +92,6 @@ def detect_people():
                     x = [c[0] for c in to.centroids]
                     direction = centroid[0]-25 - np.mean(x)
                     #   debug lel
-                    print("Centroid " + str(to.objectID) + " Xaxis " + str(centroid[0]) + " in " + str(direction) + " at " + str(round((cap.get(cv2.CAP_PROP_POS_MSEC)/1000), 2)) + " ? " + str(to.counted))
                     to.centroids.append(centroid)
                     if not to.counted:
                         if direction < 0 and centroid[0] > 297 and centroid[0] < 300:
@@ -109,21 +106,20 @@ def detect_people():
             text = "Person {}".format(objectID)
             cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
         #   text
-        default_frame_text(cap, frame, left_counter, right_counter, fps, people_in_frame_count)
+        default_frame_text(frame, left_counter, right_counter, people_in_frame_count)
         #   Display the resulting frame
         cv2.imshow("Bakker van Maanen", frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        key == cv2.waitKey(1) & 0xFF
+        rawCapture.truncate(0)
+        if key == ord('q'):
             break
     #   When everything done, release the capture
-    cap.release()
     cv2.destroyAllWindows()
 
 
-def default_frame_text(cap, frame, left_counter, right_counter, fps, people_in_frame_count):
-    duration = round((cap.get(cv2.CAP_PROP_POS_MSEC)/1000), 2)
+def default_frame_text(frame, left_counter, right_counter, people_in_frame_count):
     cv2.putText(frame, "Right counter: " + str(right_counter) , (20, 40), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
     cv2.putText(frame, "Left counter: " + str(left_counter), (20, 60), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
-    cv2.putText(frame, "Time / FPS: " + (str(duration) + " - " + str(fps)), (20, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
     cv2.putText(frame, "Total being detected: " + str(people_in_frame_count), (400, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
 
 
