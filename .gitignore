@@ -1,7 +1,7 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
-.mp4
-.avi
+*.mp4
+*.avi
 *~
 *.sw[mnpcod]
 *.log
@@ -29,7 +29,7 @@ plugins/
 plugins/android.json
 plugins/ios.json
 $RECYCLE.BIN/
-.pyc
+*.pyc
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
