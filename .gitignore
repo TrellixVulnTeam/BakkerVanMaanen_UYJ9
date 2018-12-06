@@ -1,6 +1,7 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
-
+.mp4
+.avi
 *~
 *.sw[mnpcod]
 *.log
