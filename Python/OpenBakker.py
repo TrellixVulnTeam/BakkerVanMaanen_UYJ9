@@ -16,7 +16,7 @@ smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
 font = cv2.FONT_HERSHEY_SIMPLEX
 MAX_BUFFER = 16
 CAMERA_HEIGHT = 600
-CAMERA_WIDTH = 480
+CAMERA_WIDTH = 600
 
 def detect_smile():
     img = cv2.imread("smiling_sample3.jpg")
@@ -58,7 +58,7 @@ def detect_people():
         frame = frame.array
         frame = imutils.resize(frame, width=min(600, frame.shape[1]))
         orig = frame.copy()
-        (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(4, 4),scale=1.50)
+        (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(32, 32),scale=1.60)
         #   line in the middle of the screen
         cv2.line(frame, (300, 0), (300, 600), (0, 0, 255), 2)
         #   use centroid method of uniquely identifying objects found
@@ -109,7 +109,7 @@ def detect_people():
         default_frame_text(frame, left_counter, right_counter, people_in_frame_count)
         #   Display the resulting frame
         cv2.imshow("Bakker van Maanen", frame)
-        key == cv2.waitKey(1) & 0xFF
+        key = cv2.waitKey(1) & 0xFF
         rawCapture.truncate(0)
         if key == ord('q'):
             break
