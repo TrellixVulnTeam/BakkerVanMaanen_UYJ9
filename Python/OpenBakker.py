@@ -10,21 +10,23 @@ from TrackableObject import TrackableObject
 
 #   add haarcascades
 smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
-
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
 MAX_BUFFER = 16
+
 
 def detect_smile():
     img = cv2.imread("smiling_sample3.jpg")
     frame = imutils.resize(img, width=min(600, img.shape[1]))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.95)
+    #   detected smiles
     for(x, y, w, h) in smiles:
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
         return 0
-    cv2.imshow("blah", frame)
+    #   Frame
+    cv2.imshow("Bakker van Maanen", frame)
     cv2.waitKey(0)
 
 
@@ -36,7 +38,7 @@ def detect_people():
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample10.mp4")
+    cap = cv2.VideoCapture("walking_sample2.mp4")
     #  counters
     right_counter = 0
     left_counter = 0
@@ -59,7 +61,7 @@ def detect_people():
         for i, (x, y, w, h) in enumerate(rects):
             center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
             detections.append(center)
-            people_in_frame_count += 1
+            people_in_frame_count = len(detections)
             cv2.circle(frame, (center), 5, (0, 0, 255), 2)
             if len(detections) > 1:
                 for i in range(1, len(detections)):
