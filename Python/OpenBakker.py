@@ -6,6 +6,8 @@ import imutils
 from imutils.object_detection import non_max_suppression
 from CentroidTracker import CentroidTracker
 from TrackableObject import TrackableObject
+from picamera.array import PiRGBArray
+from picamera import PiCamera
 
 
 #   add haarcascades
