@@ -13,7 +13,8 @@ smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
 MAX_BUFFER = 16
-
+CAMERA_HEIGHT = 600
+CAMERA_WIDTH = 480
 
 def detect_smile():
     img = cv2.imread("smiling_sample3.jpg")
@@ -38,15 +39,21 @@ def detect_people():
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample2.mp4")
+    #   cap = cv2.VideoCapture("walking_sample2.mp4")
+    camera = PiCamera()
+    camera.resolution = (CAMERA_WIDTH, CAMERA_HEIGHT)
+    camera.framerate = 30
+    rawCapture = PiRGBArray(camera, size=(CAMERA_WIDTH, CAMERA_HEIGHT))
+    time.sleep(1)
     #  counters
     right_counter = 0
     left_counter = 0
     people_in_frame_count = 0
     #   play video till the end
-    while(cap.isOpened()):
+    for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
         #   setup
-        ret, frame = cap.read()
+        #   ret, frame = cap.read()
+        frame = frame.array
         frame = imutils.resize(frame, width=min(600, frame.shape[1]))
         orig = frame.copy()
         (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(4, 4),scale=1.50)
