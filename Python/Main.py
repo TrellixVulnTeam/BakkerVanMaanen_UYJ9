@@ -20,6 +20,7 @@ def main():
     #    { 'product_name': 'Reza Taart', 'available': True },
     #    { 'product_name': 'Murtaza Taart', 'available': True }]
     # Bakkerbase.save_vitrine(fake_products)
+    # print(Bakkerbase.get_temperature())
     return 0
 
 
