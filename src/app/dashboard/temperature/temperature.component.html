@@ -1,16 +1,14 @@
 <ion-row>
-  <h4 class="display-4">TEMPERATUUR <i class="fas fa-temperature-low"></i></h4>
+  <h4 class="display-4">TEMPERATUUR</h4>
 </ion-row>
 <ion-row>
-  <ion-col>
-    <h5 class="display-5">Huidige Temperatuur</h5>
-    <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ temperature }} &deg;C</h4>
-  </ion-col>
-  <ion-col>
-    <h5 class="display-5">Huidige Vochtigheid</h5>
-    <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ humidity }}%</h4>
-  </ion-col>
-</ion-row>
+  <ion-col *ngFor="let sensors of temperatureData">
+      <h4 class="display-4 sensor-no">Sensor {{sensors['temp_sensor_no']}}</h4>
+    <h5 class="display-5">Temperatuur</h5>
+    <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ sensors[' temperature'] | number }} &deg;C</h4>
+    <h5 class="display-5">Vochtigheid</h5>
+    <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ sensors['humidity'] | number }}%</h4>
 <ion-row>
-  <small class="text-muted">Updated On: {{ temperatureTimestamp }}</small>
-</ion-row>
+   <small class="text-muted">Updated On: {{ temperatureTimestamp }}</small>
+</ion-row> 
+</ion-col>
