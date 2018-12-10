@@ -2,29 +2,44 @@ import numpy as np
 import cv2
 from collections import deque
 import time
+import datetime
 import imutils
 from imutils.object_detection import non_max_suppression
 from CentroidTracker import CentroidTracker
 from TrackableObject import TrackableObject
-
+from picamera import PiCamera
+import picamera.array
 
 #   add haarcascades
 smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
 
+
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
+CURRENT_TIMESTAMP = datetime.datetime.now().__str__()
 MAX_BUFFER = 16
 
-def detect_smile():
-    img = cv2.imread("smiling_sample3.jpg")
+
+def take_picture():
+    camera = PiCamera()
+    camera.resolution = (1024, 768)
+    camera.start_preview()
+    time.sleep(1)
+    camera.capture('smiles.jpg')
+
+def detect_smiles():
+    take_picture()
+    img = cv2.imread('smiles.jpg')
     frame = imutils.resize(img, width=min(600, img.shape[1]))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.95)
+    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.75, minNeighbors=5, minSize=(30, 30), maxSize=(70, 70))
     for(x, y, w, h) in smiles:
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
         return 0
-    cv2.imshow("blah", frame)
+    else:
+        print(len(smiles))
+    cv2.imwrite('smiles-detected.jpg', frame)
     cv2.waitKey(0)
 
 
@@ -36,7 +51,7 @@ def detect_people():
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
     #   start video from file
-    cap = cv2.VideoCapture("walking_sample10.mp4")
+    cap = cv2.VideoCapture("walking_sample2.mp4")
     #  counters
     right_counter = 0
     left_counter = 0
@@ -117,5 +132,4 @@ def default_frame_text(cap, frame, left_counter, right_counter, fps, people_in_f
 
 
 #   MAGGGGICCCC
-detect_people()
-
+detect_smiles()
