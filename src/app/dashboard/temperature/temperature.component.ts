@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
@@ -16,7 +16,8 @@ export class TemperatureComponent implements OnInit {
   dataLoaded = false;
 
   constructor(private db: AngularFireDatabase) {
-    this.getTemperatureData();
+      this.getTemperatureData();
+      console.log(this.getTemperatureData())
   }
 
   /**
@@ -28,10 +29,12 @@ export class TemperatureComponent implements OnInit {
     .limitToLast(1))
     .valueChanges()
     .subscribe(data => {
-        this.temperatureData = data[0]['temperature_sensors']
-        this.temperatureTimestamp = data[0]['timestamp']
-        this.dataLoaded = true;
-    });  
+        data.forEach(entry => {
+            this.temperatureTimestamp = entry['timestamp'];
+            this.temperatureData = entry['temperature_sensors'];
+            this.dataLoaded = true;
+        })
+    });   
   }
 
   ngOnInit() {
