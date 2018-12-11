@@ -22,7 +22,7 @@ MAX_BUFFER = 16
 
 def take_picture():
     camera = PiCamera()
-    camera.resolution = (1024, 768)
+    camera.resolution = (400, 400)
     camera.start_preview()
     time.sleep(1)
     camera.capture('smiles.jpg')
@@ -30,9 +30,10 @@ def take_picture():
 def detect_smiles():
     take_picture()
     img = cv2.imread('smiles.jpg')
+    img = cv2.flip(img, -1)
     frame = imutils.resize(img, width=min(600, img.shape[1]))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.75, minNeighbors=5, minSize=(30, 30), maxSize=(70, 70))
+    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.90, minNeighbors=4, minSize=(30, 30), maxSize=(70, 70))
     for(x, y, w, h) in smiles:
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
