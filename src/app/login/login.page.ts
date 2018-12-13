@@ -7,8 +7,16 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./login.page.scss']
 })
 export class LoginPage implements OnInit {
+  user: string;
+  passowrd: string;
 
   constructor(public navCtrl: NavController) { }
+
+  login(){
+  if (this.user === "111" && this.password === "111") {
+       this.goToDashboard(); 
+    } 
+  }
 
   ngOnInit() {
   }
