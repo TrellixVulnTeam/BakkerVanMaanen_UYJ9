@@ -3,34 +3,42 @@ import cv2
 from collections import deque
 import time
 import imutils
+from imutils.video import VideoStream
 from imutils.object_detection import non_max_suppression
+from imutils.video import FPS
 from CentroidTracker import CentroidTracker
 from TrackableObject import TrackableObject
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 
-
-#   add haarcascades
-smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
+#cascades
+full_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_fullbody.xml')
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
-MAX_BUFFER = 16
-CAMERA_HEIGHT = 600
-CAMERA_WIDTH = 600
+MAX_BUFFER = 4
 
-def detect_smile():
-    img = cv2.imread("smiling_sample3.jpg")
-    frame = imutils.resize(img, width=min(600, img.shape[1]))
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.95)
-    #   detected smiles
-    for(x, y, w, h) in smiles:
-        cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
-    if smiles is None:
-        return 0
-    #   Frame
-    cv2.imshow("Bakker van Maanen", frame)
-    cv2.waitKey(0)
+
+def detect_cascade():
+    # camera
+    vs = VideoStream(usePiCamera=True).start()
+    time.sleep(1)
+    #  counters
+    while True:
+        frame = vs.read()
+        frame = imutils.resize(frame, width=600)
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        full_bodies = full_body_cascade.detectMultiScale(frame, scaleFactor=1.05, minNeighbors=5, minSize=(5, 5), maxSize=(10,10))
+
+        for (x, y, w, h) in full_bodies:
+            cv2.rectangle(frame, (x,y), (x+w, y+h), (0, 255,0),1)
+
+        #   Display the resulting frame
+        cv2.imshow("Bakker van Maanen", frame)
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord('q'):
+            break
+    #   When everything done, release the capture
+    cv2.destroyAllWindows()
 
 
 def detect_people():
@@ -40,25 +48,20 @@ def detect_people():
     #   deque of center pointns with a max length of buffer size
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
-    #   start video from file
-    #   cap = cv2.VideoCapture("walking_sample2.mp4")
-    camera = PiCamera()
-    camera.resolution = (CAMERA_WIDTH, CAMERA_HEIGHT)
-    camera.framerate = 30
-    rawCapture = PiRGBArray(camera, size=(CAMERA_WIDTH, CAMERA_HEIGHT))
-    time.sleep(1)
+    # camera
+    vs = VideoStream(usePiCamera=True).start()
+    time.sleep(2)
     #  counters
     right_counter = 0
     left_counter = 0
-    people_in_frame_count = 0
     #   play video till the end
-    for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-        #   setup
+    while True:
+    #   setup
         #   ret, frame = cap.read()
-        frame = frame.array
-        frame = imutils.resize(frame, width=min(600, frame.shape[1]))
-        orig = frame.copy()
-        (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(32, 32),scale=1.60)
+        frame = vs.read()
+        frame = imutils.resize(frame, width=600)
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        (rects, weights)=hog.detectMultiScale(gray,winStride=(4,4),padding=(8,8),scale=1.75)
         #   line in the middle of the screen
         cv2.line(frame, (300, 0), (300, 600), (0, 0, 255), 2)
         #   use centroid method of uniquely identifying objects found
@@ -68,7 +71,6 @@ def detect_people():
         for i, (x, y, w, h) in enumerate(rects):
             center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
             detections.append(center)
-            people_in_frame_count = len(detections)
             cv2.circle(frame, (center), 5, (0, 0, 255), 2)
             if len(detections) > 1:
                 for i in range(1, len(detections)):
@@ -77,8 +79,9 @@ def detect_people():
                     cv2.line(frame, detections[i-1], detections[i], line_color, thickness)
         # apply nms to make objects found more precise
         rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-        pick = non_max_suppression(rects, probs=None, overlapThresh=0.65)
+        pick = non_max_suppression(rects, probs=None, overlapThresh=0.60)
         for (xA, yA, xB, yB) in pick:
+            people_in_frame_count = len(pick)
             objects = ct.update(pick)
             cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
             for i, (objectID, centroid) in enumerate(objects.items()):
@@ -106,11 +109,9 @@ def detect_people():
             text = "Person {}".format(objectID)
             cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
         #   text
-        default_frame_text(frame, left_counter, right_counter, people_in_frame_count)
         #   Display the resulting frame
         cv2.imshow("Bakker van Maanen", frame)
         key = cv2.waitKey(1) & 0xFF
-        rawCapture.truncate(0)
         if key == ord('q'):
             break
     #   When everything done, release the capture
@@ -124,5 +125,4 @@ def default_frame_text(frame, left_counter, right_counter, people_in_frame_count
 
 
 #   MAGGGGICCCC
-detect_people()
-
+detect_cascade()
