@@ -5,9 +5,9 @@ import Bakkerbase
 #   Main loop here
 def main():
     fake_temperature_data = [
-            { 'temp_sensor_no': 1, 'temperatue': 5, 'humidity': 50 },
-            { 'temp_sensor_no': 2, 'temperatue': 2, 'humidity': 45 },
-            { 'temp_sensor_no': 3, 'temperatue': 1, 'humidity': 47 }
+            { 'temp_sensor_no': 1, 'temperature': 23, 'humidity': 50 },
+            { 'temp_sensor_no': 2, 'temperature': 25, 'humidity': 45 },
+            { 'temp_sensor_no': 3, 'temperature': 26, 'humidity': 47 }
     ]
     Bakkerbase.save_temperature(fake_temperature_data)
     # fake_products = [

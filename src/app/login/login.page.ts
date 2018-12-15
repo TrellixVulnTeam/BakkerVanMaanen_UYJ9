@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +8,27 @@ import { NavController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
   user: string;
-  passowrd: string;
+  password: string;
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController) { }
 
-  login(){
-  if (this.user === "111" && this.password === "111") {
-       this.goToDashboard(); 
-    } 
+  login() {
+    if (this.user === '111' && this.password === '111') {
+       this.goToDashboard();
+    } else {
+       this.loginFailedAlert();
+    }
+  }
+
+  async loginFailedAlert() {
+    const alert = await this.alertCtrl.create({
+      header: 'LOGIN MISLUKT',
+      subHeader: '',
+      message: 'Je werknemersnummer en/of wachtwoord was nrect ingevoerd.',
+      buttons: ['Probeer opnieuw'],
+      cssClass: 'loginAlert'
+    });
+    await alert.present();
   }
 
   ngOnInit() {

@@ -14,3 +14,18 @@
   font-family: bvmFont;
   src: url('../src/assets/fonts/futura-book.woff2');
 }
+.loginAlert{
+  h2{
+    letter-spacing: 1px;
+    font-family: bvmFont;
+    color: white!important;
+  }
+  div{
+    background-color: rgba(52,58,64,0.65)!important;
+    div{
+      font-family: bvmFont;
+      text-align: center;
+      color: white!important;
+    }
+  }
+}

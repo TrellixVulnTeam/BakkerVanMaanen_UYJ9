@@ -1,4 +1,9 @@
+ion-row{
+  background-color: rgba(52,58,64,0.65)!important;
+}
 h4{
+  margin-top: 0px;
+  line-height: 2;
   font-size: 2.5em;
   text-align: center;
   font-family: bvmFont;
@@ -13,19 +18,23 @@ h4.sensor-data{
 }
 
 h4.sensor-no{
-    color: #222428;
+    color: white;
     background-color: rgba(0,0,0,0);
 }
-
+h5{
+  color: white;
+}
 h4.data{
   background-color: rgba(0,0,0,0);
-  color: black;
+  color: white;
 }
 
 small{
+  color: white!important;
   display: block;
   text-align: center;
   width: 100%;
+  margin-bottom: 5px;
 }
 
 ion-col{
