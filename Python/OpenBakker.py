@@ -9,11 +9,7 @@ from imutils.object_detection import non_max_suppression
 from imutils.video import FPS
 from CentroidTracker import CentroidTracker
 from TrackableObject import TrackableObject
-<<<<<<< HEAD
-from picamera.array import PiRGBArray
-from picamera import PiCamera
 
-<<<<<<< HEAD
 #cascades
 full_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_fullbody.xml')
 #   junk
