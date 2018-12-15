@@ -42,26 +42,9 @@ def detect_cascade():
             break
     #   When everything done, release the capture
     cv2.destroyAllWindows()
-=======
 
-#   add haarcascades
-smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
-=======
-from picamera import PiCamera
-import picamera.array
-
-#   add haarcascades
-smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
-
-
->>>>>>> nachosCV
-#   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
 CURRENT_TIMESTAMP = datetime.datetime.now().__str__()
-MAX_BUFFER = 16
-CAMERA_HEIGHT = 600
-CAMERA_WIDTH = 600
-
 
 def take_picture():
     camera = PiCamera()
@@ -76,26 +59,17 @@ def detect_smiles():
     img = cv2.flip(img, -1)
     frame = imutils.resize(img, width=min(600, img.shape[1]))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-<<<<<<< HEAD
-    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.95)
-    #   detected smiles
-=======
     smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.90, minNeighbors=4, minSize=(30, 30), maxSize=(70, 70))
->>>>>>> nachosCV
     for(x, y, w, h) in smiles:
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
         return 0
-<<<<<<< HEAD
     #   Frame
     cv2.imshow("Bakker van Maanen", frame)
-=======
     else:
         print(len(smiles))
     cv2.imwrite('smiles-detected.jpg', frame)
->>>>>>> nachosCV
     cv2.waitKey(0)
->>>>>>> 0e5c4b8103b40cef482e1f7b85cafb9ee9e606a2
 
 
 def detect_people():
@@ -105,23 +79,9 @@ def detect_people():
     #   deque of center pointns with a max length of buffer size
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
-<<<<<<< HEAD
     # camera
     vs = VideoStream(usePiCamera=True).start()
     time.sleep(2)
-=======
-    #   start video from file
-<<<<<<< HEAD
-    #   cap = cv2.VideoCapture("walking_sample2.mp4")
-    camera = PiCamera()
-    camera.resolution = (CAMERA_WIDTH, CAMERA_HEIGHT)
-    camera.framerate = 30
-    rawCapture = PiRGBArray(camera, size=(CAMERA_WIDTH, CAMERA_HEIGHT))
-    time.sleep(1)
-=======
-    cap = cv2.VideoCapture("walking_sample2.mp4")
->>>>>>> nachosCV
->>>>>>> 0e5c4b8103b40cef482e1f7b85cafb9ee9e606a2
     #  counters
     right_counter = 0
     left_counter = 0
@@ -196,8 +156,4 @@ def default_frame_text(frame, left_counter, right_counter, people_in_frame_count
 
 
 #   MAGGGGICCCC
-<<<<<<< HEAD
 detect_cascade()
-=======
-detect_smiles()
->>>>>>> 0e5c4b8103b40cef482e1f7b85cafb9ee9e606a2
