@@ -60,11 +60,11 @@ def detect_smiles():
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
         return 0
-    #   Frame
-    cv2.imshow("Bakker van Maanen", frame)
     else:
         print(len(smiles))
-    cv2.imwrite('smiles-detected.jpg', frame)
+        cv2.imwrite('smiles-detected.jpg', frame)
+    #   Frame
+    cv2.imshow("Bakker van Maanen", frame)
     cv2.waitKey(0)
 
 
