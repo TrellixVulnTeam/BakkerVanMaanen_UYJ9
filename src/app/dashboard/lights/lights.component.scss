@@ -1,4 +1,16 @@
+ion-row{
+    background-color: rgba(52,58,64,0.65)!important;
+}
+h4.data{
+    background-color: rgba(0,0,0,0);
+}
+ion-spinner{
+    color:white;
+}
 h4{
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 2.5em;
   text-align: center;
   font-family: bvmFont;
   display: block;
@@ -7,18 +19,15 @@ h4{
   color: white;
 }
 
-h4.data{
-  background-color: rgba(0,0,0,0);
-  color: black;
-}
-
 p{
+  color: white;
   margin-top: 10px;
   font-weight: bold;
   font-family: bvmFont;
 }
 
 small{
+  color: white!important;
   display: block;
   text-align: center;
   width: 100%;

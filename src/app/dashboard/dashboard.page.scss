@@ -6,3 +6,19 @@ ion-title{
   font-family: bvmFont;
   font-weight: bold;
 }
+
+ion-content{
+    --background: #fff url('../../assets/images/dashboard-bg2.png') no-repeat center cover;
+    background-image: url('../../assets/images/dashboard-bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ion-fab-button{
+    color: white;
+}
+
+ion-icon:not(:first-child){
+    color: white;
+}

@@ -2,34 +2,66 @@ import numpy as np
 import cv2
 from collections import deque
 import time
+import datetime
 import imutils
 from imutils.object_detection import non_max_suppression
 from CentroidTracker import CentroidTracker
 from TrackableObject import TrackableObject
+<<<<<<< HEAD
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 
 
 #   add haarcascades
 smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
+=======
+from picamera import PiCamera
+import picamera.array
+
+#   add haarcascades
+smile_cascade = cv2.CascadeClassifier('cascades/haarcascade_smile.xml')
+
+
+>>>>>>> nachosCV
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
+CURRENT_TIMESTAMP = datetime.datetime.now().__str__()
 MAX_BUFFER = 16
 CAMERA_HEIGHT = 600
 CAMERA_WIDTH = 600
 
-def detect_smile():
-    img = cv2.imread("smiling_sample3.jpg")
+
+def take_picture():
+    camera = PiCamera()
+    camera.resolution = (400, 400)
+    camera.start_preview()
+    time.sleep(1)
+    camera.capture('smiles.jpg')
+
+def detect_smiles():
+    take_picture()
+    img = cv2.imread('smiles.jpg')
+    img = cv2.flip(img, -1)
     frame = imutils.resize(img, width=min(600, img.shape[1]))
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+<<<<<<< HEAD
     smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.95)
     #   detected smiles
+=======
+    smiles = smile_cascade.detectMultiScale(frame, scaleFactor=1.90, minNeighbors=4, minSize=(30, 30), maxSize=(70, 70))
+>>>>>>> nachosCV
     for(x, y, w, h) in smiles:
         cv2.rectangle(frame, (x, y), ((x+w), (y+h)), (0, 255, 0), 2)
     if smiles is None:
         return 0
+<<<<<<< HEAD
     #   Frame
     cv2.imshow("Bakker van Maanen", frame)
+=======
+    else:
+        print(len(smiles))
+    cv2.imwrite('smiles-detected.jpg', frame)
+>>>>>>> nachosCV
     cv2.waitKey(0)
 
 
@@ -41,12 +73,16 @@ def detect_people():
     detections = deque(maxlen=MAX_BUFFER)
     trackableObjects = {}
     #   start video from file
+<<<<<<< HEAD
     #   cap = cv2.VideoCapture("walking_sample2.mp4")
     camera = PiCamera()
     camera.resolution = (CAMERA_WIDTH, CAMERA_HEIGHT)
     camera.framerate = 30
     rawCapture = PiRGBArray(camera, size=(CAMERA_WIDTH, CAMERA_HEIGHT))
     time.sleep(1)
+=======
+    cap = cv2.VideoCapture("walking_sample2.mp4")
+>>>>>>> nachosCV
     #  counters
     right_counter = 0
     left_counter = 0
@@ -124,5 +160,4 @@ def default_frame_text(frame, left_counter, right_counter, people_in_frame_count
 
 
 #   MAGGGGICCCC
-detect_people()
-
+detect_smiles()

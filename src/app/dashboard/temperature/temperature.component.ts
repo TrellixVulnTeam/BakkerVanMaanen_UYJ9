@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
@@ -8,16 +8,16 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class TemperatureComponent implements OnInit {
 
-  //  Temperature variables
-  temperature: number;
-  humidity: number;
-  temperatureTimestamp: string;
-
-  //  For spinner
+    //  Temperature variables
+    temperatureData: any; 
+    temperatureTimestamp: string;
+    
+    //  For spinner
   dataLoaded = false;
 
   constructor(private db: AngularFireDatabase) {
-    this.getTemperatureData();
+      this.getTemperatureData();
+      console.log(this.getTemperatureData())
   }
 
   /**
@@ -28,14 +28,13 @@ export class TemperatureComponent implements OnInit {
     .orderByChild('timestamp')
     .limitToLast(1))
     .valueChanges()
-    .subscribe(data => data.forEach(entry => {
-      //  First object in the list is has the highest timestamp
-      //  We can also sort by id, fix!
-      this.temperature = entry['temperature'];
-      this.humidity = entry['humidity'];
-      this.temperatureTimestamp = entry['timestamp'];
-      this.dataLoaded = true;
-    }));
+    .subscribe(data => {
+        data.forEach(entry => {
+            this.temperatureTimestamp = entry['timestamp'];
+            this.temperatureData = entry['temperature_sensors'];
+            this.dataLoaded = true;
+        })
+    });   
   }
 
   ngOnInit() {
