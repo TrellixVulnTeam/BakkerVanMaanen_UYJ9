@@ -1,3 +1,11 @@
-<p>
-  temperature-analytics works!
-</p>
+<ion-row>
+    <h4 class="display-4">TEMPERATUUR <i class="fas fa-temperature-high"></i></h4>
+</ion-row>
+<ion-row>
+    <ion-col>   
+    <canvas id="temperatureLineChart" height="50%" width="75%"> {{ temperatureLineChart }}</canvas>
+    </ion-col>
+</ion-row>
+<ion-row>
+   <small class="text-muted">Updated On: {{ temperatureTimestamp }}</small>
+</ion-row> 

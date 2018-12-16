@@ -1,0 +1,45 @@
+ion-row{
+  background-color: rgba(52,58,64,0.65)!important;
+}
+ion-spinner{
+    color: white;
+}
+h4{
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: bvmFont;
+  display: block;
+  width: 100%;
+  background-color: #222428;
+  color: white;
+}
+
+h4.sensor-data{
+    width: 25%;
+}
+
+h4.sensor-no{
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+h5{
+  color: white;
+}
+h4.data{
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+
+small{
+  color: white!important;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+ion-col{
+  text-align: center;
+}

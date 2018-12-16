@@ -1,0 +1,47 @@
+ion-spinner{
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+ion-col{
+  text-align: center;
+  i{
+    font-size: 75px;
+  }
+  i.fa-check-circle{
+    color: green;
+  }
+  i.fa-times-circle{
+    color: red;
+  }
+}
+ion-row{
+    background-color: rgba(52,58,64,0.65)!important;
+}
+h4{
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: bvmFont;
+  display: block;
+  width: 100%;
+  background-color: #222428;
+  color: white;
+}
+
+p{
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: bvmFont;
+}
+
+small{
+  color: white!important;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
