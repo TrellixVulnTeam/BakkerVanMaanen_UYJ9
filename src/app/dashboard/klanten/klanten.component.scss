@@ -1,6 +1,9 @@
 ion-row{
   background-color: rgba(52,58,64,0.65)!important;
 }
+ion-spinner{
+    color: white;
+}
 h4{
   margin-top: 0px;
   line-height: 2;
@@ -19,11 +22,7 @@ h4.sensor-data{
 
 h4.sensor-no{
     color: white;
-    background-color: rgba(52,0,0,0);
-    background-color: rgba(52, 58, 64, 0.6);
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgba(0,0,0,0);
 }
 h5{
   color: white;

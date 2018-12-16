@@ -17,6 +17,9 @@ firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
 
+def get_klanten():
+    return db.child('/klanten').get().val()
+
 #   Get all light sensor data
 def get_lights():
     return db.child('/lights').get().val()
@@ -60,3 +63,11 @@ def save_vitrine(products_dict):
             'timestamp': datetime.datetime.now().__str__()
         }
     return db.child('/vitrine').push(data)
+
+#   Save klanten data
+def save_klanten(klanten_dict):
+    data = {
+            'klanten_data': klanten_dict,
+            'timestamp': datetime.datetime.now().__str__()
+        }
+    return db.child('/klanten').push(data)

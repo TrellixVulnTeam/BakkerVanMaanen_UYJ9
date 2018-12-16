@@ -9,6 +9,11 @@ import { DashboardPage } from './dashboard.page';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { VitrineComponent } from './vitrine/vitrine.component';
 import { LightsComponent } from './lights/lights.component';
+import { LightAnalyticsComponent } from './light-analytics/light-analytics.component';
+import { TemperatureAnalyticsComponent } from './temperature-analytics/temperature-analytics.component';
+import { VitrineAnalyticsComponent } from './vitrine-analytics/vitrine-analytics.component';
+import { KlantenAnalyticsComponent } from './klanten-analytics/klanten-analytics.component';
+import { KlantenComponent } from './klanten/klanten.component';
 
 const routes: Routes = [
   {
@@ -24,6 +29,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DashboardPage, TemperatureComponent, VitrineComponent, LightsComponent]
+  declarations: [DashboardPage, TemperatureComponent, VitrineComponent, LightsComponent, LightAnalyticsComponent, TemperatureAnalyticsComponent, VitrineAnalyticsComponent, KlantenAnalyticsComponent, KlantenComponent]
 })
 export class DashboardPageModule {}
