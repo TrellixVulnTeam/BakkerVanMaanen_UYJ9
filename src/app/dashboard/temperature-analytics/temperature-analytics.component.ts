@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
-
+import { AngularFireDatabase } from 'angularfire2/database';
 @Component({
   selector: 'app-temperature-analytics',
   templateUrl: './temperature-analytics.component.html',
@@ -8,17 +8,36 @@ import * as Chart from 'chart.js';
 })
 export class TemperatureAnalyticsComponent implements OnInit {
   temperatureLineChart: Chart;
+  temperatureMonthData = [];
+  humidityMonthData: any;
+  temperatureTimestamp: string;
   dataLoaded = false;
-
-  constructor() {
+  chartLabels = ['Temperature, Vochtigheid'];
+  constructor(private db: AngularFireDatabase) {
   }
+
+  getTemperatureMonthData() {
+    this.db.list('/temperature', ref => ref
+        .orderByChild('timestamp')
+        .limitToLast(30))
+        .valueChanges()
+        .subscribe(data => {
+            data.forEach(entry => {
+                this.temperatureTimestamp = entry['timestamp'];
+                this.temperatureMonthData.push(entry['temperature_sensors']);
+                // this.humidityMonthData =  entry['temperature_sensors'];
+                console.log(this.temperatureMonthData);
+            });
+        });
+  }
+
 
   createTemperatureLineChart() {
     const ctx = document.getElementById('temperatureLineChart');
     this.temperatureLineChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['Temperatuur', 'Vochtigheid'],
+            labels: this.chartLabels,
             datasets: [{
                 label: '# of Votes',
                 data: [12, 19, 3, 5, 2, 3],
@@ -52,6 +71,7 @@ export class TemperatureAnalyticsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getTemperatureMonthData();
     this.createTemperatureLineChart();
   }
 
