@@ -5,30 +5,6 @@ item {
 
 item {
   id: 2
-  name: 'rood'
+  name: 'koekje'
 }
-
-item {
-  id: 3
-  name: 'piDoos'
-}
-
-item {
-  id: 4
-  name: 'groen'
-}
-
-item {
-  id: 5
-  name: 'geel'
-}
-
-item {
-  id: 6
-  name: 'wit'
-}
-
-item {
-  id: 7
-  name: 'blauw'
-}
+ 
