@@ -17,7 +17,6 @@ export class TemperatureComponent implements OnInit {
 
   constructor(private db: AngularFireDatabase) {
       this.getTemperatureData();
-      console.log(this.getTemperatureData())
   }
 
   /**

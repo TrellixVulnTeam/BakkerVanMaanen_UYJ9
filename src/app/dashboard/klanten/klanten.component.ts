@@ -8,7 +8,7 @@ import { AngularFireDatabase  } from 'angularfire2/database';
 })
 export class KlantenComponent implements OnInit {
 
-  //  Temperature variables
+  //  Klanten variables
   klantenCount: number;
   klantenIdleTime: number;
   klantenTimestamp: string;
@@ -17,11 +17,10 @@ export class KlantenComponent implements OnInit {
 
   constructor(private db: AngularFireDatabase) {
       this.getKlantenData();
-      console.log(this.klantenIdleTime);
   }
 
   /**
-   * Get latest temperature data
+   * Get latest klanten data
    */
   private getKlantenData() {
     this.db.list('/klanten', ref => ref
@@ -36,7 +35,5 @@ export class KlantenComponent implements OnInit {
     }));
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
  }

@@ -9,26 +9,32 @@ import { AngularFireDatabase } from 'angularfire2/database';
 export class TemperatureAnalyticsComponent implements OnInit {
   temperatureLineChart: Chart;
   temperatureMonthData = [];
-  humidityMonthData: any;
+  humidityMonthData = [];
+  temperatureDates = [];
   temperatureTimestamp: string;
   dataLoaded = false;
   chartLabels = ['Temperature, Vochtigheid'];
+
   constructor(private db: AngularFireDatabase) {
+    this.getTemperatureMonthData();
   }
 
   getTemperatureMonthData() {
     this.db.list('/temperature', ref => ref
         .orderByChild('timestamp')
-        .limitToLast(30))
+        .limitToLast(90))
         .valueChanges()
         .subscribe(data => {
             data.forEach(entry => {
                 this.temperatureTimestamp = entry['timestamp'];
-                this.temperatureMonthData.push(entry['temperature_sensors']);
-                // this.humidityMonthData =  entry['temperature_sensors'];
-                console.log(this.temperatureMonthData);
+                this.temperatureDates.push(entry['timestamp']);
+                entry['temperature_sensors'].forEach(sensors => {
+                   this.humidityMonthData.push(sensors['humidity']);
+                   this.temperatureMonthData.push(sensors['temperature']);
+                });
             });
         });
+        this.dataLoaded = true;
   }
 
 
@@ -37,42 +43,56 @@ export class TemperatureAnalyticsComponent implements OnInit {
     this.temperatureLineChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: this.chartLabels,
+            labels: this.temperatureDates,
+            backgroundColor: '#FFF',
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: ['rgba(255, 99, 132, 0.2)',
-                                  'rgba(54, 162, 235, 0.2)',
-                                  'rgba(255, 206, 86, 0.2)',
-                                  'rgba(75, 192, 192, 0.2)',
-                                  'rgba(153, 102, 255, 0.2)',
-                                  'rgba(255, 159, 64, 0.2)'],
-                borderColor: ['rgba(255,99,132,1)',
-                              'rgba(54, 162, 235, 1)',
-                              'rgba(255, 206, 86, 1)',
-                              'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)'],
-                borderWidth: 1
+                label: 'Temperature',
+                data: this.temperatureMonthData,
+                borderColor: 'white',
+            }, {
+                label: 'Humidity',
+                labelColor: 'black',
+                data: this.humidityMonthData,
+                borderColor: 'black',
             }]
         },
         options: {
+            legend: {
+                labels: {
+                    fontColor: 'white',
+                    fontSize: 15
+                }
+            },
+            title: {
+                display: true,
+                text: 'Average Humidity and Temperature',
+                fontColor: 'white'
+            },
             scales: {
                 yAxes: [{
                     ticks: {
-                         beginAtZero: true
-                    }
+                        fontColor: '#FFF',
+                        stepSize: 10,
+                        beginAtZero: true
+                    },
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontColor: 'white',
+                        stepSize: 10,
+                        beginAtZero: true
+                    },
                 }]
-            }
+          }
         }
-
     });
     this.dataLoaded = true;
   }
 
   ngOnInit() {
-    this.getTemperatureMonthData();
-    this.createTemperatureLineChart();
+     if (this.dataLoaded) {
+         this.createTemperatureLineChart();
+     }
   }
 
 }
