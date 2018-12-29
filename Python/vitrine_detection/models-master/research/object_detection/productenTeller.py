@@ -10,6 +10,7 @@ from collections import defaultdict
 from io import StringIO
 from matplotlib import pyplot as plt
 from PIL import Image
+import cv2
 
 
 
@@ -75,7 +76,7 @@ PATH_TO_TEST_IMAGES_DIR = 'images/'
 TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'cam29.jpg') ]
 
 # Size, in inches, of the output images.
-#IMAGE_SIZE = (20, 16)
+IMAGE_SIZE = (20, 16)
 
 
 
@@ -101,8 +102,11 @@ with detection_graph.as_default():
       (boxes, scores, classes, num) = sess.run(
           [detection_boxes, detection_scores, detection_classes, num_detections],
           feed_dict={image_tensor: image_np_expanded})
+      
+ 
 
-'''
+      #cv2.imwrite("face.jpg", image_np)
+#'''
      # Visualization of the results of a detection.
       vis_util.visualize_boxes_and_labels_on_image_array(
           image_np,
@@ -114,8 +118,14 @@ with detection_graph.as_default():
           line_thickness=1)
       plt.figure(figsize=IMAGE_SIZE)
       plt.imshow(image_np)
- '''
+      cv2.imwrite('checkImages/test.jpg', image_np)
+#'''
 ###Below always print 1
-#print(boxes.shape[0])
+
+for index,value in enumerate(classes[0]):
+  if scores[0,index] > 0.5:
+    #print(category_index.get_tensor_by_name(value))
+    print(category_index.get(value))
+
 taco = [category_index.get(value) for index,value in enumerate(classes[0]) if scores[0,index] > 0.5]
 print(len(taco))
