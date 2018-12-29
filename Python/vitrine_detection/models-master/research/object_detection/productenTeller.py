@@ -15,6 +15,7 @@ sys.path.append("..")
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 import picamera
+import Bakkerbase
 
 def maakFoto():
   with picamera.PiCamera() as camera:
@@ -25,17 +26,16 @@ def maakFoto():
       time.sleep(2)
       camera.capture('images/cam29.jpg')
       print('..foto is gemaakt')
-      
+      time.sleep(2)
 
 def splitProducten():
-  print('..Wachten, producten worden gesplitst')
-  time.sleep(50)
   arrayCoordinators = [[50, 180, 150, 280],[50, 180, 270,400],[280,400, 150,280],[280,400, 270,400]]
   img = cv2.imread('images/cam29.jpg')
   for list in arrayCoordinators:
       crop_img = img[list[0]:list[1], list[2]:list[3]]
       cv2.imwrite('images/plek{}.jpg'.format(arrayCoordinators.index(list)), crop_img)
-  print('..producten zijn gesplitst')
+  print('..Wachten, producten zijn gesplitst')
+  time.sleep(2)
 
 while True:
 
@@ -138,7 +138,13 @@ while True:
           producten[TEST_IMAGE_PATHS.index(image_path)] = True
 
 
-  for product in producten:
-    print(product)
+  producten_data = [
+    {'available': producten[0], 'product_name': 'Plek1'},
+    {'available': producten[1], 'product_name': 'Plek2'},
+    {'available': producten[2], 'product_name': 'Plek3'},
+    {'available': producten[3], 'product_name': 'Plek4'}
+  ]
+  Bakkerbase.save_vitrine(producten_data)
+  print('..Data verzonden naar api')
   time.sleep(100)
 
