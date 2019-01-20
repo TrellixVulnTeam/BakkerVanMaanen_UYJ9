@@ -22,7 +22,7 @@ export class TemperatureAnalyticsComponent implements OnInit {
   getTemperatureMonthData() {
     this.db.list('/temperature', ref => ref
         .orderByChild('timestamp')
-        .limitToLast(90))
+        .limitToLast(20))
         .valueChanges()
         .subscribe(data => {
             data.forEach(entry => {
