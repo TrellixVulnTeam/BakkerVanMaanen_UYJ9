@@ -144,7 +144,11 @@ while True:
     {'available': producten[2], 'product_name': 'Plek3'},
     {'available': producten[3], 'product_name': 'Plek4'}
   ]
-  Bakkerbase.save_vitrine(producten_data)
-  print('..Data verzonden naar api')
+  try:
+    Bakkerbase.save_vitrine(producten_data)
+    print('..Data verzonden naar api')
+  except ConnectionError:
+    print("Connection error, maar hij gaat door")
+    continue
   time.sleep(100)
 
