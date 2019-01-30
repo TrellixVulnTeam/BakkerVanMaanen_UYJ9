@@ -11,7 +11,12 @@
    </ion-col>
 </ion-row>
 <ion-row>
-    <h4 class="display-4 sensor-no">Gemiddelde Temperatuur (Per Dag)</h4> 
+    <ion-col>
+      <h4 class="display-4 sensor-no">Gemiddelde Temperatuur (Per Dag)</h4> 
+      <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ temperatureAverage | number: '1.2-2' }}&deg;C</h4> 
+      <h4 class="display-4 sensor-no">Gemiddelde Vochtigheid (Per Dag)</h4> 
+      <h4 class="display-4 data"><ion-spinner name="bubbles" *ngIf="!dataLoaded"></ion-spinner>{{ humidityAverage | number: '1.2-2' }}%</h4>
+    </ion-col>
 </ion-row>
 <ion-row>
    <small class="text-muted">Updated On: {{ temperatureTimestamp }}</small>

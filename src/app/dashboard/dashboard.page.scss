@@ -22,3 +22,35 @@ ion-fab-button{
 ion-icon:not(:first-child){
     color: white;
 }
+
+i{
+    margin-right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+ion-list p{
+    text-align: right;
+    color: white;
+}
+ion-label, ion-item, ion-list{
+    --background: rgba(34, 36, 40, 0.5)!important;
+    background-color: rgba(0,0,0,0)!important;
+    color: white;
+}
+h4{
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: bvmFont;
+  display: block;
+  width: 100%;
+  background-color: #222428;
+  color: white;
+}
+
+h4.sensor-no{
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+

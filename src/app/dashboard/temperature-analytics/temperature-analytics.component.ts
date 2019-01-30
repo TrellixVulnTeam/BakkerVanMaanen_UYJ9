@@ -35,6 +35,8 @@ export class TemperatureAnalyticsComponent implements AfterViewInit {
                    this.temperatureMonthData.push(sensors['temperature']);
                 });
             this.dataLoaded = true;
+            this.createTemperatureLineChart();
+            this.createHumidityLineChart();
             });
         });
   }
@@ -173,8 +175,11 @@ export class TemperatureAnalyticsComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-     this.createTemperatureLineChart();
-     this.createHumidityLineChart();
-  }
-
+      if (this.dataLoaded === true) {
+         this.createTemperatureLineChart();
+         this.createHumidityLineChart();
+      } else {
+          console.log('damn');
+      }
+   }
 }

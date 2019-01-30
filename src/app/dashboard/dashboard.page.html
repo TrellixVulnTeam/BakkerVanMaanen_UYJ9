@@ -4,9 +4,18 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>BAKKER VAN MAANEN</ion-title>
+    <ion-buttons slot="end">
+      <i (click)="toggleNotifications()" class="fas fa-bell"></i> 
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content padding>
+  <ion-list *ngIf="showNotifications">
+    <h4 class="display-4 sensor-no">NOTIFICATIONS <i class="fas fa-bell"></i></h4>
+    <ion-item *ngFor="let notifications of notificationList" id="notifications-items">
+        <ion-label>{{ notifications['descriptions'] }} <p id="notification-timestamp">{{ notifications['timestamp'] }}</p></ion-label>
+    </ion-item>
+  </ion-list>
   <ion-grid *ngIf="phoneMode">
     <app-klanten></app-klanten>
     <app-vitrine></app-vitrine>

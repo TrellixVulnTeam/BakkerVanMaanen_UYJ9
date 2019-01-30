@@ -44,11 +44,12 @@ export class VitrineAnalyticsComponent implements OnInit {
                 }
             });
          });
-            Object.entries(this.countVitrineProducts(this.vitrineData)).forEach(
-                ([key, value]) => this.vitrineCount.push(value)
-            );
+         Object.entries(this.countVitrineProducts(this.vitrineData)).forEach(
+            ([key, value]) => this.vitrineCount.push(value)
+         );
+         this.dataLoaded = true;
+         this.createVitrineChart();
       });
-      this.dataLoaded = true;
   }
 
   countVitrineProducts (vitrine: string[]) {
@@ -99,11 +100,9 @@ export class VitrineAnalyticsComponent implements OnInit {
             }
         }
     });
-    this.dataLoaded = true;
   }
 
   ngOnInit() {
-      this.createVitrineChart();
   }
 
 }

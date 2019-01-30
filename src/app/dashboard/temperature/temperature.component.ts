@@ -11,13 +11,15 @@ export class TemperatureComponent implements OnInit {
   //  Temperature variables
   temperatureData: any;
   temperatureTimestamp: string;
+  humidityAverage = 0;
+  temperatureAverage = 0;
   //  For spinner
   dataLoaded = false;
 
   constructor(private db: AngularFireDatabase) {
       this.getTemperatureData();
+      this.getAverageTemperatureForToday();
   }
-
   /**
    * Get latest temperature data
    */
@@ -30,13 +32,26 @@ export class TemperatureComponent implements OnInit {
         data.forEach(entry => {
             this.temperatureTimestamp = entry['timestamp'];
             this.temperatureData = entry['temperature_sensors'];
-            entry['temperature_sensors'].forEach(sensor => {
-                if (sensor['temperature'] < 20 || sensor['temperature'] > 26) {
-                    // push
-                }
             });
             this.dataLoaded = true;
-        });
+    });
+  }
+
+  getAverageTemperatureForToday() {
+    const today = new Date().toLocaleDateString();
+    this.db.list('/temperature', ref => ref
+        .orderByChild('timestamp')
+        .limitToLast(96))
+        .valueChanges()
+        .subscribe(entries => {
+            entries.forEach(entry => {
+                entry['temperature_sensors'].forEach(data => {
+                    this.humidityAverage += data['humidity'];
+                    this.temperatureAverage += data['temperature'];
+                });
+            });
+        this.humidityAverage = this.humidityAverage / 288;
+        this.temperatureAverage = this.temperatureAverage / 288;
     });
   }
 
