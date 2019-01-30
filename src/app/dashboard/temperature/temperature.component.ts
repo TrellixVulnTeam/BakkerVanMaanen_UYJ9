@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
@@ -8,11 +8,10 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class TemperatureComponent implements OnInit {
 
-    //  Temperature variables
-    temperatureData: any; 
-    temperatureTimestamp: string;
-    
-    //  For spinner
+  //  Temperature variables
+  temperatureData: any;
+  temperatureTimestamp: string;
+  //  For spinner
   dataLoaded = false;
 
   constructor(private db: AngularFireDatabase) {
@@ -31,9 +30,14 @@ export class TemperatureComponent implements OnInit {
         data.forEach(entry => {
             this.temperatureTimestamp = entry['timestamp'];
             this.temperatureData = entry['temperature_sensors'];
+            entry['temperature_sensors'].forEach(sensor => {
+                if (sensor['temperature'] < 20 || sensor['temperature'] > 26) {
+                    // push
+                }
+            });
             this.dataLoaded = true;
-        })
-    });   
+        });
+    });
   }
 
   ngOnInit() {
