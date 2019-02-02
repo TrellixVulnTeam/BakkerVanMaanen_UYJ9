@@ -16,36 +16,48 @@ export class KlantenAnalyticsComponent implements OnInit {
     const ctx = document.getElementById('klantenChart');
     this.klantenChart = new Chart(ctx, {
         type: 'line',
+        responsive: true,
         data: {
-            labels: ['Temperatuur', 'Vochtigheid'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: ['rgba(255, 99, 132, 0.2)',
-                                  'rgba(54, 162, 235, 0.2)',
-                                  'rgba(255, 206, 86, 0.2)',
-                                  'rgba(75, 192, 192, 0.2)',
-                                  'rgba(153, 102, 255, 0.2)',
-                                  'rgba(255, 159, 64, 0.2)'],
-                borderColor: ['rgba(255,99,132,1)',
-                              'rgba(54, 162, 235, 1)',
-                              'rgba(255, 206, 86, 1)',
-                              'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)'],
-                borderWidth: 1
+                label: 'X Coordinaten',
+                data: [38, 33, 31, 30, 39, 32, 35, 40],
+                borderColor: '#3e95cd',
+                fill: true
+            }, {
+                label: 'Y Coordinaten',
+                data: [38, 33, 31, 30, 39, 32, 35, 40],
+                borderColor: '#3e95cd',
+                fill: true
             }]
         },
         options: {
+            legend: {
+                labels: {
+                    fontColor: 'white',
+                    fontSize: 15
+                }
+            },
+            title: {
+                display: true,
+                text: 'AVERAGE TEMPERATURE',
+                fontColor: 'white',
+                fontSize: 20
+            },
             scales: {
                 yAxes: [{
                     ticks: {
-                         beginAtZero: true
-                    }
+                        fontColor: '#FFF',
+                        stepSize: 5,
+                    },
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontColor: 'white',
+                        stepSize: 5,
+                    },
                 }]
             }
         }
-
     });
     this.dataLoaded = true;
   }
@@ -53,5 +65,4 @@ export class KlantenAnalyticsComponent implements OnInit {
   ngOnInit() {
       this.createKlantenChart();
   }
-
 }

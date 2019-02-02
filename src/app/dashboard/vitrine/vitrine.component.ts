@@ -10,6 +10,7 @@ export class VitrineComponent implements OnInit {
 
   //  Vitrine variables
   vitrineState: any;
+  vitrineCount: any;
   vitrineTimestamp: string;
   //  For spinner
   dataLoaded = false;
@@ -30,6 +31,7 @@ export class VitrineComponent implements OnInit {
       .forEach(entry => {
         this.vitrineState = entry['products'];
         this.vitrineTimestamp = entry['timestamp'];
+        this.vitrineCount = entry['product_count'];
         this.dataLoaded = true;
     }));
   }

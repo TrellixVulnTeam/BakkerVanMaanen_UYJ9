@@ -25,17 +25,32 @@ ion-icon:not(:first-child){
 
 i{
     margin-right: 15px;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
 }
 ion-list p{
     text-align: right;
     color: white;
 }
+ion-list{
+    text-align: center;
+}
+ion-list small{
+    color: beige!important;
+    text-align: center;
+    font-size: 1.2em;
+}
 ion-label, ion-item, ion-list{
     --background: rgba(34, 36, 40, 0.5)!important;
     background-color: rgba(0,0,0,0)!important;
     color: white;
+}
+
+ion-label:hover, ion-item:hover{
+    --background: rgba(34, 36, 40, 1)!important;
+    background-color: rgba(0,0,0,0)!important;
+    color: white;
+    cursor: pointer;
 }
 h4{
   margin-top: 0px;
@@ -53,4 +68,37 @@ h4.sensor-no{
     color: white;
     background-color: rgba(0,0,0,0);
 }
+#new-notification{
+    color: red;
+}
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px lightblue;  
+        border-radius: 50%;
+    }
+    20% {
+        box-shadow: 0 0 20px lightblue;  
+        border-radius: 50%;
+    }
+    40% {
+        box-shadow: 0 0 30px  lightblue; 
+        border-radius: 50%;
+    }
+    60% {
+        box-shadow: 0 0 30px  lightblue;  
+        border-radius: 50%;
+    }
+    80% {
+        box-shadow: 0 0 20px  lightblue;  
+        border-radius: 50%;
+    }
+    100% {
+        box-shadow: 0 0 10px  lightblue;  
+        border-radius: 50%;
+    }
+}
 
+#new-notification {
+      animation: glowing 500ms infinite;
+
+}

@@ -65,9 +65,10 @@ def save_vitrine(products_dict):
     return db.child('/vitrine').push(data)
 
 #   Save klanten data
-def save_klanten(klanten_dict):
+def save_klanten(klanten_count, idle_time):
     data = {
-            'klanten_data': klanten_dict,
+            'klanten_count': klanten_count,
+            'klanten_idle_time': idle_time,
             'timestamp': datetime.datetime.now().__str__()
-        }
+            }
     return db.child('/klanten').push(data)

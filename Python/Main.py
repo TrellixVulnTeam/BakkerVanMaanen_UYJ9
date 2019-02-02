@@ -2,8 +2,9 @@ import Bakkerbase as bs
 
 
 def main():
-    fake_klanten_data = { 'klanten_count': 22, 'klanten_idle_time': 5.22 }
-    bs.save_klanten(fake_klanten_data)
+    klanten_count = 5
+    klanten_idle_time = 2.32
+    bs.save_klanten(klanten_count, klanten_idle_time)
     return 0
 
 

@@ -29,11 +29,13 @@ export class VitrineAnalyticsComponent implements OnInit {
   getVitrineData() {
       this.db.list('/vitrine', ref => ref
       .orderByChild('timestamp')
-      .limitToLast(10))
+      .limitToLast(50))
       .valueChanges()
       .subscribe(data => {
-          for (const labels of data[data.length - 1]['products']) {
-              this.vitrineLabels.push(labels['product_name']);
+          if (this.vitrineLabels.length < 1) {
+              for (const labels of data[data.length - 1]['products']) {
+                  this.vitrineLabels.push(labels['product_name']);
+              }
           }
           data.forEach(entry => {
             this.vitrineDates.push(entry['timestamp']);

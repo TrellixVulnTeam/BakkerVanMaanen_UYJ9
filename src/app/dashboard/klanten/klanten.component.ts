@@ -29,8 +29,8 @@ export class KlantenComponent implements OnInit {
     .valueChanges()
     .subscribe(data => data.forEach(entry => {
         this.klantenTimestamp = entry['timestamp'];
-        this.klantenCount = entry['klanten_data']['klanten_count'];
-        this.klantenIdleTime = entry['klanten_data']['klanten_idle_time'];
+        this.klantenCount = entry['klanten_count'];
+        this.klantenIdleTime = entry['klanten_idle_time'];
         this.dataLoaded = true;
     }));
   }

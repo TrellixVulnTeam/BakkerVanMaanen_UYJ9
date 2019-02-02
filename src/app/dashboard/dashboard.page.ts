@@ -10,18 +10,57 @@ export class DashboardPage implements OnInit {
  phoneMode = true;
  showNotifications = false;
  notificationList = {};
+ currentNotificationKeys = [];
+ newNotifications = false;
+ noNewNotifications: String = 'No new notifications';
+
  constructor(private db: AngularFireDatabase) {
-     this.getNotifications();
+     this.getNotificationKeys();
+ }
+
+ playSoundNotification() {
+     const audio = new Audio();
+     audio.src = '../../assets/sound.mp3';
+     audio.load();
+     audio.play();
  }
 
  getNotifications() {
      this.db.list('/notifications', ref => ref
-         .orderByChild('timestamp')
+         .orderByChild('seen')
+         .equalTo(false)
          .limitToLast(5))
          .valueChanges()
          .subscribe(entries => {
-            this.notificationList = entries;
+             if (entries.length === 0) {
+                this.newNotifications = false;
+             } else {
+                this.notificationList = entries;
+                this.newNotifications = true;
+                this.playSoundNotification();
+             }
          });
+ }
+
+ getNotificationKeys() {
+     this.db.list('/notifications', ref => ref
+         .orderByChild('seen')
+         .equalTo(false)
+         .limitToLast(5))
+         .snapshotChanges()
+         .subscribe(entries => {
+             entries.map(payload => {
+                this.currentNotificationKeys.push(payload['key']);
+             });
+             this.getNotifications();
+         });
+ }
+
+ updateNotificationsSeen() {
+     for (const notification of this.currentNotificationKeys) {
+        this.db.object('/notifications/' + notification)
+            .update({ seen: true });
+     }
  }
 
  toggleNotifications() {
@@ -43,6 +82,7 @@ export class DashboardPage implements OnInit {
       }
   }
   ngOnInit() {
+    console.log(this.newNotifications);
   }
 
 }
