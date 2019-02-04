@@ -7,47 +7,21 @@ import imutils
 from imutils.video import VideoStream
 from imutils.object_detection import non_max_suppression
 from imutils.video import FPS
-from CentroidTracker import CentroidTracker
-from TrackableObject import TrackableObject
+from picamera import PiCamera
+import datetime
+import Bakkerbase
 
-#cascades
-full_body_cascade = cv2.CascadeClassifier('cascades/haarcascade_fullbody.xml')
 #   junk
 font = cv2.FONT_HERSHEY_SIMPLEX
-MAX_BUFFER = 4
+MAX_BUFFER = 64
 
-
-def detect_cascade():
-    # camera
-    vs = VideoStream(usePiCamera=True).start()
-    time.sleep(1)
-    #  counters
-    while True:
-        frame = vs.read()
-        frame = imutils.resize(frame, width=600)
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        full_bodies = full_body_cascade.detectMultiScale(frame, scaleFactor=1.05, minNeighbors=5, minSize=(5, 5), maxSize=(10,10))
-
-        for (x, y, w, h) in full_bodies:
-            cv2.rectangle(frame, (x,y), (x+w, y+h), (0, 255,0),1)
-
-        #   Display the resulting frame
-        cv2.imshow("Bakker van Maanen", frame)
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord('q'):
-            break
-    #   When everything done, release the capture
-    cv2.destroyAllWindows()
-
-font = cv2.FONT_HERSHEY_SIMPLEX
-CURRENT_TIMESTAMP = datetime.datetime.now().__str__()
 
 def take_picture():
     camera = PiCamera()
-    camera.resolution = (400, 400)
-    camera.start_preview()
-    time.sleep(1)
-    camera.capture('smiles.jpg')
+    camera.resolution = (600, 600)
+    time.sleep(5)
+    camera.capture('people.jpg')
+
 
 def detect_smiles():
     take_picture()
@@ -69,73 +43,125 @@ def detect_smiles():
 
 
 def detect_people():
+    #   start time, for logging purposes. can be pushed.
+    print(datetime.datetime.now())
     #   initialize HOG people detector
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-    #   deque of center pointns with a max length of buffer size
-    detections = deque(maxlen=MAX_BUFFER)
-    trackableObjects = {}
-    # camera
+    #   variables to be used to send to firebase.
+    detections_x = []
+    detections_y = []
+    coords_x = []
+    coords_y = []
+    #   amount of people detected divided by the time passed
+    average_waiting_time = 0
+    #   try and keep track of previous amount of people to avoid doubles
+    last_people_counter = 0
+    #   counters
+    people_counter = 0
+    amount_found = 0
+    #   every TIME_INTERVAL increment to use for choose -> current_time_counter = 3 -> 30 aprox seconds.
+    current_time_counter = 0
+    #   sample rate of coords
+    COORDS_SAMPLE_RATE = 10
+    #   amount of samples per 10 seconds, tested.
+    TIME_SAMPLE_RATE = 6
+    #   what should we do after every 10 seconds?
+    TIME_INTERVAL = 10
+    #   to be used to divide the amount of people found and seconds it took for samples to be collected
+    TIME_WAITING = 60
+    #   idle time
+    idle_time = 0
+    person_found_time_counter = 0
+    # camera setup
     vs = VideoStream(usePiCamera=True).start()
-    time.sleep(2)
-    #  counters
-    right_counter = 0
-    left_counter = 0
+    time.sleep(1)
+    start_time = time.time()
     #   play video till the end
     while True:
-    #   setup
-        #   ret, frame = cap.read()
+        #   each time we loop determine time spent. this is used to keep track of time.
+        end_time = time.time()
+        current_time_elapsed = end_time - start_time
+        #   if 10 seconds has passed
+        if int(current_time_elapsed) > TIME_INTERVAL:
+            #   DO CHECKS BEFORE RESETTING VALUES
+            #   10 seconds = 1
+            current_time_counter += 1
+            #   modulo of 6 is that it can push data after every 60 seconds.
+            #   we want to push every 5 minutes
+            if current_time_counter % 6 is 0:
+                #   time spent = total clients / 5minutes?
+                #   no clients? can't divide by 0 now can we
+                try:
+                   if person_found_time_counter < 2 and person_found_time_counter is not 0:
+                       idle_time = ((person_found_time_count * 10) / amount_found)
+                   idle_time = (TIME_WAITING / amount_found)
+                except ZeroDivisionError:
+                    print("No customers in the last minute")
+                    idle_time = 0
+                    pass
+                #   push centroids
+                #   push to firebase
+                #   reset values of current_time_elapsed and amount_found
+                if amount_found is not 0:
+                    Bakkerbase.save_klanten(idle_time, amount_found, coords_x, coords_y)
+                    print("Firebase Pushed.")
+            #   if the counter divided by the samples taken in X amount of time is rounded to > 1 then
+            #   add the number to the current amount_found variable
+            if round(people_counter / SAMPLE_RATE) > 0:
+                #   add amount of people found
+                amount_found += round(people_counter / SAMPLE_RATE)
+                person_found_time_counter = current_time_counter
+                print("Last counted: " + str(last_people_counter))
+                print("Current people counter: " + str(people_counter))
+                print("Current counted: " + str(round(people_counter / SAMPLE_RATE)))
+                print("People counted: " + str(amount_found))
+            #   trying to keep track of the last recorded people_counter to avoid doubles
+            #   if the counter of the amount of people counter is equal to the last amount
+            #   they are most likely idling there. otherwise the values would be slightly different
+            if int(people_counter) is int(last_people_counter):
+                amount_found -= amount_found
+            #   RESET THE PEOPLE COUNTER, AND START TIME
+            #   THIS IS OUR INTERVAL
+            print("10 Seconds Passed")
+            last_people_counter = people_counter
+            people_counter = 0
+            start_time = time.time()
+        #   CAMERA SETTINGS
         frame = vs.read()
-        frame = imutils.resize(frame, width=600)
+        frame = imutils.resize(frame, width=400)
+        frame = cv2.flip(frame, -1)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        (rects, weights)=hog.detectMultiScale(gray,winStride=(4,4),padding=(8,8),scale=1.75)
-        #   line in the middle of the screen
-        cv2.line(frame, (300, 0), (300, 600), (0, 0, 255), 2)
-        #   use centroid method of uniquely identifying objects found
-        ct = CentroidTracker()
-        tracked_x = deque([], maxlen=MAX_BUFFER)
+        #   HOG DETECTION
+        (rects, weights)=hog.detectMultiScale(frame,winStride=(4,4),padding=(16, 16),scale=1.10)
         #    found objects
         for i, (x, y, w, h) in enumerate(rects):
-            center = (int((x+w) - (w/2)), int((y+h) - (h/2)))
-            detections.append(center)
-            cv2.circle(frame, (center), 5, (0, 0, 255), 2)
-            if len(detections) > 1:
-                for i in range(1, len(detections)):
-                    thickness = int(np.sqrt(MAX_BUFFER/float(i+1)) * 1.80)
-                    line_color = (255, 255, 0)
-                    cv2.line(frame, detections[i-1], detections[i], line_color, thickness)
+            #   get the center of the found object x and y coords, to be pushed to firebase
+            center_x = int((x+w) - (w/2))
+            center_y = int((y+h) - (h/2))
+            #   if x is not 0 ->
+            if x is not 0:
+                detections_x.append(center_x)
+                #   when we have enough samples
+                if len(detections_x) is COORDS_SAMPLE_RATE:
+                    coords_x.append(sum(detections_x)/len(detections_x))
+                    del detections_x[:]
+            if y is not 0:
+                detections_y.append(center_y)
+                #   when we have enough samples
+                if len(detections_y) is COORDS_SAMPLE_RATE:
+                    coords_y.append(sum(detections_y)/len(detections_y))
+                    del detections_y[:]
         # apply nms to make objects found more precise
         rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-        pick = non_max_suppression(rects, probs=None, overlapThresh=0.60)
+        pick = non_max_suppression(rects, probs=None, overlapThresh=0.30)
+        #   if len(pick) > 0 means we have detected a person.
+        if len(pick) > 0:
+            people_counter += len(pick)
+            print(people_counter)
+        #   draw square on object. optional.
         for (xA, yA, xB, yB) in pick:
-            people_in_frame_count = len(pick)
-            objects = ct.update(pick)
             cv2.rectangle(frame, (xA, yA), (xB, yB), (0, 255, 0), 1)
-            for i, (objectID, centroid) in enumerate(objects.items()):
-                #    unique objects found persons here
-                to = trackableObjects.get(objectID, None)
-                if to is None:
-                    to = TrackableObject(objectID, centroid)
-                else:
-                    if to.objectID == 0:
-                        to.counted = False
-                    x = [c[0] for c in to.centroids]
-                    direction = centroid[0]-25 - np.mean(x)
-                    #   debug lel
-                    to.centroids.append(centroid)
-                    if not to.counted:
-                        if direction < 0 and centroid[0] > 297 and centroid[0] < 300:
-                            left_counter += 1
-                            to.counted = True
-                        elif direction > 0 and centroid[0] > 301 and centroid[0] < 303:
-                            right_counter += 1
-                            to.counted = True
-                # store the trackable object in our dictionary
-                trackableObjects[objectID] = to
-            #   person found label
-            text = "Person {}".format(objectID)
-            cv2.putText(frame,text,(centroid[0]-10,centroid[1]-10),font,0.5,(0, 0, 255),1)
-        #   text
         #   Display the resulting frame
         cv2.imshow("Bakker van Maanen", frame)
         key = cv2.waitKey(1) & 0xFF
@@ -144,12 +170,5 @@ def detect_people():
     #   When everything done, release the capture
     cv2.destroyAllWindows()
 
-
-def default_frame_text(frame, left_counter, right_counter, people_in_frame_count):
-    cv2.putText(frame, "Right counter: " + str(right_counter) , (20, 40), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
-    cv2.putText(frame, "Left counter: " + str(left_counter), (20, 60), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
-    cv2.putText(frame, "Total being detected: " + str(people_in_frame_count), (400, 20), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
-
-
 #   MAGGGGICCCC
-detect_cascade()
+detect_people()
