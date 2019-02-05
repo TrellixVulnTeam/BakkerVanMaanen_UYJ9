@@ -97,6 +97,7 @@ def detect_people():
                        idle_time = ((person_found_time_count * 10) / amount_found)
                    idle_time = (TIME_WAITING / amount_found)
                 except ZeroDivisionError:
+                    print("No customers in the last minute")
                     idle_time = 0
                     pass
                 #   push centroids
@@ -113,13 +114,18 @@ def detect_people():
                 #   add amount of people found
                 amount_found += round(people_counter / TIME_SAMPLE_RATE)
                 person_found_time_counter = current_time_counter
+                print("Last counted: " + str(last_people_counter))
+                print("Current people counter: " + str(people_counter))
+                print("Current counted: " + str(round(people_counter / TIME_SAMPLE_RATE)))
             #   trying to keep track of the last recorded people_counter to avoid doubles
             #   if the counter of the amount of people counter is equal to the last amount
             #   they are most likely idling there. otherwise the values would be slightly different
             if int(people_counter) is int(last_people_counter):
                 amount_found -= amount_found
+                print("People counted: " + str(amount_found))
             #   RESET THE PEOPLE COUNTER, AND START TIME
             #   THIS IS OUR INTERVAL
+            print("10 Seconds Passed")
             last_people_counter = people_counter
             people_counter = 0
             start_time = time.time()
